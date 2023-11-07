@@ -35,14 +35,44 @@ The Byte Busters will be using data from the National Centers for Environmental 
 
 [Udit & Ajinkya:]{.underline}
 
+**Dallas 2022 Dataset**
+
 ```{r}
-#| label: load-dallas-dataset
+#| label: dallas-dataset
 #| echo: false
 #| warning: false
 
 dallas_data <- read_csv(here('./data/dallas-2022.csv'))
 
 dallas_data |> # Need to format "DATE" and other columns if we have time.
+  head() |>
+  formattable()
+```
+
+**Arlington 2022 Dataset**
+
+```{r}
+#| label: arlington-dataset
+#| echo: false
+#| warning: false
+
+arlington_data <- read_csv(here('./data/arlington-2022.csv'))
+
+arlington_data |> # Need to format "DATE" and other columns if we have time.
+  head() |>
+  formattable()
+```
+
+Denton 2022 Dataset
+
+```{r}
+#| label: denton-dataset
+#| echo: false
+#| warning: false
+
+denton_data <- read_csv(here('./data/denton-2022.csv'))
+
+denton_data |> # Need to format "DATE" and other columns if we have time.
   head() |>
   formattable()
 ```
