@@ -1,5 +1,5 @@
 ---
-title: "Urban Heat Island Detection & Impact Analysis (2022)"
+title: "Urban Heat Island Detection & Impact Analysis - Dallas (2022)"
 subtitle: "Proposal"
 format: html
 editor: visual
@@ -7,8 +7,12 @@ editor: visual
 
 ```{r}
 #| label: load-pkgs
+#| include: false
 #| message: false
+#| warning: false
 library(tidyverse)
+library(here)
+library(formattable)
 ```
 
 ## Dataset
@@ -27,6 +31,16 @@ Make sure to load the data and use inline code for some of this information.
 The Byte Busters will be using data from the National Centers for Environmental Information(<https://www.ncei.noaa.gov/>)
 
 *The high-level goal can be - Leverage advanced data mining techniques to identify and analyze urban heat islands and weather anomalies, providing insights into the impacts of urbanization on local climates.*
+
+```{r}
+
+#| label: dallas-dataset
+#| echo: false
+dallas_data <- read_csv(here('./data/dallas-2022.csv'))
+dallas_data |>
+  head() |>
+  formattable()
+```
 
 ## Questions
 
