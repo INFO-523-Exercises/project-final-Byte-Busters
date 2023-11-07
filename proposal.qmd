@@ -10,17 +10,18 @@ editor: visual
 #| include: false
 #| message: false
 #| warning: false
-library(tidyverse)
-library(here)
-library(formattable)
+
+install.packages("pacman")
+
+pacman::p_load(dlookr,
+               tidyverse,
+               here,
+               formattable,
+               knitr,
+               dplyr)
 ```
 
 ## Dataset
-
-```{r}
-#| label: load-dataset
-#| message: false
-```
 
 A brief description of your dataset including its provenance, dimensions, etc. as well as the reason why you chose this dataset.
 
@@ -33,11 +34,13 @@ The Byte Busters will be using data from the National Centers for Environmental 
 *The high-level goal can be - Leverage advanced data mining techniques to identify and analyze urban heat islands and weather anomalies, providing insights into the impacts of urbanization on local climates.*
 
 ```{r}
-
-#| label: dallas-dataset
+#| label: load-dallas-dataset
 #| echo: false
+#| warning: false
+
 dallas_data <- read_csv(here('./data/dallas-2022.csv'))
-dallas_data |>
+
+dallas_data |> # Need to format "DATE" and other columns if we have time.
   head() |>
   formattable()
 ```
