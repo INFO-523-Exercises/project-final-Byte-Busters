@@ -35,7 +35,7 @@ The Byte Busters will be using data from the National Centers for Environmental 
 
 [Udit & Ajinkya:]{.underline}
 
-**Dallas 2022 Dataset**
+### **Dallas 2022 Dataset**
 
 ```{r}
 #| label: dallas-dataset
@@ -49,7 +49,7 @@ dallas_data |> # Need to format "DATE" and other columns if we have time.
   formattable()
 ```
 
-**Arlington 2022 Dataset**
+### **Arlington 2022 Dataset**
 
 ```{r}
 #| label: arlington-dataset
@@ -63,7 +63,7 @@ arlington_data |> # Need to format "DATE" and other columns if we have time.
   formattable()
 ```
 
-Denton 2022 Dataset
+### **Denton 2022 Dataset**
 
 ```{r}
 #| label: denton-dataset
