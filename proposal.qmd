@@ -11,7 +11,7 @@ editor: visual
 #| message: false
 #| warning: false
 
-install.packages("pacman")
+#install.packages("pacman")
 
 pacman::p_load(dlookr,
                tidyverse,
