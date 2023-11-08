@@ -157,27 +157,7 @@ ul.task-list li input[type="checkbox"] {
 <h4 class="anchored" data-anchor-id="dallas-2022-dataset">Dallas 2022 Dataset</h4>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
-<pre><code>10536 rows x columns 125</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>function (..., file = "", sep = " ", fill = FALSE, labels = NULL, 
-    append = FALSE) 
-{
-    if (is.character(file)) 
-        if (file == "") 
-            file &lt;- stdout()
-        else if (startsWith(file, "|")) {
-            file &lt;- pipe(substring(file, 2L), "w")
-            on.exit(close(file))
-        }
-        else {
-            file &lt;- file(file, ifelse(append, "a", "w"))
-            on.exit(close(file))
-        }
-    .Internal(cat(list(...), file, sep, fill, labels, append))
-}
-&lt;bytecode: 0x000001f7118ff5d8&gt;
-&lt;environment: namespace:base&gt;</code></pre>
+<pre><code>(10536 rows x 125 columns)</code></pre>
 </div>
 <div class="cell-output-display">
 
@@ -2833,6 +2813,9 @@ NA
 <section id="arlington-2022-dataset" class="level4">
 <h4 class="anchored" data-anchor-id="arlington-2022-dataset"><strong>Arlington 2022 Dataset</strong></h4>
 <div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>(10938 rows x 125 columns)</code></pre>
+</div>
 <div class="cell-output-display">
 
 <table class="table table-condensed">
@@ -5487,6 +5470,9 @@ NA
 <section id="denton-2022-dataset" class="level3">
 <h3 class="anchored" data-anchor-id="denton-2022-dataset"><strong>Denton 2022 Dataset</strong></h3>
 <div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>(10808 rows x 125 columns)</code></pre>
+</div>
 <div class="cell-output-display">
 
 <table class="table table-condensed">
@@ -8148,19 +8134,13 @@ NA
 </section>
 <section id="analysis-plan" class="level2">
 <h2 class="anchored" data-anchor-id="analysis-plan">Analysis plan</h2>
-<ul>
-<li>A plan for answering each of the questions including the variables involved, variables to be created (if any), external data to be merged in (if any).</li>
-</ul>
-<p><u>Riyanshi</u>:</p>
-<ul>
-<li><em>Leverage advanced data mining techniques to identify and analyze urban heat islands and weather anomalies, providing insights into the impacts of urbanization on&nbsp;local&nbsp;climates.</em></li>
-</ul>
+<p>Leverage advanced data mining techniques to identify and analyze urban heat islands and weather anomalies, providing insights into the impacts of urbanization on&nbsp;local&nbsp;climates.</p>
 <ol type="1">
 <li><p>Week 1: Data Cleaning and Data Preprocessing (11/8/2023 - 11/15/2023)</p></li>
 <li><p>Week 2: Exploratory Data Analysis (11/15/2023 - 11/22/2023)</p></li>
 <li><p>Week 3: Anomaly Detection (11/22/2023 - 11/29/2023)</p></li>
 <li><p>Week 4: Model Development and Evaluation (11/29/2023 - 12/6/2023)</p></li>
-<li><p>Week 5: Documentation &amp; Presentation (12/6/2023 - 13/6/2023)</p></li>
+<li><p>Week 5: Documentation &amp; Presentation (12/6/2023 - 12/6/2023)</p></li>
 </ol>
 
 

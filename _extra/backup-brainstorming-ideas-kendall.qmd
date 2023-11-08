@@ -34,8 +34,8 @@ The two questions you want to answer.
 
 This is what Anjik sent to me on WhatsApp:
 
-data1_rows, data1_cols = dallas_data.shape \
-data2_rows, data2_cols = arlington_data.shape \
+data1_rows, data1_cols = dallas_data.shape\
+data2_rows, data2_cols = arlington_data.shape\
 data3_rows, data3_cols = denton_data.shape
 
 ```{r}
