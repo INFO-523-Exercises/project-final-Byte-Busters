@@ -63,7 +63,22 @@ wind conditions, precipitation levels, degree days, and temperature extremes. Ad
 
 #### **Arlington 2022 Dataset**
 
-`{r} #| label: arlington-dataset #| echo: false #| warning: false  arlington_data <- read_csv(here('./data/arlington-2022.csv'))  # Dimensions of dataset: num_rows <- nrow(arlington_data) num_columns <- ncol(arlington_data)  cat("(", num_rows, " rows x ", num_columns, " columns)", sep = "")  arlington_data |> # Need to format "DATE" and other columns if we have time.   head() |>   formattable()}`
+```{r}
+#| label: arlington-dataset 
+#| echo: false 
+#| warning: false  
+
+arlington_data <- read_csv(here('./data/arlington-2022.csv'))  
+
+# Dimensions of dataset: 
+num_rows <- nrow(arlington_data) 
+num_columns <- ncol(arlington_data)  
+cat("(", num_rows, " rows x ", num_columns, " columns)", sep = "")
+
+arlington_data |> 
+  head() |>   
+  formattable()
+```
 
 ### **Denton 2022 Dataset**
 
@@ -107,3 +122,5 @@ denton_data |> # Need to format "DATE" and other columns if we have time.
 | Dew Point Temperature | (Add description)                                                               |
 | Pressure - Avg SL     | Daily average sea level pressure                                                |
 | Rel Hum               | This is the relative humidity given to the nearest whole percentage             |
+
+Leverage advanced data mining techniques to identify and analyze urban heat islands and weather anomalies, providing insights into the impacts of urbanization on local climates.

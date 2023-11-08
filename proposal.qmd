@@ -45,25 +45,25 @@ This project will focus on assessing UHIs in various urban environments, particu
 
 The high-level goal of this project is to detect, analyze, and understand UHIs by leveraging data mining and machine learning to understand the microclimatic effects of urbanization in various metropolitan landscapes.
 
-Climatological and hourly time-series data has been collected from several weather stations run by the National Weather Service (NWS), Federal Aviation Administration (FAA), and Department of Defense (DOD), including airports and other significant areas. This data has been divided into three Local Climatological Datasets (LCD) for Arlington, Dallas, and Denton for the year 2022.
+Climatological and hourly time-series data has been collected from several weather stations run by the National Weather Service (NWS), Federal Aviation Administration (FAA), and Department of Defense (DOD), which encompass data collected from airports and other significant areas. This data has been divided into three Local Climatological Datasets (LCD) for Arlington, Dallas, and Denton for the year 2022.
 
-The dataset also offers daily summaries that describe:
+The dataset that we've gathered from National Center for Environmental Information (NCEI) (<https://www.ncei.noaa.gov/>) offers these key daily summaries that we will be analyzing:
 
-+---------------------------------------------+---------------------------------------------------------------------------------+
-| Columns                                     | Description                                                                     |
-+=============================================+=================================================================================+
-| Wind Gust Speed                             | Wind gusts occurring during time of observation. Given in miles per hour (mph)  |
-+---------------------------------------------+---------------------------------------------------------------------------------+
-| Dry Bulb Temperature                        | The measure of air temperature (Fahrenheit)                                     |
-+---------------------------------------------+---------------------------------------------------------------------------------+
-| Precipitation Levels                        | Total Liquid Content (TLC) Water equivalent amount of precipitation for the day |
-+---------------------------------------------+---------------------------------------------------------------------------------+
-| Dew Point Temperature                       | (Add description)                                                               |
-+---------------------------------------------+---------------------------------------------------------------------------------+
-| Pressure - Avg Sea Level                    | Daily average sea level pressure                                                |
-+---------------------------------------------+---------------------------------------------------------------------------------+
-| Relative Humidity                           | This is the relative humidity given to the nearest whole percentage             |
-+---------------------------------------------+---------------------------------------------------------------------------------+
++---------------------------------------------+----------------------------------------------------------------------------------+
+| Columns                                     | Description                                                                      |
++=============================================+==================================================================================+
+| Wind Gust Speed                             | Wind gusts occurring during time of observation. Given in miles per hour (mph).  |
++---------------------------------------------+----------------------------------------------------------------------------------+
+| Dry Bulb Temperature                        | The measure of air temperature (Fahrenheit).                                     |
++---------------------------------------------+----------------------------------------------------------------------------------+
+| Precipitation Levels                        | Total Liquid Content (TLC) water equivalent amount of precipitation for the day. |
++---------------------------------------------+----------------------------------------------------------------------------------+
+| Dew Point Temperature                       | \-                                                                               |
++---------------------------------------------+----------------------------------------------------------------------------------+
+| Pressure - Average Sea Level                | Daily average sea level pressure.                                                |
++---------------------------------------------+----------------------------------------------------------------------------------+
+| Relative Humidity                           | This is the relative humidity given to the nearest whole percentage.             |
++---------------------------------------------+----------------------------------------------------------------------------------+
 
 Additional data is included in the tabulated monthly summaries: maximum, minimum, and average temperatures; deviations from normal; average station pressure; ceiling height; visibility; weather patterns; wet bulb temperatures; heating and cooling degree days; daily precipitation; average wind speeds; fastest wind speeds and their directions; sky cover; and instances of sunshine, snowfall, and snow depth.
 
@@ -79,42 +79,40 @@ How do urban heat islands vary in intensity across different metropolitan/rural 
 
 ## Weekly Plan of Attack
 
-+-------------------------------------------+----------------------------------------------------------------------------+---------------------------+
-| Week                                      | Weekly Tasks                                                               | Team Member Assignments   |
-+:=========================================:+:==========================================================================:+:=========================:+
-| [**Week 1 (11/8 - 11/15)**]{.underline}\  | Setting up environment, data blending                                      | Dhanya, Udit              |
-| (Data Cleaning & Data Preprocessing)      |                                                                            |                           |
-+-------------------------------------------+----------------------------------------------------------------------------+---------------------------+
-|                                           | Identify missing values and perform imputation to deal with missing values | Riyanshi, Ajinkya         |
-+-------------------------------------------+----------------------------------------------------------------------------+---------------------------+
-|                                           | Data type conversions                                                      | Kendall                   |
-+-------------------------------------------+----------------------------------------------------------------------------+---------------------------+
-| [**Week 2 (11/15 - 11/22)**]{.underline}\ | Visualization of key metrics                                               | Udit, Dhanya              |
-| (Exploratory Data Analysis)               |                                                                            |                           |
-+-------------------------------------------+----------------------------------------------------------------------------+---------------------------+
-|                                           | Feature engineering and selection                                          | Riyanshi                  |
-+-------------------------------------------+----------------------------------------------------------------------------+---------------------------+
-|                                           | Data normalization and standardization                                     | Kendall, Ajinkya          |
-+-------------------------------------------+----------------------------------------------------------------------------+---------------------------+
-| [**Week 3 (11/22 - 11/29)**]{.underline}\ | Implement anomaly detection algorithms                                     | Riyanshi, Kendall, Dhanya |
-| (Anomaly detection)                       |                                                                            |                           |
-+-------------------------------------------+----------------------------------------------------------------------------+---------------------------+
-|                                           | Validate and analyze anomalies                                             | Udit, Ajinkya             |
-+-------------------------------------------+----------------------------------------------------------------------------+---------------------------+
-| [**Week 4 (11/29 - 12/6)**]{.underline}\  | Build classification models                                                | Dhanya, Kendall           |
-| (Model Development and Evaluation)        |                                                                            |                           |
-+-------------------------------------------+----------------------------------------------------------------------------+---------------------------+
-|                                           | Model optimization & cross-validate models                                 | Riyanshi, Udit            |
-+-------------------------------------------+----------------------------------------------------------------------------+---------------------------+
-|                                           | Evaluation metrics and performance analysis                                | Ajinkya                   |
-+-------------------------------------------+----------------------------------------------------------------------------+---------------------------+
-| [**Week 5 (12/6 - 12/6)**]{.underline}\   | Compile project documentation                                              | Kendall, Dhanya           |
-| (Documentation & Presentation)            |                                                                            |                           |
-+-------------------------------------------+----------------------------------------------------------------------------+---------------------------+
-|                                           | Prepare final presentation                                                 | Udit, Riyanshi, Ajinkya   |
-+-------------------------------------------+----------------------------------------------------------------------------+---------------------------+
-
-Leverage advanced data mining techniques to identify and analyze urban heat islands and weather anomalies, providing insights into the impacts of urbanization on local climates.
++-------------------------------------------+----------------------------------------------------------------------------+-----------------------------+-------------------------------------------------------------------------+
+| Week                                      | Weekly Tasks                                                               | Team Member Assignments     | Group Deliverables                                                      |
++:=========================================:+:==========================================================================:+:===========================:+:=======================================================================:+
+| [**Week 1 (11/8 - 11/15)**]{.underline}\  | Setting up environment, data blending                                      | *Dhanya, Udit*              | Cleaned dataset ready for exploratory analysis                          |
+| (Data Cleaning & Data Pre-processing)     |                                                                            |                             |                                                                         |
++-------------------------------------------+----------------------------------------------------------------------------+-----------------------------+-------------------------------------------------------------------------+
+|                                           | Identify missing values and perform imputation to deal with missing values | *Riyanshi, Ajinkya*         | \-                                                                      |
++-------------------------------------------+----------------------------------------------------------------------------+-----------------------------+-------------------------------------------------------------------------+
+|                                           | Data type conversions                                                      | *Kendall*                   | \-                                                                      |
++-------------------------------------------+----------------------------------------------------------------------------+-----------------------------+-------------------------------------------------------------------------+
+| [**Week 2 (11/15 - 11/22)**]{.underline}\ | Visualization of key metrics                                               | *Udit, Dhanya*              | A thorough analysis of data insights and prepared features for modeling |
+| (Exploratory Data Analysis)               |                                                                            |                             |                                                                         |
++-------------------------------------------+----------------------------------------------------------------------------+-----------------------------+-------------------------------------------------------------------------+
+|                                           | Feature engineering and selection                                          | *Riyanshi*                  | \-                                                                      |
++-------------------------------------------+----------------------------------------------------------------------------+-----------------------------+-------------------------------------------------------------------------+
+|                                           | Data normalization and standardization                                     | *Kendall, Ajinkya*          | \-                                                                      |
++-------------------------------------------+----------------------------------------------------------------------------+-----------------------------+-------------------------------------------------------------------------+
+| [**Week 3 (11/22 - 11/29)**]{.underline}\ | Implement anomaly detection algorithms                                     | *Riyanshi, Kendall, Dhanya* | Anomaly detection results and cleaned dataset                           |
+| (Anomaly Detection)                       |                                                                            |                             |                                                                         |
++-------------------------------------------+----------------------------------------------------------------------------+-----------------------------+-------------------------------------------------------------------------+
+|                                           | Validate and analyze anomalies                                             | *Udit, Ajinkya*             | \-                                                                      |
++-------------------------------------------+----------------------------------------------------------------------------+-----------------------------+-------------------------------------------------------------------------+
+| [**Week 4 (11/29 - 12/6)**]{.underline}\  | Build classification models                                                | *Dhanya, Kendall*           | Working models and performance evaluation report                        |
+| (Model Development & Evaluation)          |                                                                            |                             |                                                                         |
++-------------------------------------------+----------------------------------------------------------------------------+-----------------------------+-------------------------------------------------------------------------+
+|                                           | Model optimization & cross-validate models                                 | *Riyanshi, Udit*            | \-                                                                      |
++-------------------------------------------+----------------------------------------------------------------------------+-----------------------------+-------------------------------------------------------------------------+
+|                                           | Evaluation metrics and performance analysis                                | *Ajinkya*                   | \-                                                                      |
++-------------------------------------------+----------------------------------------------------------------------------+-----------------------------+-------------------------------------------------------------------------+
+| [**Week 5 (12/6 - 12/6)**]{.underline}\   | Compile project documentation                                              | *Kendall, Dhanya*           | Complete project documentation and ready-to-deliver presentation        |
+| (Documentation & Presentation)            |                                                                            |                             |                                                                         |
++-------------------------------------------+----------------------------------------------------------------------------+-----------------------------+-------------------------------------------------------------------------+
+|                                           | Prepare final presentation                                                 | *Udit, Riyanshi, Ajinkya*   | \-                                                                      |
++-------------------------------------------+----------------------------------------------------------------------------+-----------------------------+-------------------------------------------------------------------------+
 
 ## Organization of the Project Repository
 
