@@ -8,8 +8,10 @@ This project was developed by Byte Busters For [INFO 523 - Data Mining and Disco
 
 -   Team member 1: Kendall Beaver - First-year graduate student studying Machine Learning.
 
--   Team member 2: One sentence description of Team member 2 (e.g., year, major, etc.).
+-   Team member 2: Riyanshi Bohra: Graduate Student in Data Science.
 
--   Team member 3: One sentence description of Team member 3 (e.g., year, major, etc.).
+-   Team member 3: Ajinkya Deshmukh: Graduate Student in Data Science.
 
--   Team member 4: One sentence description of Team member 4 (e.g., year, major, etc.).
+-   Team member 4: Udit Chaudhary: Graduate Student in Data Science.
+
+-   Team member 5: Dhanyapriya Somasundaram: Graduate Student in Data Science. 
