@@ -23,13 +23,13 @@ pacman::p_load(dlookr,
 
 ## Dataset Description
 
-The high-level goal of this project is to develop a shoe-recommendation system.
+The high-level goal of this project is to detect, analyze, and understand Urban Heat Islands (UHIs) by leveraging data mining and machine learning to understand the microclimatic effects of urbanization in various metropolitan landscapes.
 
 Climatological, hourly time-series data has been collected from several weather stations run by the National Weather Service (NWS), Federal Aviation Administration (FAA), and Department of Defense (DOD), including airports and other significant areas, is compiled into 3 Local Climatological Datasets (LCD) for Arlington, Dallas, and Denton for 2022.
 
 The dataset also offers daily summaries that describe:
 
-| Class                | Description       |
+| Columns              | Description       |
 |----------------------|-------------------|
 | Wind Conditions      | (Add description) |
 | Precipitation Levels | (Add description) |
