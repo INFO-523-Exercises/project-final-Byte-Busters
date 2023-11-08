@@ -53,7 +53,48 @@ wind conditions, precipitation levels, degree days, and temperature extremes. Ad
 
 1.  What methods can be employed to assess variations in the intensity of urban heat islands across diverse metropolitan and rural regions, and how can we characterize the temporal patterns of these variations throughout a specific year?
 
-```{=html}
 <!-- -->
-```
+
 1.  How can we pinpoint distinct anomalies that are typical of urban heat islands, and what is the extent of their correlation with urban infrastructure and population density?
+
+#### Dallas 2022 Dataset
+
+`{r} #| label: dallas-dataset #| echo: false #| warning: false  dallas_data <- read_csv(here('./data/dallas-2022.csv'))  # Dimensions of dataset: num_rows <- nrow(dallas_data) num_columns <- ncol(dallas_data)  cat("(", num_rows, " rows x ", num_columns, " columns)", sep = "")   dallas_data |>   head() |>   formattable()}`
+
+#### **Arlington 2022 Dataset**
+
+`{r} #| label: arlington-dataset #| echo: false #| warning: false  arlington_data <- read_csv(here('./data/arlington-2022.csv'))  # Dimensions of dataset: num_rows <- nrow(arlington_data) num_columns <- ncol(arlington_data)  cat("(", num_rows, " rows x ", num_columns, " columns)", sep = "")  arlington_data |> # Need to format "DATE" and other columns if we have time.   head() |>   formattable()}`
+
+### **Denton 2022 Dataset**
+
+```{r}
+#| label: denton-dataset
+#| echo: false
+#| warning: false
+
+denton_data <- read_csv(here('./data/denton-2022.csv'))
+
+# Dimensions of dataset:
+num_rows <- nrow(denton_data)
+num_columns <- ncol(denton_data)
+
+cat("(", num_rows, " rows x ", num_columns, " columns)", sep = "")
+
+denton_data |> # Need to format "DATE" and other columns if we have time.
+  head() |>
+  formattable()
+```
+
+-   **data/:** Used for storing any necessary data files for the project, such as input files.
+
+-   **images/:** Used for storing plots of our project.
+
+-   **presentation_files/:** Folder for having presentation related files.
+
+-   **\_extra/:** Used to brainstorm our analysis which won't impact our project workflow.
+
+-   **\_freeze/:** This folder is used to store the generated files during the build process. These files represent the frozen state of the website at a specific point in time.
+
+-   **\_site/:** Folder used to store the generated static website files after the site generator processes the quarto document.
+
+-   **.github/:** Folder for storing github templates and workflow.

@@ -23,23 +23,23 @@ pacman::p_load(dlookr,
 
 ## Project Objective**:**
 
--   The primary objective of this project is to leverage data mining and machine learning algorithms to detect and characterize urban heat islands (UHIs) across a diverse range of metropolitan landscapes. By analyzing weather pattern anomalies and temperature distributions, the project aims to gain a deeper understanding of the microclimatic effects of urbanization.
+The primary objective of this project is to leverage data mining and machine learning algorithms to detect and characterize Urban Heat Islands (UHIs) across three different areas in the Dallas region. By analyzing weather pattern anomalies and temperature distributions, the project aims to gain a deeper understanding of the microclimatic effects of urbanization.
 
 #### **Scope and Focus:**
 
--   This project will focus on assessing UHIs in various urban environments, particularly comparing the UHI intensity in the following settings:
+This project will focus on assessing UHIs in various urban environments, particularly comparing the UHI intensity in the following settings:
 
 #### **Dallas (Significant City):**
 
--   Analyzing the UHI in a major metropolitan area with high population density and urbanization. Factors such as pollution, land use, and climate will be considered to determine the UHI's intensity.
+Analyzing the UHI in a major metropolitan area with high population density and urbanization. Factors such as pollution, land use, and climate will be considered to determine the UHI's intensity.
 
 #### **Arlington (Suburban Town):**
 
--   Evaluating the UHI in a suburban setting, with a moderate population density and less urban development than a significant city. This comparison will help us understand how UHIs vary in less densely populated areas.
+Evaluating the UHI in a suburban setting, with a moderate population density and less urban development than a significant city. This comparison will help us understand how UHIs vary in less densely populated areas.
 
 #### **Denton (Rural City):**
 
--   Examining the UHI in a rural city, where factors like lower population density, less pollution, and different land use patterns play a role in UHI intensity.
+Examining the UHI in a rural city, where factors like lower population density, less pollution, and different land use patterns play a role in UHI intensity.
 
 #### Dataset Description:
 
@@ -49,81 +49,26 @@ Climatological, hourly time-series data has been collected from several weather 
 
 The dataset also offers daily summaries that describe:
 
-| Columns              | Description       |
-|----------------------|-------------------|
-| Wind Conditions      | (Add description) |
-| Precipitation Levels | (Add description) |
-| Degree Days          | (Add description) |
-|                      |                   |
+| Columns                           | Description       |
+|-----------------------------------|-------------------|
+| Wind Gust Speed                   | (Add description) |
+| Dry Bulb Temperature (Fahrenheit) |                   |
+| Precipitation Levels              | (Add description) |
+| Dew Point Temperature             | (Add description) |
+| Sea Level Pressure                |                   |
+| Relative Humidity                 |                   |
 
-Additional data is included in the tabulated monthly summaries: maximum, minimum, and average temperatures; deviations from normal; dew point temperatures; average station pressure; ceiling height; visibility; weather patterns; wet bulb temperatures; relative humidity; heating and cooling degree days; daily precipitation; average wind speeds; fastest wind speeds and their directions; sky cover; and instances of sunshine, snowfall, and snow depth.
+Additional data is included in the tabulated monthly summaries: maximum, minimum, and average temperatures; deviations from normal; average station pressure; ceiling height; visibility; weather patterns; wet bulb temperatures; heating and cooling degree days; daily precipitation; average wind speeds; fastest wind speeds and their directions; sky cover; and instances of sunshine, snowfall, and snow depth.
 
-#### Dallas 2022 Dataset
+## Question
 
-```{r}
-#| label: dallas-dataset
-#| echo: false
-#| warning: false
-
-dallas_data <- read_csv(here('./data/dallas-2022.csv'))
-
-# Dimensions of dataset:
-num_rows <- nrow(dallas_data)
-num_columns <- ncol(dallas_data)
-
-cat("(", num_rows, " rows x ", num_columns, " columns)", sep = "")
-
-
-dallas_data |>
-  head() |>
-  formattable()
-```
-
-#### **Arlington 2022 Dataset**
+How do urban heat islands vary in intensity across different metropolitan/rural cities in a particular region, and what are the temporal patterns of these variations within a given year?
 
 ```{r}
-#| label: arlington-dataset
-#| echo: false
-#| warning: false
+# Q1, Part 1: k-Means Clustering, SVM (Support Vector Machines), Isolation Forest and Local Outlier Factor (LOF), Z-scores. First 3 are models.
 
-arlington_data <- read_csv(here('./data/arlington-2022.csv'))
-
-# Dimensions of dataset:
-num_rows <- nrow(arlington_data)
-num_columns <- ncol(arlington_data)
-
-cat("(", num_rows, " rows x ", num_columns, " columns)", sep = "")
-
-arlington_data |> # Need to format "DATE" and other columns if we have time.
-  head() |>
-  formattable()
+# Q1, Part 2: Time-series analysis (data viz & dashboards; heat maps).
 ```
-
-### **Denton 2022 Dataset**
-
-```{r}
-#| label: denton-dataset
-#| echo: false
-#| warning: false
-
-denton_data <- read_csv(here('./data/denton-2022.csv'))
-
-# Dimensions of dataset:
-num_rows <- nrow(denton_data)
-num_columns <- ncol(denton_data)
-
-cat("(", num_rows, " rows x ", num_columns, " columns)", sep = "")
-
-denton_data |> # Need to format "DATE" and other columns if we have time.
-  head() |>
-  formattable()
-```
-
-## Questions
-
-1.  How do urban heat islands vary in intensity across different metropolitan/rural cities in a particular region, and what are the temporal patterns of these variations within a given year?
-
-2.  Can we identify specific anomalies that are characteristic of urban heat islands, and how do these anomalies correlate with urban infrastructure and population density?
 
 ## Analysis Plan
 
@@ -139,20 +84,20 @@ Leverage advanced data mining techniques to identify and analyze urban heat isla
 
 5.  Week 5: Documentation & Presentation (12/6/2023 - 12/6/2023)
 
-## Repo Organization
+## Organization of the Project Repository
 
-The following are the folders involved in the Project repository.
+Below are the key folders within the Project repository:
 
--   **data/:** Used for storing any necessary data files for the project, such as input files.
+-   **data/**: This directory is designated for essential data files required for the project, including input files.
 
--   **images/:** Used for storing image files used in the project.
+-   **images/**: This folder serves as the storage location for project-related visual representations and plots.
 
--   **presentation_files/:** Folder for having presentation related files.
+-   **presentation_files/**: This folder is specifically reserved for materials relevant to project presentations.
 
--   **\_extra/:** Used to brainstorm our analysis which won't impact our project workflow.
+-   **\_extra/**: We will brainstorm and store analysis-related content that doesn't directly affect the project workflow.
 
--   **\_freeze/:** This folder is used to store the generated files during the build process. These files represent the frozen state of the website at a specific point in time.
+-   **\_freeze/**: This folder stores the generated files during the build process, preserving the website's specific state at a given moment.
 
--   **\_site/:** Folder used to store the generated static website files after the site generator processes the quarto document.
+-   **\_site/**: This is where we will generate our static website files after rendering our Quarto documents.
 
--   **.github/:** Folder for storing github templates and workflow.
+-   **.github/**: This is where we will access and manage GitHub templates and workflow configurations.
