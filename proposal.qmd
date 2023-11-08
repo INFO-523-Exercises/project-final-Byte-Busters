@@ -77,7 +77,7 @@ How do urban heat islands vary in intensity across different metropolitan/rural 
 # Q1, Part 2: Time-series analysis (data viz & dashboards; heat maps).
 ```
 
-## Analysis Plan of Attack
+## Weekly Plan of Attack
 
 +-------------------------+------------------------------------+-------------------------+
 | Week                    | Weekly Tasks                       | Team Member Assignments |
@@ -104,16 +104,6 @@ How do urban heat islands vary in intensity across different metropolitan/rural 
 +-------------------------+------------------------------------+-------------------------+
 
 Leverage advanced data mining techniques to identify and analyze urban heat islands and weather anomalies, providing insights into the impacts of urbanization on local climates.
-
-1.  Week 1: Data Cleaning and Data Preprocessing
-
-2.  Week 2:
-
-3.  Week 3:
-
-4.  Week 4:
-
-5.  Week 5:
 
 ## Organization of the Project Repository
 
