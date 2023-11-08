@@ -47,7 +47,7 @@ dallas_data |>
 #| echo: false 
 #| warning: false  
 
-arlington_data <- read_csv(here('./data/arlington-2022.csv'))  
+arlington_data <- read_csv(here('./data/arlington-2022.csv'))
 
 # Dimensions of dataset: 
 num_rows <- nrow(arlington_data) 

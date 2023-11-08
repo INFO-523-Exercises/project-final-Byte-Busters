@@ -20,40 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -153,10 +119,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#project-objective" id="toc-project-objective" class="nav-link active" data-scroll-target="#project-objective">Project Objective<strong>:</strong></a>
+  <li><a href="#project-objective" id="toc-project-objective" class="nav-link active" data-scroll-target="#project-objective">Project Objective</a>
   <ul class="collapse">
-  <li><a href="#scope-and-focus" id="toc-scope-and-focus" class="nav-link" data-scroll-target="#scope-and-focus"><strong>Scope and Focus:</strong></a></li>
-  <li><a href="#dataset-description" id="toc-dataset-description" class="nav-link" data-scroll-target="#dataset-description">Dataset Description:</a></li>
+  <li><a href="#scope-and-focus" id="toc-scope-and-focus" class="nav-link" data-scroll-target="#scope-and-focus"><strong>Scope and Focus</strong></a></li>
+  <li><a href="#dataset-description" id="toc-dataset-description" class="nav-link" data-scroll-target="#dataset-description">Dataset Description</a></li>
   </ul></li>
   <li><a href="#question" id="toc-question" class="nav-link" data-scroll-target="#question">Question</a></li>
   <li><a href="#weekly-plan-of-attack" id="toc-weekly-plan-of-attack" class="nav-link" data-scroll-target="#weekly-plan-of-attack">Weekly Plan of Attack</a></li>
@@ -186,10 +152,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 <section id="project-objective" class="level2">
-<h2 class="anchored" data-anchor-id="project-objective">Project Objective<strong>:</strong></h2>
+<h2 class="anchored" data-anchor-id="project-objective">Project Objective</h2>
 <p>The primary objective of this project is to leverage data mining and machine learning algorithms to detect and characterize Urban Heat Islands (UHIs) across three different areas in the Dallas region. By analyzing weather pattern anomalies and temperature distributions, the project aims to gain a deeper understanding of the microclimatic effects of urbanization.</p>
 <section id="scope-and-focus" class="level3">
-<h3 class="anchored" data-anchor-id="scope-and-focus"><strong>Scope and Focus:</strong></h3>
+<h3 class="anchored" data-anchor-id="scope-and-focus"><strong>Scope and Focus</strong></h3>
 <p>This project will focus on assessing UHIs in various urban environments, particularly comparing the UHI intensity in the following settings:</p>
 <ol type="1">
 <li><p><strong>Dallas (Significant City):</strong></p>
@@ -201,7 +167,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ol>
 </section>
 <section id="dataset-description" class="level3">
-<h3 class="anchored" data-anchor-id="dataset-description">Dataset Description:</h3>
+<h3 class="anchored" data-anchor-id="dataset-description">Dataset Description</h3>
 <p>The high-level goal of this project is to detect, analyze, and understand UHIs by leveraging data mining and machine learning to understand the microclimatic effects of urbanization in various metropolitan&nbsp;landscapes.</p>
 <p>Climatological and hourly time-series data has been collected from several weather stations run by the National Weather Service (NWS), Federal Aviation Administration (FAA), and Department of Defense (DOD), which encompass data collected from airports and other significant areas. This data has been divided into three Local Climatological Datasets (LCD) for Arlington, Dallas, and Denton for the year 2022.</p>
 <p>The dataset that we’ve gathered from National Center for Environmental Information (NCEI) (<a href="https://www.ncei.noaa.gov/" class="uri">https://www.ncei.noaa.gov/</a>) offers these key daily summaries that we will be analyzing:</p>
@@ -249,112 +215,134 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="question" class="level2">
 <h2 class="anchored" data-anchor-id="question">Question</h2>
 <p>How do urban heat islands vary in intensity across different metropolitan/rural cities in a particular region, and what are the temporal patterns of these variations within&nbsp;a&nbsp;given&nbsp;year?</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Q1, Part 1: k-Means Clustering, SVM (Support Vector Machines), Isolation Forest and Local Outlier Factor (LOF), Z-scores. First 3 are models.</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Q1, Part 2: Time-series analysis (data viz &amp; dashboards; heat maps).</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
 </section>
 <section id="weekly-plan-of-attack" class="level2">
 <h2 class="anchored" data-anchor-id="weekly-plan-of-attack">Weekly Plan of Attack</h2>
 <table class="table">
 <colgroup>
-<col style="width: 19%">
-<col style="width: 33%">
-<col style="width: 13%">
-<col style="width: 32%">
+<col style="width: 44%">
+<col style="width: 39%">
+<col style="width: 15%">
 </colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: center;">Week</th>
-<th style="text-align: center;">Weekly Tasks</th>
-<th style="text-align: center;">Team Member Assignments</th>
-<th style="text-align: center;">Group Deliverables</th>
+<th style="text-align: center;">Week No.&nbsp;&amp; Overview</th>
+<th style="text-align: center;">Individual Weekly Tasks</th>
+<th style="text-align: center;">Assigned Team Members</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: center;"><u><strong>Week 1 (11/8 - 11/15)</strong></u><br>
-(Data Cleaning &amp; Data Pre-processing)</td>
+<td style="text-align: center;"><u><strong>Week 1<br>
+</strong></u>11/8/23 - 11/15/23</td>
 <td style="text-align: center;">Setting up environment, data blending</td>
 <td style="text-align: center;"><em>Dhanya, Udit</em></td>
-<td style="text-align: center;">Cleaned dataset ready for exploratory analysis</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;"></td>
+<td style="text-align: center;"><u><strong>Objective:</strong></u><br>
+Data cleaning &amp; data pre-processing</td>
 <td style="text-align: center;">Identify missing values and perform imputation to deal with missing values</td>
 <td style="text-align: center;"><em>Riyanshi, Ajinkya</em></td>
-<td style="text-align: center;">-</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;"></td>
+<td style="text-align: center;"><u><strong>Deliverables:</strong></u><br>
+Cleaned dataset ready for exploratory analysis.</td>
 <td style="text-align: center;">Data type conversions</td>
 <td style="text-align: center;"><em>Kendall</em></td>
-<td style="text-align: center;">-</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;"><u><strong>Week 2 (11/15 - 11/22)</strong></u><br>
-(Exploratory Data Analysis)</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><u><strong>Week 2<br>
+</strong></u>11/15/23 - 11/22/23</td>
 <td style="text-align: center;">Visualization of key metrics</td>
 <td style="text-align: center;"><em>Udit, Dhanya</em></td>
-<td style="text-align: center;">A thorough analysis of data insights and prepared features for modeling</td>
 </tr>
-<tr class="odd">
-<td style="text-align: center;"></td>
+<tr class="even">
+<td style="text-align: center;"><u><strong>Objective:</strong></u><br>
+Gain insights into the dataset and prepare for model development.</td>
 <td style="text-align: center;">Feature engineering and selection</td>
 <td style="text-align: center;"><em>Riyanshi</em></td>
-<td style="text-align: center;">-</td>
 </tr>
-<tr class="even">
-<td style="text-align: center;"></td>
+<tr class="odd">
+<td style="text-align: center;"><u><strong>Deliverables:</strong></u><br>
+A thorough analysis of data insights and prepared features for modeling.</td>
 <td style="text-align: center;">Data normalization and standardization</td>
 <td style="text-align: center;"><em>Kendall, Ajinkya</em></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;"><u><strong>Week 3 (11/22 - 11/29)</strong></u><br>
-(Anomaly Detection)</td>
+<td style="text-align: center;"><u><strong>Week 3<br>
+</strong></u>11/22/23 - 11/29/23</td>
 <td style="text-align: center;">Implement anomaly detection algorithms</td>
 <td style="text-align: center;"><em>Riyanshi, Kendall, Dhanya</em></td>
-<td style="text-align: center;">Anomaly detection results and cleaned dataset</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;"></td>
+<td style="text-align: center;"><u><strong>Objective:</strong></u><br>
+Identify and address anomalies in the dataset and draw conclusions concerning UHIs.</td>
 <td style="text-align: center;">Validate and analyze anomalies</td>
 <td style="text-align: center;"><em>Udit, Ajinkya</em></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><u><strong>Deliverables:</strong></u><br>
+Anomaly detection results and cleaned dataset.</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;"><u><strong>Week 4 (11/29 - 12/6)</strong></u><br>
-(Model Development &amp; Evaluation)</td>
+<td style="text-align: center;"><u><strong>Week 4<br>
+</strong></u>11/29/23 - 12/6/23</td>
 <td style="text-align: center;">Build classification models</td>
 <td style="text-align: center;"><em>Dhanya, Kendall</em></td>
-<td style="text-align: center;">Working models and performance evaluation report</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;"></td>
+<td style="text-align: center;"><u><strong>Objective:</strong></u><br>
+Develop classification models for anomalies and evaluate their performance.</td>
 <td style="text-align: center;">Model optimization &amp; cross-validate models</td>
 <td style="text-align: center;"><em>Riyanshi, Udit</em></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><u><strong>Deliverables:</strong></u><br>
+Working models and performance evaluation report.</td>
+<td style="text-align: center;">Evaluation metrics and performance analysis</td>
+<td style="text-align: center;"><em>Ajinkya</em></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;"></td>
-<td style="text-align: center;">Evaluation metrics and performance analysis</td>
-<td style="text-align: center;"><em>Ajinkya</em></td>
+<td style="text-align: center;"><u><strong>Week 5<br>
+</strong></u>12/6/23 (Presentation)</td>
+<td style="text-align: center;"><ul>
+<li></li>
+</ul></td>
 <td style="text-align: center;">-</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;"><u><strong>Week 5 (12/6 - 12/6)</strong></u><br>
-(Documentation &amp; Presentation)</td>
+<td style="text-align: center;"><u><strong>Objective:</strong></u><br>
+Document the project process and results, and prepare a presentation.</td>
 <td style="text-align: center;">Compile project documentation</td>
 <td style="text-align: center;"><em>Kendall, Dhanya</em></td>
-<td style="text-align: center;">Complete project documentation and ready-to-deliver presentation</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;"></td>
+<td style="text-align: center;"><u><strong>Deliverables:</strong></u><br>
+Complete project documentation and ready-to-deliver presentation.</td>
 <td style="text-align: center;">Prepare final presentation</td>
 <td style="text-align: center;"><em>Udit, Riyanshi, Ajinkya</em></td>
-<td style="text-align: center;">-</td>
 </tr>
 </tbody>
 </table>
