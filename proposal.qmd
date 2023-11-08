@@ -121,11 +121,11 @@ denton_data |> # Need to format "DATE" and other columns if we have time.
 
 ## Questions
 
-1.  Can we identify specific anomalies that are characteristic of urban heat islands, and how do these anomalies correlate with urban infrastructure and population density?
+1.  How do urban heat islands vary in intensity across different metropolitan/rural cities in a particular region, and what are the temporal patterns of these variations within a given year?
 
-2.  How do urban heat islands vary in intensity across different metropolitan/rural areas, and what are the temporal patterns of these variations within a given year?
+2.  Can we identify specific anomalies that are characteristic of urban heat islands, and how do these anomalies correlate with urban infrastructure and population density?
 
-## Analysis plan
+## Analysis Plan
 
 Leverage advanced data mining techniques to identify and analyze urban heat islands and weather anomalies, providing insights into the impacts of urbanization on local climates.
 
