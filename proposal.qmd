@@ -21,7 +21,27 @@ pacman::p_load(dlookr,
                dplyr)
 ```
 
-## Dataset Description
+##  Project Objective**:**
+
+-   The primary objective of this project is to leverage data mining and machine learning algorithms to detect and characterize urban heat islands (UHIs) across a diverse range of metropolitan landscapes. By analyzing weather pattern anomalies and temperature distributions, the project aims to gain a deeper understanding of the microclimatic effects of urbanization.
+
+#### **Scope and Focus:**
+
+-   This project will focus on assessing UHIs in various urban environments, particularly comparing the UHI intensity in the following settings:
+
+#### **Dallas (Significant City):**
+
+-   Analyzing the UHI in a major metropolitan area with high population density and urbanization. Factors such as pollution, land use, and climate will be considered to determine the UHI's intensity.
+
+#### **Arlington (Suburban Town):**
+
+-   Evaluating the UHI in a suburban setting, with a moderate population density and less urban development than a significant city. This comparison will help us understand how UHIs vary in less densely populated areas.
+
+#### **Denton (Rural City):**
+
+-   Examining the UHI in a rural city, where factors like lower population density, less pollution, and different land use patterns play a role in UHI intensity.
+
+#### Dataset Description:
 
 The high-level goal of this project is to detect, analyze, and understand Urban Heat Islands (UHIs) by leveraging data mining and machine learning to understand the microclimatic effects of urbanization in various metropolitan landscapes.
 
@@ -101,9 +121,9 @@ denton_data |> # Need to format "DATE" and other columns if we have time.
 
 ## Questions
 
-1.  Can we identify specific anomalies that are characteristic of urban heat islands, and how do these anomalies correlate with urban infrastructure and population density?
+1.  How can we pinpoint distinct anomalies that are typical of urban heat islands, and what is the extent of their correlation with urban infrastructure and population density?
 
-2.  How do urban heat islands vary in intensity across different metropolitan/rural areas, and what are the temporal patterns of these variations within a given year?
+2.  What methods can be employed to assess variations in the intensity of urban heat islands across diverse metropolitan and rural regions, and how can we characterize the temporal patterns of these variations throughout a specific year?
 
 ## Analysis plan
 
