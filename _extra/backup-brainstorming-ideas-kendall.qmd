@@ -46,3 +46,7 @@ dim(dallas_data)
 dallas_dimension <- data.frame(dallas_data)
 dallas_dimension
 ```
+
+Anjinka & Udit
+
+wind conditions, precipitation levels, degree days, and temperature extremes. Additional data is included in the tabulated monthly summaries: maximum, minimum, and average temperatures; deviations from normal; dew point temperatures; average station pressure; ceiling height; visibility; weather patterns; wet bulb temperatures; relative humidity; heating and cooling degree days; daily precipitation; average wind speeds; fastest wind speeds and their directions; sky cover; and instances of sunshine, snowfall, and snow depth.

@@ -25,7 +25,16 @@ pacman::p_load(dlookr,
 
 Climatological, hourly time-series data has been collected from several weather stations run by the NWS, FAA, and DOD, including airports and other significant areas, is compiled into 3 Local Climatological Datasets (LCD) for Arlington, Dallas, and Denton for 2022.
 
-The dataset also offers daily summaries that describe: wind conditions, precipitation levels, degree days, and temperature extremes. Additional data is included in the tabulated monthly summaries: maximum, minimum, and average temperatures; deviations from normal; dew point temperatures; average station pressure; ceiling height; visibility; weather patterns; wet bulb temperatures; relative humidity; heating and cooling degree days; daily precipitation; average wind speeds; fastest wind speeds and their directions; sky cover; and instances of sunshine, snowfall, and snow depth.
+The dataset also offers daily summaries that describe:
+
+| Class                | Description       |
+|----------------------|-------------------|
+| Wind Conditions      | (Add description) |
+| Precipitation Levels | (Add description) |
+| Degree Days          | (Add description) |
+| Temperature Extremes | (Add description) |
+
+Additional data is included in the tabulated monthly summaries: maximum, minimum, and average temperatures; deviations from normal; dew point temperatures; average station pressure; ceiling height; visibility; weather patterns; wet bulb temperatures; relative humidity; heating and cooling degree days; daily precipitation; average wind speeds; fastest wind speeds and their directions; sky cover; and instances of sunshine, snowfall, and snow depth.
 
 #### Dallas 2022 Dataset
 
