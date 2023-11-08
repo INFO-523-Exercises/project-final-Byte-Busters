@@ -50,3 +50,10 @@ dallas_dimension
 Anjinka & Udit
 
 wind conditions, precipitation levels, degree days, and temperature extremes. Additional data is included in the tabulated monthly summaries: maximum, minimum, and average temperatures; deviations from normal; dew point temperatures; average station pressure; ceiling height; visibility; weather patterns; wet bulb temperatures; relative humidity; heating and cooling degree days; daily precipitation; average wind speeds; fastest wind speeds and their directions; sky cover; and instances of sunshine, snowfall, and snow depth.
+
+1.  What methods can be employed to assess variations in the intensity of urban heat islands across diverse metropolitan and rural regions, and how can we characterize the temporal patterns of these variations throughout a specific year?
+
+```{=html}
+<!-- -->
+```
+1.  How can we pinpoint distinct anomalies that are typical of urban heat islands, and what is the extent of their correlation with urban infrastructure and population density?
