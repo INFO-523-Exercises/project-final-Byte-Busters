@@ -4,6 +4,36 @@ Byte Busters' Draft:
 
 The Byte Busters will be using data from the National Centers for Environmental Information
 
-(https://www.ncei.noaa.gov/)…
+(https://www.ncei.noaa.gov/)...
 
 Udit & Ajinkya:
+
+## Questions
+
+The two questions you want to answer.
+
+## Analysis plan
+
+-   A plan for answering each of the questions including the variables involved, variables to be created (if any), external data to be merged in (if any).
+
+[Riyanshi]{.underline}:
+
+-   *Leverage advanced data mining techniques to identify and analyze urban heat islands and weather anomalies, providing insights into the impacts of urbanization on local climates.*
+
+1.  Week 1: Data Cleaning and Data Preprocessing (11/8/2023 - 11/15/2023)
+
+2.  Week 2: Exploratory Data Analysis (11/15/2023 - 11/22/2023)
+
+3.  Week 3: Anomaly Detection (11/22/2023 - 11/29/2023)
+
+4.  Week 4: Model Development and Evaluation (11/29/2023 - 12/6/2023)
+
+5.  Week 5: Documentation & Presentation (12/6/2023 - 13/6/2023)
+
+\-\-\-\--
+
+This is what Anjik sent to me on WhatsApp:
+
+data1_rows, data1_cols = dallas_data.shape \
+data2_rows, data2_cols = arlington_data.shape \
+data3_rows, data3_cols = denton_data.shape

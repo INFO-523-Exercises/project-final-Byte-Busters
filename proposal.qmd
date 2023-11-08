@@ -39,6 +39,15 @@ dallas_data <- read_csv(here('./data/dallas-2022.csv'))
 dallas_data |> # Need to format "DATE" and other columns if we have time.
   head() |>
   formattable()
+dim(dallas_data)
+
+dallas_dimension <- data.frame(dallas_data)
+dallas_dimension
+
+num_rows <- nrow(dallas_data)
+num_rows
+num_columns <- ncol(dallas_data)
+num_columns
 ```
 
 ### **Arlington 2022 Dataset**
