@@ -1,3 +1,20 @@
+```{r}
+
+#| label: load-pkgs
+#| include: false
+#| message: false
+#| warning: false
+
+#install.packages("pacman")
+
+pacman::p_load(dlookr,
+               tidyverse,
+               here,
+               formattable,
+               knitr,
+               dplyr)
+```
+
 Make sure to load the data and use inline code for some of this information.
 
 Byte Busters' Draft:
@@ -115,7 +132,7 @@ denton_data |> # Need to format "DATE" and other columns if we have time.
 -   **.github/:** Folder for storing github templates and workflow.
 
 | Columns               | Description                                                                     |
-|----------------------------------------------|--------------------------|
+|---------------------------------------------|--------------------------|
 | Wind Gust Speed       | Wind gusts occurring during time of observation. Given in miles per hour (mph)  |
 | Dry Bulb Temperature  | The measure of air temperature (Fahrenheit)                                     |
 | Precipitation Levels  | Total Liquid Content (TLC) Water equivalent amount of precipitation for the day |

@@ -5,27 +5,11 @@ format: html
 editor: visual
 ---
 
-```{r}
-#| label: load-pkgs
-#| include: false
-#| message: false
-#| warning: false
-
-#install.packages("pacman")
-
-pacman::p_load(dlookr,
-               tidyverse,
-               here,
-               formattable,
-               knitr,
-               dplyr)
-```
-
 ## Project Objective**:**
 
 The primary objective of this project is to leverage data mining and machine learning algorithms to detect and characterize Urban Heat Islands (UHIs) across three different areas in the Dallas region. By analyzing weather pattern anomalies and temperature distributions, the project aims to gain a deeper understanding of the microclimatic effects of urbanization.
 
-#### **Scope and Focus:**
+### **Scope and Focus:**
 
 This project will focus on assessing UHIs in various urban environments, particularly comparing the UHI intensity in the following settings:
 
@@ -41,7 +25,7 @@ This project will focus on assessing UHIs in various urban environments, particu
 
     Examining the UHI in a rural city, where factors like lower population density, less pollution, and different land use patterns play a role in UHI intensity.
 
-#### Dataset Description:
+### Dataset Description:
 
 The high-level goal of this project is to detect, analyze, and understand UHIs by leveraging data mining and machine learning to understand the microclimatic effects of urbanization in various metropolitan landscapes.
 

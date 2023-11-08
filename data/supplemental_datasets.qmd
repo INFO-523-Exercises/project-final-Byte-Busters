@@ -1,0 +1,80 @@
+---
+title: "Supplemental Datasets"
+subtitle: "Proposal"
+format: html
+editor: visual
+---
+
+```{r}
+#| label: load-pkgs
+#| include: false
+#| message: false
+#| warning: false
+
+#install.packages("pacman")
+
+pacman::p_load(dlookr,
+               tidyverse,
+               here,
+               formattable,
+               knitr,
+               dplyr)
+```
+
+### **Dallas 2022 Dataset**
+
+```{r}
+#| label: dallas-dataset 
+#| echo: false 
+#| warning: false  
+
+dallas_data <- read_csv(here('./data/dallas-2022.csv'))  
+
+# Dimensions of dataset: 
+num_rows <- nrow(dallas_data) 
+num_columns <- ncol(dallas_data)  
+cat("(", num_rows, " rows x ", num_columns, " columns)", sep = "")  
+
+dallas_data |>
+  head() |>
+  formattable()
+```
+
+### **Arlington 2022 Dataset**
+
+```{r}
+#| label: arlington-dataset 
+#| echo: false 
+#| warning: false  
+
+arlington_data <- read_csv(here('./data/arlington-2022.csv'))  
+
+# Dimensions of dataset: 
+num_rows <- nrow(arlington_data) 
+num_columns <- ncol(arlington_data)  
+cat("(", num_rows, " rows x ", num_columns, " columns)", sep = "")
+
+arlington_data |> 
+  head() |>   
+  formattable()
+```
+
+### **Denton 2022 Dataset**
+
+```{r}
+#| label: denton-dataset
+#| echo: false
+#| warning: false
+
+denton_data <- read_csv(here('./data/denton-2022.csv'))
+
+# Dimensions of dataset:
+num_rows <- nrow(denton_data)
+num_columns <- ncol(denton_data)
+
+cat("(", num_rows, " rows x ", num_columns, " columns)", sep = "")
+
+denton_data |> # Need to format "DATE" and other columns if we have time.
+  head() |>
+  formattable()
+```
