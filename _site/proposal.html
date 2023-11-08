@@ -119,10 +119,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#dataset" id="toc-dataset" class="nav-link active" data-scroll-target="#dataset">Dataset</a>
+  <li><a href="#dataset-description" id="toc-dataset-description" class="nav-link active" data-scroll-target="#dataset-description">Dataset Description</a>
   <ul class="collapse">
-  <li><a href="#dallas-2022-dataset" id="toc-dallas-2022-dataset" class="nav-link" data-scroll-target="#dallas-2022-dataset"><strong>Dallas 2022 Dataset</strong></a></li>
-  <li><a href="#arlington-2022-dataset" id="toc-arlington-2022-dataset" class="nav-link" data-scroll-target="#arlington-2022-dataset"><strong>Arlington 2022 Dataset</strong></a></li>
   <li><a href="#denton-2022-dataset" id="toc-denton-2022-dataset" class="nav-link" data-scroll-target="#denton-2022-dataset"><strong>Denton 2022 Dataset</strong></a></li>
   </ul></li>
   <li><a href="#questions" id="toc-questions" class="nav-link" data-scroll-target="#questions">Questions</a></li>
@@ -151,17 +149,36 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="dataset" class="level2">
-<h2 class="anchored" data-anchor-id="dataset">Dataset</h2>
-<p><em>A brief description of your dataset including its provenance, dimensions, etc. as well as the reason why you chose this dataset.</em></p>
-<p><em>Make sure to load the data and use inline code for some of this information.</em></p>
-<p><u><strong>Byte Busters’ Draft:</strong></u></p>
-<p>The Byte Busters will be using data from the National Centers for Environmental Information</p>
-<p>(<a href="https://www.ncei.noaa.gov/" class="uri">https://www.ncei.noaa.gov/</a>)…</p>
-<p><u>Udit &amp; Ajinkya:</u></p>
-<section id="dallas-2022-dataset" class="level3">
-<h3 class="anchored" data-anchor-id="dallas-2022-dataset"><strong>Dallas 2022 Dataset</strong></h3>
+<section id="dataset-description" class="level2">
+<h2 class="anchored" data-anchor-id="dataset-description">Dataset Description</h2>
+<p>Climatological, hourly time-series data has been collected from several weather stations run by the NWS, FAA, and DOD, including airports and other significant areas, is compiled into 3 Local Climatological Datasets (LCD) for Arlington, Dallas, and Denton for 2022.</p>
+<p>The dataset also offers daily summaries that describe: wind conditions, precipitation levels, degree days, and temperature extremes. Additional data is included in the tabulated monthly summaries: maximum, minimum, and average temperatures; deviations from normal; dew point temperatures; average station pressure; ceiling height; visibility; weather patterns; wet bulb temperatures; relative humidity; heating and cooling degree days; daily precipitation; average wind speeds; fastest wind speeds and their directions; sky cover; and instances of sunshine, snowfall, and snow depth.</p>
+<section id="dallas-2022-dataset" class="level4">
+<h4 class="anchored" data-anchor-id="dallas-2022-dataset">Dallas 2022 Dataset</h4>
 <div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>10536 rows x columns 125</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>function (..., file = "", sep = " ", fill = FALSE, labels = NULL, 
+    append = FALSE) 
+{
+    if (is.character(file)) 
+        if (file == "") 
+            file &lt;- stdout()
+        else if (startsWith(file, "|")) {
+            file &lt;- pipe(substring(file, 2L), "w")
+            on.exit(close(file))
+        }
+        else {
+            file &lt;- file(file, ifelse(append, "a", "w"))
+            on.exit(close(file))
+        }
+    .Internal(cat(list(...), file, sep, fill, labels, append))
+}
+&lt;bytecode: 0x000001f7118ff5d8&gt;
+&lt;environment: namespace:base&gt;</code></pre>
+</div>
 <div class="cell-output-display">
 
 <table class="table table-condensed">
@@ -2813,8 +2830,8 @@ NA
 </div>
 </div>
 </section>
-<section id="arlington-2022-dataset" class="level3">
-<h3 class="anchored" data-anchor-id="arlington-2022-dataset"><strong>Arlington 2022 Dataset</strong></h3>
+<section id="arlington-2022-dataset" class="level4">
+<h4 class="anchored" data-anchor-id="arlington-2022-dataset"><strong>Arlington 2022 Dataset</strong></h4>
 <div class="cell">
 <div class="cell-output-display">
 
@@ -8124,7 +8141,10 @@ NA
 </section>
 <section id="questions" class="level2">
 <h2 class="anchored" data-anchor-id="questions">Questions</h2>
-<p>The two questions you want to answer.</p>
+<ol type="1">
+<li><p>Can we identify specific anomalies that are characteristic of urban heat islands, and how do these anomalies correlate with urban infrastructure and population density?</p></li>
+<li><p>How do urban heat islands vary in intensity across different metropolitan/rural areas, and what are the temporal patterns of these variations within a given year?</p></li>
+</ol>
 </section>
 <section id="analysis-plan" class="level2">
 <h2 class="anchored" data-anchor-id="analysis-plan">Analysis plan</h2>

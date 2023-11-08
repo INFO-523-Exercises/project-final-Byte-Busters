@@ -21,13 +21,13 @@ pacman::p_load(dlookr,
                dplyr)
 ```
 
-## Dataset
+## Dataset Description
 
-Data Description: The climatological data collected from several weather stations run by the NWS, FAA, and DOD, including airports and other significant areas, is compiled into 3 Local Climatological Datasets (LCD) for Arlington, Dallas, and Denton for the year 2022.
+Climatological, hourly time-series data has been collected from several weather stations run by the NWS, FAA, and DOD, including airports and other significant areas, is compiled into 3 Local Climatological Datasets (LCD) for Arlington, Dallas, and Denton for 2022.
 
-The dataset also offers daily summaries that describe wind conditions, precipitation levels, degree days, and temperature extremes.Data like maximum, minimum, and average temperatures; deviations from normal; dew point temperatures; average station pressure; ceiling height; visibility; weather patterns; wet bulb temperatures; relative humidity; heating and cooling degree days; daily precipitation; average wind speeds; fastest wind speeds and their directions; sky cover; and instances of sunshine, snowfall, and snow depth are all included in the tabulated monthly summaries.
+The dataset also offers daily summaries that describe: wind conditions, precipitation levels, degree days, and temperature extremes. Additional data is included in the tabulated monthly summaries: maximum, minimum, and average temperatures; deviations from normal; dew point temperatures; average station pressure; ceiling height; visibility; weather patterns; wet bulb temperatures; relative humidity; heating and cooling degree days; daily precipitation; average wind speeds; fastest wind speeds and their directions; sky cover; and instances of sunshine, snowfall, and snow depth.
 
-### **Dallas 2022 Dataset**
+#### Dallas 2022 Dataset
 
 ```{r}
 #| label: dallas-dataset
@@ -36,21 +36,19 @@ The dataset also offers daily summaries that describe wind conditions, precipita
 
 dallas_data <- read_csv(here('./data/dallas-2022.csv'))
 
-dallas_data |> # Need to format "DATE" and other columns if we have time.
+# Dimensions of dataset:
+num_rows <- nrow(dallas_data)
+num_columns <- ncol(dallas_data)
+
+cat(num_rows, "rows x columns", num_columns)
+cat
+
+dallas_data |>
   head() |>
   formattable()
-dim(dallas_data)
-
-dallas_dimension <- data.frame(dallas_data)
-dallas_dimension
-
-num_rows <- nrow(dallas_data)
-num_rows
-num_columns <- ncol(dallas_data)
-num_columns
 ```
 
-### **Arlington 2022 Dataset**
+#### **Arlington 2022 Dataset**
 
 ```{r}
 #| label: arlington-dataset
@@ -80,7 +78,9 @@ denton_data |> # Need to format "DATE" and other columns if we have time.
 
 ## Questions
 
-The two questions you want to answer.
+1.  Can we identify specific anomalies that are characteristic of urban heat islands, and how do these anomalies correlate with urban infrastructure and population density?
+
+2.  How do urban heat islands vary in intensity across different metropolitan/rural areas, and what are the temporal patterns of these variations within a given year?
 
 ## Analysis plan
 
