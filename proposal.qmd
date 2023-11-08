@@ -1,5 +1,5 @@
 ---
-title: "Urban Heat Island Detection & Impact Analysis - Dallas (2022)"
+title: "Urban Heat Island Detection & Impact Analysis"
 subtitle: "Proposal"
 format: html
 editor: visual
@@ -21,7 +21,7 @@ pacman::p_load(dlookr,
                dplyr)
 ```
 
-##  Project Objective**:**
+## Project Objective**:**
 
 -   The primary objective of this project is to leverage data mining and machine learning algorithms to detect and characterize urban heat islands (UHIs) across a diverse range of metropolitan landscapes. By analyzing weather pattern anomalies and temperature distributions, the project aims to gain a deeper understanding of the microclimatic effects of urbanization.
 
