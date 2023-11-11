@@ -28,12 +28,12 @@ pacman::p_load(dlookr,
 #| echo: false 
 #| warning: false  
 
-dallas_data <- read_csv(here('./data/dallas-2022.csv'))  
+dallas_data <- read_csv(here('./data/dallas-2022.csv'))
 
 # Dimensions of dataset: 
-num_rows <- nrow(dallas_data) 
-num_columns <- ncol(dallas_data)  
-cat("(", num_rows, " rows x ", num_columns, " columns)", sep = "")  
+num_rows <- nrow(dallas_data)
+num_columns <- ncol(dallas_data)
+cat("(", num_rows, " rows x ", num_columns, " columns)", sep = "")
 
 dallas_data |>
   head() |>
@@ -49,13 +49,13 @@ dallas_data |>
 
 arlington_data <- read_csv(here('./data/arlington-2022.csv'))
 
-# Dimensions of dataset: 
-num_rows <- nrow(arlington_data) 
-num_columns <- ncol(arlington_data)  
+# Dimensions of dataset:
+num_rows <- nrow(arlington_data)
+num_columns <- ncol(arlington_data)
 cat("(", num_rows, " rows x ", num_columns, " columns)", sep = "")
 
-arlington_data |> 
-  head() |>   
+arlington_data |>
+  head() |>
   formattable()
 ```
 
