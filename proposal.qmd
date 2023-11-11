@@ -33,21 +33,14 @@ Climatological and hourly time-series data has been collected from several weath
 
 The dataset that we've gathered from National Center for Environmental Information (NCEI) (<https://www.ncei.noaa.gov/>) offers these key daily summaries that we will be analyzing:
 
-+------------------------------+----------------------------------------------------------------------------------+
 | Columns                      | Description                                                                      |
-+==============================+==================================================================================+
+|------------------------------|----------------------------------------------------------------------------------|
 | Wind Gust Speed              | Wind gusts occurring during time of observation. Given in miles per hour (mph).  |
-+------------------------------+----------------------------------------------------------------------------------+
 | Dry Bulb Temperature         | The measure of air temperature (Fahrenheit).                                     |
-+------------------------------+----------------------------------------------------------------------------------+
 | Precipitation Levels         | Total Liquid Content (TLC) water equivalent amount of precipitation for the day. |
-+------------------------------+----------------------------------------------------------------------------------+
 | Dew Point Temperature        | \-                                                                               |
-+------------------------------+----------------------------------------------------------------------------------+
 | Pressure - Average Sea Level | Daily average sea level pressure.                                                |
-+------------------------------+----------------------------------------------------------------------------------+
 | Relative Humidity            | This is the relative humidity given to the nearest whole percentage.             |
-+------------------------------+----------------------------------------------------------------------------------+
 
 Additional data is included in the tabulated monthly summaries: maximum, minimum, and average temperatures; deviations from normal; average station pressure; ceiling height; visibility; weather patterns; wet bulb temperatures; heating and cooling degree days; daily precipitation; average wind speeds; fastest wind speeds and their directions; sky cover; and instances of sunshine, snowfall, and snow depth.
 
