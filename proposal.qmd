@@ -33,21 +33,21 @@ Climatological and hourly time-series data has been collected from several weath
 
 The dataset that we've gathered from National Center for Environmental Information (NCEI) (<https://www.ncei.noaa.gov/>) offers these key daily summaries that we will be analyzing:
 
-+---------------------------------------------+----------------------------------------------------------------------------------+
-| Columns                                     | Description                                                                      |
-+=============================================+==================================================================================+
-| Wind Gust Speed                             | Wind gusts occurring during time of observation. Given in miles per hour (mph).  |
-+---------------------------------------------+----------------------------------------------------------------------------------+
-| Dry Bulb Temperature                        | The measure of air temperature (Fahrenheit).                                     |
-+---------------------------------------------+----------------------------------------------------------------------------------+
-| Precipitation Levels                        | Total Liquid Content (TLC) water equivalent amount of precipitation for the day. |
-+---------------------------------------------+----------------------------------------------------------------------------------+
-| Dew Point Temperature                       | \-                                                                               |
-+---------------------------------------------+----------------------------------------------------------------------------------+
-| Pressure - Average Sea Level                | Daily average sea level pressure.                                                |
-+---------------------------------------------+----------------------------------------------------------------------------------+
-| Relative Humidity                           | This is the relative humidity given to the nearest whole percentage.             |
-+---------------------------------------------+----------------------------------------------------------------------------------+
++------------------------------+----------------------------------------------------------------------------------+
+| Columns                      | Description                                                                      |
++==============================+==================================================================================+
+| Wind Gust Speed              | Wind gusts occurring during time of observation. Given in miles per hour (mph).  |
++------------------------------+----------------------------------------------------------------------------------+
+| Dry Bulb Temperature         | The measure of air temperature (Fahrenheit).                                     |
++------------------------------+----------------------------------------------------------------------------------+
+| Precipitation Levels         | Total Liquid Content (TLC) water equivalent amount of precipitation for the day. |
++------------------------------+----------------------------------------------------------------------------------+
+| Dew Point Temperature        | \-                                                                               |
++------------------------------+----------------------------------------------------------------------------------+
+| Pressure - Average Sea Level | Daily average sea level pressure.                                                |
++------------------------------+----------------------------------------------------------------------------------+
+| Relative Humidity            | This is the relative humidity given to the nearest whole percentage.             |
++------------------------------+----------------------------------------------------------------------------------+
 
 Additional data is included in the tabulated monthly summaries: maximum, minimum, and average temperatures; deviations from normal; average station pressure; ceiling height; visibility; weather patterns; wet bulb temperatures; heating and cooling degree days; daily precipitation; average wind speeds; fastest wind speeds and their directions; sky cover; and instances of sunshine, snowfall, and snow depth.
 
@@ -58,9 +58,9 @@ How do urban heat islands vary in intensity across different metropolitan/rural 
 ```{r}
 #| include: false
 
-# Q1, Part 1: k-Means Clustering, SVM (Support Vector Machines), Isolation Forest and Local Outlier Factor (LOF), Z-scores. First 3 are models.
+# Question 1, Part 1: k-Means Clustering, SVM (Support Vector Machines), Isolation Forest and Local Outlier Factor (LOF), Z-scores. First 3 are models.
 
-# Q1, Part 2: Time-series analysis (data viz & dashboards; heat maps).
+# Question 1, Part 2: Time-series analysis (data viz & dashboards; heat maps).
 ```
 
 ## Weekly Plan of Attack
@@ -76,10 +76,10 @@ How do urban heat islands vary in intensity across different metropolitan/rural 
 +------------------------------------+----------------------------------------------------------------------------+-----------------------------+-------------------------------------------------------------------------------------+
 | \-                                 | Data type conversions                                                      | *Kendall*                   | \-                                                                                  |
 +------------------------------------+----------------------------------------------------------------------------+-----------------------------+-------------------------------------------------------------------------------------+
-| [**Week 2 \                        | Visualization of key metrics                                               | *Udit, Dhanya*              | [Objective:]{.underline} \                                                          |
+| [**Week 2\                         | Visualization of key metrics                                               | *Udit, Dhanya*              | [Objective:]{.underline}\                                                           |
 | **]{.underline}11/15/23 - 11/22/23 |                                                                            |                             | Gain insights into the dataset and prepare for model development.                   |
 +------------------------------------+----------------------------------------------------------------------------+-----------------------------+-------------------------------------------------------------------------------------+
-| \-                                 | Feature engineering and selection                                          | *Riyanshi*                  | [Deliverables:]{.underline} \                                                       |
+| \-                                 | Feature engineering and selection                                          | *Riyanshi*                  | [Deliverables:]{.underline}\                                                        |
 |                                    |                                                                            |                             | A thorough analysis of data insights and prepared features for modeling.            |
 +------------------------------------+----------------------------------------------------------------------------+-----------------------------+-------------------------------------------------------------------------------------+
 | \-                                 | Data normalization and standardization                                     | *Kendall, Ajinkya*          | \-                                                                                  |
@@ -93,7 +93,7 @@ How do urban heat islands vary in intensity across different metropolitan/rural 
 | [**Week 4\                         | Build classification models                                                | *Dhanya, Kendall*           | [Objective:]{.underline}\                                                           |
 | **]{.underline}11/29/23 - 12/6/23  |                                                                            |                             | Develop classification models for anomalies and evaluate their performance.         |
 +------------------------------------+----------------------------------------------------------------------------+-----------------------------+-------------------------------------------------------------------------------------+
-| \-                                 | Model optimization & cross-validate models                                 | *Riyanshi, Udit*            | [Deliverables:]{.underline} \                                                       |
+| \-                                 | Model optimization & cross-validate models                                 | *Riyanshi, Udit*            | [Deliverables:]{.underline}\                                                        |
 |                                    |                                                                            |                             | Working models and performance evaluation report.                                   |
 +------------------------------------+----------------------------------------------------------------------------+-----------------------------+-------------------------------------------------------------------------------------+
 | \-                                 | Evaluation metrics and performance analysis                                | *Ajinkya*                   | \-                                                                                  |
