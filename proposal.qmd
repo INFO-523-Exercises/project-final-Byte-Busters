@@ -55,8 +55,6 @@ Additional data is included in the tabulated monthly summaries: maximum, minimum
 
 How do **Urban Heat Islands** vary in intensity across different metropolitan/rural cities in a particular region within a given year and how do we classify different levels of UHI?
 
-How might the presence of highs and lows of different factors simultaneously influence the temperature difference and subsequent classification of Urban Heat Island (UHI) intensity
-
 \[Time series question\]
 
 ```{r}
