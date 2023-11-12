@@ -36,7 +36,7 @@ num_columns <- ncol(dallas_data)
 cat("(", num_rows, " rows x ", num_columns, " columns)", sep = "")
 
 dallas_data |>
-  head() |>
+  #head() |>
   formattable()
 ```
 
