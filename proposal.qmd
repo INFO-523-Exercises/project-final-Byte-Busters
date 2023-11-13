@@ -11,9 +11,9 @@ The primary objective of this project is to leverage data mining and machine lea
 
 Kendall's Draft:
 
--   The primary objective of this project is to study and analyze climatological data for three cities in and around the Dallas region and to classify these cities based on an "Urban Heat Island" (UHI) scale. UHI is the climatological term used to describe the subtle yet powerful effect that a city can have on influening and amplifying weather conditions, such as prolonging heat waves and contributing to heavy precipitation. This effect occurs when natural land and vegitation is replaced with pavement, buildings, and various surfaces that absorb and retain heat. So, high-rise buildings act as heat sinks during the day and release heat after sunset, prolonging the increase of temperatures.
+-   The primary objective of this project is to study and analyze climatological data for three cities inside and surrounding the Dallas, TX region, and to classify these cities based on an "Urban Heat Island" (UHI) scale. UHI is a term used in the study of climate science, climatology, to describe the subtle yet powerful effect that large cities can have on exacerbating weather conditions. This occurs when natural land and vegetation are replaced by dense concentrations of buildings, pavements, and various surfaces that absorb and retain heat. For example, a high-rise building will act as a heat sink during the day then release the absorbed heat after sunset, which will prolong the heat and humidity conditions, especially compared to suburban cities.
 
--   By analyzing the climatological data in an urban city vs. a suburban city, we should expect to see an increase in weather conditions in various times throughout the day.
+-   By analyzing and comparing climatological data across different types of cities, we should expect to see an increase in weather conditions in various times throughout the day. Additionally, our analysis will allow us to conduct trend analysis on weather conditions when comparing different cities.
 
 -   when cities replace natural land cover with dense concentrations of pavement, buildings, and other surfaces that absorb and retain heat
 

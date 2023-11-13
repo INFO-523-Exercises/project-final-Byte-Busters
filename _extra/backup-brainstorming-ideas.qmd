@@ -242,3 +242,5 @@ Leverage advanced data mining techniques to identify and analyze urban heat isla
 +-------------------------------------------------------------------------------------+----------------------------------------------------------------------------+-----------------------------+
 
 The primary objective of this project is to leverage data mining and machine learning algorithms to detect and characterize Urban Heat Islands (UHIs) across three different areas in the Dallas region. By analyzing weather pattern anomalies and temperature distributions, the project aims to gain a deeper understanding of the micro-climatic effects of urbanization.
+
+-   such as prolonging heat waves and contributing to heavy precipitation. This effect occurs when natural land and vegitation is replaced with pavement, buildings, and various surfaces that absorb and retain heat. So, high-rise buildings act as heat sinks during the day and release heat after sunset, prolonging the increase of temperatures.
