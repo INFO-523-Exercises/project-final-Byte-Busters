@@ -13,18 +13,6 @@ UHI is a term used in the field of climate science, "climatology," to describe t
 
 By comparing the climatological data for the major urban city of Dallas vs. two suburban cities outside of Dallas, we can create a classification system for labeling different types of UHIs, and additionally we can perform trend analysis on this weather data and compare and contrast patterns between these different types of UHIs.
 
--   when cities replace natural land cover with dense concentrations of pavement, buildings, and other surfaces that absorb and retain heat
-
--   High-rise buildings act as heat sinks during the day and release heat after sunset, so temperatures actually increase at night for UHI. (Auburn University)
-
--   We will be studying the daily climatological data to classify the level of intensity of UHI for our region of study, as well as to do any trend analysis on the climate data to spot any trends on urban vs. rural temperature, etc.
-
--   Urban Heat Islands is a term to describe urban areas that are abundant with buildings but less abudant with vegetation, which helps with regulating humidity levels. In our case, choosing a city like Dallas, with a high humidity, will see a greater heat intensity than a less-UHI.
-
--   because there is less vegetation in urban areas,
-
-<https://www.metlink.org/fieldwork-resource/urban-heat-island-introduction/>
-
 ### Scope and Focus
 
 This project will focus on assessing UHIs in various urban environments, particularly comparing the UHI intensity in the following settings:
