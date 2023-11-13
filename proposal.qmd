@@ -7,13 +7,13 @@ editor: visual
 
 ## Project Objective
 
-The primary objective of this project is to leverage data mining and machine learning algorithms to detect and characterize Urban Heat Islands (UHIs) across three different areas in the Dallas region. By analyzing weather pattern anomalies and temperature distributions, the project aims to gain a deeper understanding of the micro-climatic effects of urbanization.
+The primary objective of this project is to study and analyze climatological data for three cities inside and outside of the Dallas, TX region, and to classify these cities based on an "Urban Heat Island" (UHI) scale.
 
-Kendall's Draft:
+UHI is a term used in the field of climate science, "climatology," to describe the subtle yet powerful effect that a dense city can have on amplifying and influencing weather conditions. A UHI is formed when natural land and vegetation are replaced by buildings, pavements, and various surfaces that absorb and retain heat. So, for example, a high-rise building will act as a heat sink during the day and then release that energy after sunset, prolonging the heat and humidity conditions which less dense and suburban areas do not have the problem.
 
--   The primary objective of this project is to study and analyze climatological data for three cities inside and surrounding the Dallas, TX region, and to classify these cities based on an "Urban Heat Island" (UHI) scale. UHI is a term used in the study of climate science, climatology, to describe the subtle yet powerful effect that large cities can have on exacerbating weather conditions. This occurs when natural land and vegetation are replaced by dense concentrations of buildings, pavements, and various surfaces that absorb and retain heat. For example, a high-rise building will act as a heat sink during the day then release the absorbed heat after sunset, which will prolong the heat and humidity conditions, especially compared to suburban cities.
+By analyzing and comparing different weather factors, we expect to be able
 
--   By analyzing and comparing climatological data across different types of cities, we should expect to see an increase in weather conditions in various times throughout the day. Additionally, our analysis will allow us to conduct trend analysis on weather conditions when comparing different cities.
+across different types of cities, we should expect to see an increase in weather conditions in various times throughout the day. Additionally, our analysis will allow us to conduct trend analysis on weather conditions when comparing different cities.
 
 -   when cities replace natural land cover with dense concentrations of pavement, buildings, and other surfaces that absorb and retain heat
 
