@@ -7,7 +7,17 @@ editor: visual
 
 ## Project Objective
 
-The primary objective of this project is to leverage data mining and machine learning algorithms to detect and characterize Urban Heat Islands (UHIs) across three different areas in the Dallas region. By analyzing weather pattern anomalies and temperature distributions, the project aims to gain a deeper understanding of the microclimatic effects of urbanization.
+The primary objective of this project is to leverage data mining and machine learning algorithms to detect and characterize Urban Heat Islands (UHIs) across three different areas in the Dallas region. By analyzing weather pattern anomalies and temperature distributions, the project aims to gain a deeper understanding of the micro-climatic effects of urbanization.
+
+Kendall's Draft:
+
+-   The primary objective is to understand Urban Heat Island and to find a way to categorize the different levels of
+
+-   micro-climates are a weather of their own
+
+-   because there is less vegetation in urban areas,
+
+<https://www.metlink.org/fieldwork-resource/urban-heat-island-introduction/>
 
 ### Scope and Focus
 
