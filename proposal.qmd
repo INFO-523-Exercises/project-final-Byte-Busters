@@ -11,9 +11,9 @@ The primary objective of this project is to leverage data mining and machine lea
 
 Kendall's Draft:
 
--   The primary objective is to understand Urban Heat Island and to find a way to categorize the different levels of
+-   The primary objective is to understand and study an Urban Heat Island and to find a way to categorize the different levels of UHIs
 
--   micro-climates are a weather of their own
+-   Urban Heat Islands is a term to describe urban areas that are abundant with buildings but less abudant with vegetation, which helps with regulating humidity levels. In our case, choosing a city like Dallas, with a high humidity, will see a greater heat intensity than a less-UHI.
 
 -   because there is less vegetation in urban areas,
 
