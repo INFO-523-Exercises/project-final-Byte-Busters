@@ -9,9 +9,9 @@ editor: visual
 
 The primary objective of this project is to study and analyze climatological data for three cities inside and outside of the Dallas, TX region, and to classify these cities based on an "Urban Heat Island" (UHI) scale.
 
-UHI, a term used in the field of climate science, occurs when a city replaces natural land and vegetation with buildings, pavements, and surfaces that absorb and hold heat, then release the heat after sunset, which can amplify or suppress weather conditions such as heat waves and heavy precipitation. This effect is also known as "micro climate" because a city is unintentionally controlling and affecting the weather in its environment.
+UHI, a term used in the field of climate science, occurs when a city replaces land and natural vegetation with buildings, pavements and surfaces that absorbs and holds heat. This effect is also known as "micro climate" since a city's infrastructure is creating its own weather conditions by amplifying or suppressing weather conditions---heat waves, precipitation, etc.
 
-By analyzing the micro climate data for Dallas, a major urban city in the country, and two suburban cities outside of Dallas, we can create a classification system for different types of UHIs and label these cities accordingly. Additionally, we can perform trend analysis by comparing and contrasting various weather patterns between different types of UHIs.
+By analyzing the micro climate data for Dallas, a major urban city in the country, and two suburban cities outside of Dallas, we can create a classification system for different types of UHIs and label these cities accordingly. Additionally, we can perform trend analysis by comparing and contrasting various weather patterns between these different types of UHIs.
 
 ### Scope and Focus
 
