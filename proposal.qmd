@@ -9,11 +9,11 @@ editor: visual
 
 The primary objective of this project is to study and analyze climatological data for three cities inside and outside of the Dallas, TX region, and to classify these cities based on an "Urban Heat Island" (UHI) scale.
 
-UHI is a term used in the field of climate science, "climatology," to describe the subtle yet powerful effect that a dense city can have on amplifying and influencing weather conditions. A UHI is formed when natural land and vegetation are replaced by buildings, pavements, and various surfaces that absorb and retain heat. So, for example, a high-rise building will act as a heat sink during the day and then release that energy after sunset, prolonging the heat and humidity conditions which less dense and suburban areas do not have the problem.
+UHI is a term used in the field of climate science, "climatology," to describe the subtle yet powerful effect that a city can have on the weather, such as prolonging heat waves, amplifying or suppressing heavy precipitation -- all of which is called "micro climate."
 
-By analyzing and comparing different weather factors, we expect to be able
+UHI is the result of dense buildings and pavements covering or replacing natural land and vegetation are replaced by buildings, pavements, and various surfaces that absorb and retain heat. A high-rise building will act as a heat sink during the day, then release that energy after sunset--a problem that suburban areas do not face.
 
-across different types of cities, we should expect to see an increase in weather conditions in various times throughout the day. Additionally, our analysis will allow us to conduct trend analysis on weather conditions when comparing different cities.
+By analyzing and comparing different weather factors across different types of UHIs, we expect to more amplified weather conditions in a larger UHI than a smaller UHI. Additionally, by analyzing various weather conditions for various regions (urban vs. suburban) we can condition trend analysis on this data.
 
 -   when cities replace natural land cover with dense concentrations of pavement, buildings, and other surfaces that absorb and retain heat
 
