@@ -9,9 +9,9 @@ editor: visual
 
 The primary objective of this project is to study and analyze climatological data for three cities inside and outside of the Dallas, TX region, and to classify these cities based on an "Urban Heat Island" (UHI) scale.
 
-UHI is a term used in the field of climate science, "climatology," to describe the subtle yet powerful effect that a city can have on amplifying or suppressing weather conditions (heat waves, precipitation, etc.). A UHI is formed when natural land and vegetation is replaced by a dense concentration of buildings, pavements, and surfaces that absorb heat throughout the day, then release this stored energy after sunset, thus prolonging hot and humid temperatures than what would occur otherwise in a non-UHI or less severe UHI.
+UHI is a term used in the field of climate science, "climatology," to describe the subtle yet powerful effect that a city can have on amplifying or suppressing weather conditions---heat waves, precipitation, etc. A UHI is formed when natural land and vegetation are replaced by buildings, pavements, and surfaces. These objects, particularly high-rise buildings, will absorb heat throughout the day then release the energy after sunset, thus prolonging hot and humid conditions than would otherwise be present.
 
-By comparing the weather data for the urban city of Dallas vs. two suburban cities outside of Dallas, we can classify different UHI intensity levels. Additionally, we can perform trend analysis on the weather conditions for these cities.
+By comparing the climatological data for the major urban city of Dallas vs. two suburban cities outside of Dallas, we can create a classification system for labeling different types of UHIs, and additionally we can perform trend analysis on this weather data and compare and contrast patterns between these different types of UHIs.
 
 -   when cities replace natural land cover with dense concentrations of pavement, buildings, and other surfaces that absorb and retain heat
 
