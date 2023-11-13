@@ -11,7 +11,7 @@ The primary objective of this project is to leverage data mining and machine lea
 
 Kendall's Draft:
 
--   The primary objective of this project is to classify different levels of an "Urban Heat Island" (UHI) across the Dallas region by studying and analyzing climatoglical data for the year 2022. UHIs are defined as large mertropolis areas that have significant heat
+-   The primary objective of this project is to study and analyze climatological data for three cities across the Dallas region and to classify these cities based on an "Urban Heat Island" (UHI) scale. UHI is a climatology term used to describe the subtle yet prolonging effects that a city infrasture can have on amplifying weather conditions. A
 
 -   High-rise buildings act as heat sinks during the day and release heat after sunset, so temperatures actually increase at night for UHI. (Auburn University)
 
