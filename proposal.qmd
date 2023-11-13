@@ -11,7 +11,11 @@ The primary objective of this project is to leverage data mining and machine lea
 
 Kendall's Draft:
 
--   The primary objective of this project is to study and analyze climatological data for three cities across the Dallas region and to classify these cities based on an "Urban Heat Island" (UHI) scale. UHI is a climatology term used to describe the subtle yet prolonging effects that a city infrasture can have on amplifying weather conditions. A
+-   The primary objective of this project is to study and analyze climatological data for three cities in and around the Dallas region and to classify these cities based on an "Urban Heat Island" (UHI) scale. UHI is the climatological term used to describe the subtle yet powerful effect that a city can have on influening and amplifying weather conditions, such as prolonging heat waves and contributing to heavy precipitation. This effect occurs when natural land and vegitation is replaced with pavement, buildings, and various surfaces that absorb and retain heat. So, high-rise buildings act as heat sinks during the day and release heat after sunset, prolonging the increase of temperatures.
+
+-   By analyzing the climatological data in an urban city vs. a suburban city, we should expect to see an increase in weather conditions in various times throughout the day.
+
+-   when cities replace natural land cover with dense concentrations of pavement, buildings, and other surfaces that absorb and retain heat
 
 -   High-rise buildings act as heat sinks during the day and release heat after sunset, so temperatures actually increase at night for UHI. (Auburn University)
 
