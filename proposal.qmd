@@ -102,15 +102,14 @@ columns_to_extract <- c("DailyAverageDryBulbTemperature",
 arlington_data <- read_csv(here('./data/arlington-2022.csv'))
 
 modified_arlington <- arlington_data %>% select(columns_to_extract)
-modified_arlington
 
 # Dimensions of dataset:
 num_rows <- nrow(arlington_data)
 num_columns <- ncol(arlington_data)
 cat("(", num_rows, " rows x ", num_columns, " columns)", sep = "")
 
-arlington_data |>
-  head(n = 5) |>
+modified_arlington |>
+  head() |>
   formattable()
 ```
 
@@ -123,13 +122,15 @@ arlington_data |>
 
 dallas_data <- read_csv(here('./data/dallas-2022.csv'))
 
+modified_dallas <- dallas_data %>% select(columns_to_extract)
+
 # Dimensions of dataset: 
 num_rows <- nrow(dallas_data)
 num_columns <- ncol(dallas_data)
 cat("(", num_rows, " rows x ", num_columns, " columns)", sep = "")
 
 dallas_data |>
-  #head(n = 5) |>
+  head(n = 5) |>
   formattable()
 ```
 
