@@ -67,7 +67,6 @@ How do **Urban Heat Islands** vary in intensity across different metropolitan/ru
 
 \[Time series question\]
 
-<<<<<<< HEAD
 ## Weekly Plan of Attack
 =======
 ```{r}
