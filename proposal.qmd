@@ -81,6 +81,23 @@ pacman::p_load(dlookr,
 
 ### **Arlington Dataset - 2022**
 
+```{r}
+#| label: arlington-dataset 
+#| echo: false 
+#| warning: false  
+
+arlington_data <- read_csv(here('./data/arlington-2022.csv'))
+
+# Dimensions of dataset:
+num_rows <- nrow(arlington_data)
+num_columns <- ncol(arlington_data)
+cat("(", num_rows, " rows x ", num_columns, " columns)", sep = "")
+
+arlington_data |>
+  head(n = 5) |>
+  formattable()
+```
+
 ### **Dallas Dataset - 2022**
 
 ```{r}
@@ -97,25 +114,6 @@ cat("(", num_rows, " rows x ", num_columns, " columns)", sep = "")
 
 dallas_data |>
   #head(n = 5) |>
-  formattable()
-```
-
-### **Arlington Dataset - 2022**
-
-```{r}
-#| label: arlington-dataset 
-#| echo: false 
-#| warning: false  
-
-arlington_data <- read_csv(here('./data/arlington-2022.csv'))
-
-# Dimensions of dataset:
-num_rows <- nrow(arlington_data)
-num_columns <- ncol(arlington_data)
-cat("(", num_rows, " rows x ", num_columns, " columns)", sep = "")
-
-arlington_data |>
-  head(n = 5) |>
   formattable()
 ```
 
