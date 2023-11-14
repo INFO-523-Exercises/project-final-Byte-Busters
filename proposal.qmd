@@ -79,8 +79,9 @@ pacman::p_load(dlookr,
                knitr,
                dplyr)
 
-# List of columns we will analyze: 
-filtered_columns <- c("DailyAverageDryBulbTemperature",
+# List of columns we will analyze:
+
+columns_to_extract <- c("DailyAverageDryBulbTemperature",
 "DailyAverageWetBulbTemperature",
 "DailyAverageDewPointTemperature",
 "DailyPrecipitation",
@@ -99,6 +100,9 @@ filtered_columns <- c("DailyAverageDryBulbTemperature",
 #| warning: false  
 
 arlington_data <- read_csv(here('./data/arlington-2022.csv'))
+
+modified_arlington <- arlington_data %>% select(columns_to_extract)
+modified_arlington
 
 # Dimensions of dataset:
 num_rows <- nrow(arlington_data)
