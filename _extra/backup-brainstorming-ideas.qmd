@@ -297,3 +297,5 @@ cleaned_arlington <- filtered_arlington %>% filter(!is.na(DailyAverageStationPre
 
 cleaned_arlington <- arlington_data %>% filter(!is.na(DailyAverageStationPressure)) %>% select(-REM)
 ```
+
+1.  How do UHIs vary in intensity across different metropolitan and rural cities in a particular region for a given year, and how do we classify different levels of UHI?
