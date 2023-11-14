@@ -101,17 +101,15 @@ columns_to_extract <- c("DailyAverageDryBulbTemperature",
 
 arlington_data <- read_csv(here('./data/arlington-2022.csv'))
 
-filtered_dallas <- dallas_data %>% select(columns_to_extract)
-cleaned_dallas <- filtered_dallas %>% filter(!is.na(DailyAverageStationPressure))
-
-modified_arlington <- arlington_data %>% select(columns_to_extract)
+filtered_arlington <- arlington_data %>% select(columns_to_extract)
+cleaned_arlington <- filtered_arlington %>% filter(!is.na(DailyAverageStationPressure))
 
 # Dimensions of dataset:
-num_rows <- nrow(arlington_data)
-num_columns <- ncol(arlington_data)
+num_rows <- nrow(cleaned_arlington)
+num_columns <- ncol(cleaned_arlington)
 cat("(", num_rows, " rows x ", num_columns, " columns)", sep = "")
 
-modified_arlington |>
+cleaned_arlington |>
   head(n = 5) |>
   formattable()
 ```
@@ -141,6 +139,10 @@ cleaned_dallas |>
 ### **Denton Dataset - 2022**
 
 ```{r}
+#| label: dallas-dataset 
+#| echo: false 
+#| warning: false  
+
 denton_data <- read_csv(here('./data/denton-2022.csv'))
 
 filtered_denton <- denton_data %>% select(columns_to_extract)
