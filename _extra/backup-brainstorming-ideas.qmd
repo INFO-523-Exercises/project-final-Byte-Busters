@@ -266,3 +266,14 @@ The primary objective of this project is to study and analyze climatological dat
 UHI is a term used in the field of climate science, "climatology," to describe the subtle yet powerful effect that a city can have on amplifying or suppressing weather conditions---heat waves, precipitation, etc. A UHI is formed when natural land and vegetation are replaced by buildings, pavements, and surfaces. These objects, particularly high-rise buildings, will absorb heat throughout the day then release the energy after sunset, thus prolonging hot and humid conditions. This is known as a "micro climate" in climatology since a UHI is unintentionally affecting atmospheric conditions through its own, dense infrastructure---creating its own micro climate.
 
 By analyzing the micro climate data for Dallas, a major urban city in the country, and two suburban cities outside of Dallas, we can create a classification system for different types of UHIs and label these cities accordingly. Additionally, we can perform trend analysis by comparing and contrasting various weather patterns between different types of UHIs.
+
+```{r}
+
+#| include: false
+
+# Question 1, Part 1: k-Means Clustering, SVM (Support Vector Machines), Isolation Forest and Local Outlier Factor (LOF), Z-scores. First 3 are models.
+
+# Question 1, Part 2: Time-series analysis (data viz & dashboards; heat maps).
+```
+
+UHI, a term used in the field of climate science, occurs when a city replaces land and natural vegetation with buildings, pavements and surfaces that absorbs and holds heat. This effect is also known as "micro climate" since a city's infrastructure is creating its own local weather by amplifying or suppressing conditions such as heat waves, precipitation, etc.
