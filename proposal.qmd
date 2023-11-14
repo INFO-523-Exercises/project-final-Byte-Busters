@@ -68,6 +68,7 @@ Additional data is included in the tabulated monthly summaries: maximum, minimum
 #| include: false
 #| message: false
 #| warning: false
+#| echo: false
 
 #install.packages("pacman")
 
@@ -77,6 +78,17 @@ pacman::p_load(dlookr,
                formattable,
                knitr,
                dplyr)
+
+# List of columns we will analyze: 
+filtered_columns <- c("DailyAverageDryBulbTemperature",
+"DailyAverageWetBulbTemperature",
+"DailyAverageDewPointTemperature",
+"DailyPrecipitation",
+"DailyAverageSeaLevelPressure",
+"DailyAverageStationPressure",
+"DailyAverageRelativeHumidity",
+"DailyAverageWindSpeed",
+"DailySustainedWindDirection")
 ```
 
 ### **Arlington Dataset - 2022**
