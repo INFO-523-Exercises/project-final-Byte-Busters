@@ -139,15 +139,16 @@ modified_dallas |>
 ```{r}
 denton_data <- read_csv(here('./data/denton-2022.csv'))
 
-modified_denton <- denton_data %>% select(columns_to_extract)
+filtered_denton <- denton_data %>% select(columns_to_extract)
+cleaned_denton <- filtered_denton %>% filter(!is.na(DailyAverageStationPressure))
 
 # Dimensions of dataset:
-num_rows <- nrow(denton_data)
-num_columns <- ncol(denton_data)
+num_rows <- nrow(cleaned_denton)
+num_columns <- ncol(cleaned_denton)
 
 cat("(", num_rows, " rows x ", num_columns, " columns)", sep = "")
 
-modified_denton |>
+cleaned_denton |>
   head(n = 5) |>
   formattable()
 ```
