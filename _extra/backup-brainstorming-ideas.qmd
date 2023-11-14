@@ -294,4 +294,6 @@ cleaned_dallas <- filtered_dallas %>% filter(!is.na(DailyAverageStationPressure)
 
 filtered_arlington <- arlington_data %>% select(columns_to_extract)
 cleaned_arlington <- filtered_arlington %>% filter(!is.na(DailyAverageStationPressure))
+
+cleaned_arlington <- arlington_data %>% filter(!is.na(DailyAverageStationPressure)) %>% select(-REM)
 ```
