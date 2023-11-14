@@ -65,8 +65,6 @@ Additional data is included in the tabulated monthly summaries: maximum, minimum
 
 How do UHIs vary in intensity across different metropolitan and rural cities in a particular region for a given year, and how do we classify different levels of UHI?
 
-\[Time series question\]
-
 ## Weekly Plan of Attack (Analysis Plan)
 
 +------------------------------------+----------------------------------------------------------------------------+-----------------------------+-----------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------+
