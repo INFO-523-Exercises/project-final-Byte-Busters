@@ -299,3 +299,9 @@ cleaned_arlington <- arlington_data %>% filter(!is.na(DailyAverageStationPressur
 ```
 
 1.  How do UHIs vary in intensity across different metropolitan and rural cities in a particular region for a given year, and how do we classify different levels of UHI?
+
+```{=html}
+<!-- -->
+```
+1.  How does UHI intensity vary between urban and rural settings such as Dallas, Arlington, and Denton, throughout a year, and what methods can be employed to classify and interpret these varying intensity levels?
+2.  How can time series data visualizations effectively illustrate the variations in UHI intensity across metropolitan and rural areas like Arlington, Dallas, and Denton over a year, highlighting the distinct temporal patterns of UHI levels?

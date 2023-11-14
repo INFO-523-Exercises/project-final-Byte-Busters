@@ -158,6 +158,14 @@ cleaned_denton |>
 
 ## Questions
 
+1.  How does Urban Heat Island (UHI) intensity vary between urban and rural settings, such as Dallas, Arlington, and Denton, throughout a given year, and what methods can be employed to classify and interpret these varying intensity levels?
+
+    Explanation:- This question highlights the investigation of variations, in Urban Heat Island (UHI) intensity between metropolitan cities and rural areas such as Arlington, Dallas, and Denton. Classifying UHI intensity in terms of multi-class classification into levels, the aim is to develop an approach that provides a comprehensive understanding of how urban and rural environments influence these observed differences in a given year.
+
+2.  How can time series data visualizations effectively illustrate the variations in Urban Heat Island (UHI) intensity across metropolitan and rural areas like Arlington, Dallas, and Denton over a given year, highlighting the distinct temporal patterns of UHI levels?
+
+    Explanation:- This question dives into the exploration of variations, in the intensity of Urban Heat Island (UHI) both in metropolitan cities and rural areas like Arlington, Dallas and Denton throughout a specific year. The main focus is on using visualizations of time series data to uncover the changes over seasons and highlight the levels of UHI. By employing techniques this investigation aims to provide an easy understanding of how UHI intensity changes over seasons identifying patterns that differentiate between urban heat impacts, in metropolitan and rural environments across the specified region.
+
 ## Weekly Plan of Attack (Analysis Plan)
 
 +------------------------------------+----------------------------------------------------------------------------+-----------------------------+-----------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------+
