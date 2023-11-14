@@ -92,7 +92,7 @@ columns_to_extract <- c("DailyAverageDryBulbTemperature",
 "DailySustainedWindDirection")
 ```
 
-### **Arlington Dataset - 2022**
+### 1.) Arlington Dataset
 
 ```{r}
 #| label: arlington-dataset 
@@ -114,7 +114,7 @@ cleaned_arlington |>
   formattable()
 ```
 
-### **Dallas Dataset - 2022**
+#### 2.) Dallas Dataset
 
 ```{r}
 #| label: dallas-dataset 
@@ -136,10 +136,10 @@ cleaned_dallas |>
   formattable()
 ```
 
-### **Denton Dataset - 2022**
+#### 3.) Denton Dataset
 
 ```{r}
-#| label: dallas-dataset 
+#| label: denton-dataset 
 #| echo: false 
 #| warning: false  
 
