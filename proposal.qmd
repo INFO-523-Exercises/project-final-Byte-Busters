@@ -109,7 +109,7 @@ num_columns <- ncol(arlington_data)
 cat("(", num_rows, " rows x ", num_columns, " columns)", sep = "")
 
 modified_arlington |>
-  head() |>
+  head(n = 5) |>
   formattable()
 ```
 
@@ -129,7 +129,7 @@ num_rows <- nrow(dallas_data)
 num_columns <- ncol(dallas_data)
 cat("(", num_rows, " rows x ", num_columns, " columns)", sep = "")
 
-dallas_data |>
+modified_dallas |>
   head(n = 5) |>
   formattable()
 ```
@@ -139,13 +139,15 @@ dallas_data |>
 ```{r}
 denton_data <- read_csv(here('./data/denton-2022.csv'))
 
+modified_denton <- denton_data %>% select(columns_to_extract)
+
 # Dimensions of dataset:
 num_rows <- nrow(denton_data)
 num_columns <- ncol(denton_data)
 
 cat("(", num_rows, " rows x ", num_columns, " columns)", sep = "")
 
-denton_data |> # Need to format "DATE" and other columns if we have time.
+modified_denton |>
   head(n = 5) |>
   formattable()
 ```
