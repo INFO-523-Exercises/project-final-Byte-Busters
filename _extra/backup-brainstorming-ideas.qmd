@@ -113,6 +113,10 @@ wind conditions, precipitation levels, degree days, and temperature extremes. Ad
 
 `{r} #| label: dallas-dataset #| echo: false #| warning: false  dallas_data <- read_csv(here('./data/dallas-2022.csv'))  # Dimensions of dataset: num_rows <- nrow(dallas_data) num_columns <- ncol(dallas_data)  cat("(", num_rows, " rows x ", num_columns, " columns)", sep = "")   dallas_data |>   head() |>   formattable()}`
 
+```{r}
+
+```
+
 #### **Arlington 2022 Dataset**
 
 ```{r}
@@ -277,3 +281,5 @@ By analyzing the micro climate data for Dallas, a major urban city in the countr
 ```
 
 UHI, a term used in the field of climate science, occurs when a city replaces land and natural vegetation with buildings, pavements and surfaces that absorbs and holds heat. This effect is also known as "micro climate" since a city's infrastructure is creating its own local weather by amplifying or suppressing conditions such as heat waves, precipitation, etc.
+
+1.  Once we've classified the intensities of UHI, a time series analysis will be performed to determine the trends between UHIs.

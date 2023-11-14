@@ -13,7 +13,7 @@ In climatology, UHI refers to cities that experience warmer temperatures than ne
 
 By analyzing the micro climate data for Dallas, a major urban city in the country, and two suburban cities outside of Dallas, we can create a classification system for different levels of intensities for UHIs and label these cities accordingly. Additionally, we will perform temporal analysis by comparing and contrasting various weather patterns for different intensities of UHIs.
 
-### Scope and Focus
+#### Scope and Focus
 
 This project will focus on assessing UHIs in various urban environments, particularly comparing the UHI intensity in the following settings:
 
@@ -29,7 +29,7 @@ This project will focus on assessing UHIs in various urban environments, particu
 
     Examining the UHI in a rural city, where factors like lower population density, less pollution, and different land use patterns play a role in UHI intensity.
 
-### Dataset Description
+## Dataset Description
 
 The high-level goal of this project is to detect, analyze, and understand **UHIs** by leveraging data mining and machine learning to understand the microclimatic effects of urbanization in various metropolitan landscapes.
 
@@ -61,9 +61,83 @@ The dataset that we've gathered from National Center for Environmental Informati
 
 Additional data is included in the tabulated monthly summaries: maximum, minimum, and average temperatures; deviations from normal; ceiling height; visibility; weather patterns; heating and cooling degree days; fastest wind speeds and their directions; sky cover; and instances of sunshine, snowfall, and snow depth.
 
+## 3 UHI Datasets
+
+```{r}
+#| label: load-pkgs
+#| include: false
+#| message: false
+#| warning: false
+
+#install.packages("pacman")
+
+pacman::p_load(dlookr,
+               tidyverse,
+               here,
+               formattable,
+               knitr,
+               dplyr)
+```
+
+### **Arlington Dataset - 2022**
+
+### **Dallas Dataset - 2022**
+
+```{r}
+#| label: dallas-dataset 
+#| echo: false 
+#| warning: false  
+
+dallas_data <- read_csv(here('./data/dallas-2022.csv'))
+
+# Dimensions of dataset: 
+num_rows <- nrow(dallas_data)
+num_columns <- ncol(dallas_data)
+cat("(", num_rows, " rows x ", num_columns, " columns)", sep = "")
+
+dallas_data |>
+  #head(n = 5) |>
+  formattable()
+```
+
+### **Arlington Dataset - 2022**
+
+```{r}
+#| label: arlington-dataset 
+#| echo: false 
+#| warning: false  
+
+arlington_data <- read_csv(here('./data/arlington-2022.csv'))
+
+# Dimensions of dataset:
+num_rows <- nrow(arlington_data)
+num_columns <- ncol(arlington_data)
+cat("(", num_rows, " rows x ", num_columns, " columns)", sep = "")
+
+arlington_data |>
+  head(n = 5) |>
+  formattable()
+```
+
+### **Denton Dataset - 2022**
+
+```{r}
+denton_data <- read_csv(here('./data/denton-2022.csv'))
+
+# Dimensions of dataset:
+num_rows <- nrow(denton_data)
+num_columns <- ncol(denton_data)
+
+cat("(", num_rows, " rows x ", num_columns, " columns)", sep = "")
+
+denton_data |> # Need to format "DATE" and other columns if we have time.
+  head(n = 5) |>
+  formattable()
+```
+
 ## Questions
 
-How do UHIs vary in intensity across different metropolitan and rural cities in a particular region for a given year, and how do we classify different levels of UHI?
+1.  How do UHIs vary in intensity across different metropolitan and rural cities in a particular region for a given year, and how do we classify different levels of UHI?
 
 ## Weekly Plan of Attack (Analysis Plan)
 
