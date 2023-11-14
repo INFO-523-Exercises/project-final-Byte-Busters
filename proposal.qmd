@@ -61,24 +61,13 @@ The dataset that we've gathered from National Center for Environmental Informati
 
 Additional data is included in the tabulated monthly summaries: maximum, minimum, and average temperatures; deviations from normal; ceiling height; visibility; weather patterns; heating and cooling degree days; fastest wind speeds and their directions; sky cover; and instances of sunshine, snowfall, and snow depth.
 
-## Question
+## Questions
 
 How do **Urban Heat Islands** vary in intensity across different metropolitan/rural cities in a particular region within a given year and how do we classify different levels of UHI?
 
 \[Time series question\]
 
-## Weekly Plan of Attack
-=======
-```{r}
-#| include: false
-
-# Question 1, Part 1: k-Means Clustering, SVM (Support Vector Machines), Isolation Forest and Local Outlier Factor (LOF), Z-scores. First 3 are models.
-
-# Question 1, Part 2: Time-series analysis (data viz & dashboards; heat maps).
-```
-
 ## Weekly Plan of Attack (Analysis Plan)
->>>>>>> ffd87dbcc4455885aeb2cc9c3eb1a52ef33e753e
 
 +------------------------------------+----------------------------------------------------------------------------+-----------------------------+-----------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------+
 | Week No. & Overview                | Individual Weekly Tasks                                                    | Assigned Team Members       | Objective                                                                                     | Deliverables                                                                |
