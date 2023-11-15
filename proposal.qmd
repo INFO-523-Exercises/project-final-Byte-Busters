@@ -37,17 +37,27 @@ Climatological and hourly time-series data has been collected from several weath
 
 The dataset that we've gathered from National Center for Environmental Information (NCEI) (<https://www.ncei.noaa.gov/>) offers these key daily summaries that we will be analyzing:
 
++---------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
 | Columns                         | Description                                                                                                                                   |
-|---------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
++=================================+===============================================================================================================================================+
 | DailyAverageDryBulbTemperature  | This is the dry-bulb temperature and is commonly used as the standard air temperature reported. It is given here in whole degrees Fahrenheit. |
++---------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
 | DailyAverageWetBulbTemperature  | This is the wet-bulb temperature. It is given here in whole degrees Fahrenheit.                                                               |
++---------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
 | DailyAverageDewPointTemperature | This is the dew point temperature. It is given here in whole degrees Fahrenheit.                                                              |
++---------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
 | DailyPrecipitation              | Total Liquid Content (TLC) water equivalent amount of precipitation for the day.                                                              |
++---------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
 | DailyAverageSeaLevelPressure    | Sea level pressure given in inches of Mercury (in Hg)                                                                                         |
++---------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
 | DailyAverageStationPressure     | Atmospheric pressure observed at the station during the time of observation. Given in inches of Mercury (in Hg)                               |
++---------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
 | DailyAverageRelativeHumidity    | This is the relative humidity given to the nearest whole percentage.                                                                          |
++---------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
 | DailyAverageWindSpeed           | Speed of the wind at the time of observation given in miles per hour (mph)                                                                    |
++---------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
 | DailySustainedWindDirection     | Wind direction from true north using compass directions (e.g. 360 = true north, 180 = south, 270 = west, etc.)                                |
++---------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
 
 Additional data is included in the tabulated monthly summaries: maximum, minimum, and average temperatures; deviations from normal; ceiling height; visibility; weather patterns; heating and cooling degree days; fastest wind speeds and their directions; sky cover; and instances of sunshine, snowfall, and snow depth.
 
