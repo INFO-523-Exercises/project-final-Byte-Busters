@@ -37,27 +37,29 @@ Climatological and hourly time-series data has been collected from several weath
 
 The dataset that we've gathered from National Center for Environmental Information (NCEI) (<https://www.ncei.noaa.gov/>) offers these key daily summaries that we will be analyzing:
 
-+---------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
-| Columns                         | Description                                                                                                                                   |
-+=================================+===============================================================================================================================================+
-| DailyAverageDryBulbTemperature  | This is the dry-bulb temperature and is commonly used as the standard air temperature reported. It is given here in whole degrees Fahrenheit. |
-+---------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
-| DailyAverageWetBulbTemperature  | This is the wet-bulb temperature. It is given here in whole degrees Fahrenheit.                                                               |
-+---------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
-| DailyAverageDewPointTemperature | This is the dew point temperature. It is given here in whole degrees Fahrenheit.                                                              |
-+---------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
-| DailyPrecipitation              | Total Liquid Content (TLC) water equivalent amount of precipitation for the day.                                                              |
-+---------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
-| DailyAverageSeaLevelPressure    | Sea level pressure given in inches of Mercury (in Hg)                                                                                         |
-+---------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
-| DailyAverageStationPressure     | Atmospheric pressure observed at the station during the time of observation. Given in inches of Mercury (in Hg)                               |
-+---------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
-| DailyAverageRelativeHumidity    | This is the relative humidity given to the nearest whole percentage.                                                                          |
-+---------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
-| DailyAverageWindSpeed           | Speed of the wind at the time of observation given in miles per hour (mph)                                                                    |
-+---------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
-| DailySustainedWindDirection     | Wind direction from true north using compass directions (e.g. 360 = true north, 180 = south, 270 = west, etc.)                                |
-+---------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
++---------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+----------------+
+| Column Names                    | Description                                                                                                                                        | Data Type      |
++=================================+====================================================================================================================================================+================+
+| DATE                            | Date of the observation(year, month and day) along with time of observation given as a 4-digit number using a 24-hour clock in local standard time | String         |
++---------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+----------------+
+| DailyAverageDryBulbTemperature  | This is the dry-bulb temperature and is commonly used as the standard air temperature reported. It is given here in whole degrees Fahrenheit.      | Float          |
++---------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+----------------+
+| DailyAverageWetBulbTemperature  | This is the wet-bulb temperature. It is given here in whole degrees Fahrenheit.                                                                    | Float          |
++---------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+----------------+
+| DailyAverageDewPointTemperature | This is the dew point temperature. It is given here in whole degrees Fahrenheit.                                                                   | Float          |
++---------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+----------------+
+| DailyPrecipitation              | Total Liquid Content (TLC) water equivalent amount of precipitation for the day.                                                                   | Float          |
++---------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+----------------+
+| DailyAverageSeaLevelPressure    | Sea level pressure given in inches of Mercury (in Hg)                                                                                              | Float          |
++---------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+----------------+
+| DailyAverageStationPressure     | Atmospheric pressure observed at the station during the time of observation. Given in inches of Mercury (in Hg)                                    | Float          |
++---------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+----------------+
+| DailyAverageRelativeHumidity    | This is the relative humidity given to the nearest whole percentage.                                                                               | Float          |
++---------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+----------------+
+| DailyAverageWindSpeed           | Speed of the wind at the time of observation given in miles per hour (mph)                                                                         | Float          |
++---------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+----------------+
+| DailySustainedWindDirection     | Wind direction from true north using compass directions (e.g. 360 = true north, 180 = south, 270 = west, etc.)                                     | Float          |
++---------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+----------------+
 
 Additional data is included in the tabulated monthly summaries: maximum, minimum, and average temperatures; deviations from normal; ceiling height; visibility; weather patterns; heating and cooling degree days; fastest wind speeds and their directions; sky cover; and instances of sunshine, snowfall, and snow depth.
 
@@ -166,7 +168,9 @@ cleaned_denton |>
 
     Explanation:- This question dives into the exploration of variations, in the intensity of Urban Heat Island (UHI) both in metropolitan cities and rural areas like Arlington, Dallas and Denton throughout a specific year. The main focus is on using visualizations of time series data to uncover the changes over seasons and highlight the levels of UHI. By employing techniques this investigation aims to provide an easy understanding of how UHI intensity changes over seasons identifying patterns that differentiate between urban heat impacts, in metropolitan and rural environments across the specified region.
 
-## Weekly Plan of Attack (Analysis Plan)
+## Analysis Plan
+
+## Weekly Plan of Attack
 
 +------------------------------------+----------------------------------------------------------------------------+-----------------------------+-----------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------+
 | Week No. & Overview                | Individual Weekly Tasks                                                    | Assigned Team Members       | Objective                                                                                     | Deliverables                                                                |
