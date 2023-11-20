@@ -174,15 +174,13 @@ cleaned_denton |>
 
 -   Collect, clean, and prepare the climatological datasets for exploratory analysis.
 
--   Remove or mutate non-numeric data from numeric columns.
-
 ### EDA (**Exploratory Data Analysis)** 
 
 -   Clean and remove non-numeric data from numerical columns.
 
 ### Classification Analysis
 
--   Assess correlations and variances of weather conditions between the three UHIs, then create an interval scale to represent the different intensities of UHI. (correlation matrices, scatter plots, etc.).
+-   Assess climatological correlations and relationships between UHIs, then create an interval scale that will represent different UHI intensities. (correlation matrices, scatter plots, etc.).
 
 -   Gain insights into the dataset and prepare data for model development.
 
