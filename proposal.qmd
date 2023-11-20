@@ -178,9 +178,9 @@ cleaned_denton |>
 
 -   EDA will be split into two parts based on our questions:
 
-    1.  **Classification Analysis**
+    1.  **Multi-Class Classification Analysis**
 
-        -   Create a training dataset: Assess climatological correlations between UHIs, then develop an interval scale that best represents different UHI intensities.
+        -   Create a training dataset: Assess climatological relationships and correlations between UHIs, then develop an interval scale that best represents different UHI intensities.
 
         -   Train data on all types of classification models (Decision Trees, kNN, Random Forest, etc.), evaluate and select models with highest accuracy, then run tests to verify each model's accuracy.
 
@@ -192,48 +192,48 @@ cleaned_denton |>
 
         -   Create visualizations of temporal trends in UHI intensity, heat maps, and if possible, find reliable satellite images that captures the amount of vegetation available for the UHIs during this time period.
 
-        -   Ensure that all graphs and visualizations have been throughly analzed and meaningful to our UHI analysis.
+        -   Collect and verify the accuracy of all graphs and illustrations; select the visualizations with the most meaningful insights that enhance and answers our project objectives.
 
 ### Reporting
 
--   Compile all reports and visualizations into one report, then prepare and deliver the final presentation on our results and overall assessments of our UHIs.
+-   Compile all reports and visualizations into one report, then prepare and deliver the final presentation on our results and overall UHI assessments.
 
 ## Weekly Plan of Attack
 
-+------------------------------------+----------------------------------------------------------------------------+-----------------------------+
-| Week No. & Overview                | Individual Weekly Tasks                                                    | Assigned Team Members       |
-+:==================================:+:==========================================================================:+:===========================:+
-| [**Week 1\                         | Setting up environment, data blending                                      | *Dhanya, Udit*              |
-| **]{.underline}11/8/23 - 11/15/23  |                                                                            |                             |
-+------------------------------------+----------------------------------------------------------------------------+-----------------------------+
-|                                    | Identify missing values and perform imputation to deal with missing values | *Riyanshi, Ajinkya*         |
-+------------------------------------+----------------------------------------------------------------------------+-----------------------------+
-|                                    | Data type conversions                                                      | *Kendall*                   |
-+------------------------------------+----------------------------------------------------------------------------+-----------------------------+
-| [**Week 2\                         | Visualization of key metrics                                               | *Udit, Dhanya*              |
-| **]{.underline}11/15/23 - 11/22/23 |                                                                            |                             |
-+------------------------------------+----------------------------------------------------------------------------+-----------------------------+
-| \-                                 | Feature engineering and selection                                          | *Riyanshi*                  |
-+------------------------------------+----------------------------------------------------------------------------+-----------------------------+
-| \-                                 | Data normalization and standardization                                     | *Kendall, Ajinkya*          |
-+------------------------------------+----------------------------------------------------------------------------+-----------------------------+
-| [**Week 3\                         | Implement Temporal Analysis                                                | *Riyanshi, Kendall, Dhanya* |
-| **]{.underline}11/22/23 - 11/29/23 |                                                                            |                             |
-+------------------------------------+----------------------------------------------------------------------------+-----------------------------+
-| \-                                 | Analyze trends over the months (seasons)                                   | *Udit, Ajinkya*             |
-+------------------------------------+----------------------------------------------------------------------------+-----------------------------+
-| [**Week 4\                         | Build classification models                                                | *Dhanya, Kendall*           |
-| **]{.underline}11/29/23 - 12/6/23  |                                                                            |                             |
-+------------------------------------+----------------------------------------------------------------------------+-----------------------------+
-| \-                                 | Model optimization & cross-validate models                                 | *Riyanshi, Udit*            |
-+------------------------------------+----------------------------------------------------------------------------+-----------------------------+
-| \-                                 | Evaluation metrics and performance analysis                                | *Ajinkya*                   |
-+------------------------------------+----------------------------------------------------------------------------+-----------------------------+
-| [**Week 5 - Presentation\          | Compile project documentation                                              | *Kendall, Dhanya*           |
-| **]{.underline}12/6/23- 12/11/23   |                                                                            |                             |
-+------------------------------------+----------------------------------------------------------------------------+-----------------------------+
-|                                    | Prepare final presentation                                                 | *Udit, Riyanshi, Ajinkya*   |
-+------------------------------------+----------------------------------------------------------------------------+-----------------------------+
++------------------------------------+-----------------------------------------------------------------------------+-----------------------------+
+| Week No. & Overview                | Individual Weekly Tasks                                                     | Assigned Team Members       |
++:==================================:+:===========================================================================:+:===========================:+
+| [**Week 1\                         | Setting up environment; data blending.                                      | *Dhanya, Udit*              |
+| **]{.underline}11/8/23 - 11/15/23  |                                                                             |                             |
++------------------------------------+-----------------------------------------------------------------------------+-----------------------------+
+|                                    | Identify missing values and perform imputation to deal with missing values. | *Riyanshi, Ajinkya*         |
++------------------------------------+-----------------------------------------------------------------------------+-----------------------------+
+|                                    | Data type conversions.                                                      | *Kendall*                   |
++------------------------------------+-----------------------------------------------------------------------------+-----------------------------+
+| [**Week 2\                         | Visualization of key metrics.                                               | *Udit, Dhanya*              |
+| **]{.underline}11/15/23 - 11/22/23 |                                                                             |                             |
++------------------------------------+-----------------------------------------------------------------------------+-----------------------------+
+| \-                                 | Feature engineering and selection.                                          | *Riyanshi*                  |
++------------------------------------+-----------------------------------------------------------------------------+-----------------------------+
+| \-                                 | Data normalization and standardization.                                     | *Kendall, Ajinkya*          |
++------------------------------------+-----------------------------------------------------------------------------+-----------------------------+
+| [**Week 3\                         | Implement Temporal Analysis.                                                | *Riyanshi, Kendall, Dhanya* |
+| **]{.underline}11/22/23 - 11/29/23 |                                                                             |                             |
++------------------------------------+-----------------------------------------------------------------------------+-----------------------------+
+| \-                                 | Analyze trends over the months (seasons).                                   | *Udit, Ajinkya*             |
++------------------------------------+-----------------------------------------------------------------------------+-----------------------------+
+| [**Week 4\                         | Build classification models.                                                | *Dhanya, Kendall*           |
+| **]{.underline}11/29/23 - 12/6/23  |                                                                             |                             |
++------------------------------------+-----------------------------------------------------------------------------+-----------------------------+
+| \-                                 | Model optimization & cross-validate models.                                 | *Riyanshi, Udit*            |
++------------------------------------+-----------------------------------------------------------------------------+-----------------------------+
+| \-                                 | Evaluation metrics and performance analysis.                                | *Ajinkya*                   |
++------------------------------------+-----------------------------------------------------------------------------+-----------------------------+
+| [**Week 5 - Presentation\          | Compile project documentation.                                              | *Kendall, Dhanya*           |
+| **]{.underline}12/6/23- 12/11/23   |                                                                             |                             |
++------------------------------------+-----------------------------------------------------------------------------+-----------------------------+
+|                                    | Prepare final presentation.                                                 | *Udit, Riyanshi, Ajinkya*   |
++------------------------------------+-----------------------------------------------------------------------------+-----------------------------+
 
 ## Organization of the Project Repository
 
