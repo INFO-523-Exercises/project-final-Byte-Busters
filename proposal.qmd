@@ -110,6 +110,8 @@ num_rows <- nrow(cleaned_arlington)
 num_columns <- ncol(cleaned_arlington)
 cat("(", num_rows, " rows x ", num_columns, " columns)", sep = "")
 
+str(cleaned_arlington)
+
 cleaned_arlington |>
   head(n = 5) |>
   formattable()
