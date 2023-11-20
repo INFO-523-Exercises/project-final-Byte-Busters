@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.353">
+<meta name="generator" content="quarto-1.3.450">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -55,7 +55,8 @@ ul.task-list li input[type="checkbox"] {
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 
@@ -127,7 +128,12 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#denton-dataset" id="toc-denton-dataset" class="nav-link" data-scroll-target="#denton-dataset">3.) Denton Dataset</a></li>
   </ul></li>
   <li><a href="#questions" id="toc-questions" class="nav-link" data-scroll-target="#questions">Questions</a></li>
-  <li><a href="#analysis-plan" id="toc-analysis-plan" class="nav-link" data-scroll-target="#analysis-plan">Analysis Plan</a></li>
+  <li><a href="#analysis-plan" id="toc-analysis-plan" class="nav-link" data-scroll-target="#analysis-plan">Analysis Plan</a>
+  <ul class="collapse">
+  <li><a href="#data-pre-processing" id="toc-data-pre-processing" class="nav-link" data-scroll-target="#data-pre-processing">Data Pre-Processing</a></li>
+  <li><a href="#eda-exploratory-data-analysis" id="toc-eda-exploratory-data-analysis" class="nav-link" data-scroll-target="#eda-exploratory-data-analysis">EDA (Exploratory Data Analysis)</a></li>
+  <li><a href="#reporting" id="toc-reporting" class="nav-link" data-scroll-target="#reporting">Reporting</a></li>
+  </ul></li>
   <li><a href="#weekly-plan-of-attack" id="toc-weekly-plan-of-attack" class="nav-link" data-scroll-target="#weekly-plan-of-attack">Weekly Plan of Attack</a></li>
   <li><a href="#organization-of-the-project-repository" id="toc-organization-of-the-project-repository" class="nav-link" data-scroll-target="#organization-of-the-project-repository">Organization of the Project Repository</a></li>
   </ul>
@@ -158,7 +164,7 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="project-objective">Project Objective</h2>
 <p>The primary objective of this project is to study and analyze climatological data for three cities inside and outside of the Dallas, TX region, and to classify these cities based on an “Urban Heat Island” (UHI) scale.</p>
 <p>In climatology, UHI refers to cities that experience warmer temperatures than nearby rural areas, which occurs when land and natural vegetation are replaced by buildings, pavements, and surfaces that absorb and hold heat. This effect is also known as “micro climate” since a city’s infrastructure is creating its own local weather conditions.</p>
-<p>By analyzing the micro climate data for Dallas, a major urban city in the country, and two suburban cities outside of Dallas, we can create a classification system for different levels of intensities for UHIs and label these cities accordingly. Additionally, we will perform temporal analysis by comparing and contrasting various weather patterns for different intensities of UHIs.</p>
+<p>By analyzing the micro climate data for Dallas, a major urban city in the country, and two suburban cities outside of Dallas—Denton and Arlington, we can create a classification system for different levels of intensities for UHIs and label these cities accordingly. Additionally, we will perform temporal analysis by comparing and contrasting various weather patterns for different heat intensities of UHIs.</p>
 <section id="scope-and-focus" class="level4">
 <h4 class="anchored" data-anchor-id="scope-and-focus">Scope and Focus</h4>
 <p>This project will focus on assessing UHIs in various urban environments, particularly comparing the UHI intensity in the following settings:</p>
@@ -179,9 +185,9 @@ ul.task-list li input[type="checkbox"] {
 <p>The dataset that we’ve gathered from National Center for Environmental Information (NCEI) (<a href="https://www.ncei.noaa.gov/" class="uri">https://www.ncei.noaa.gov/</a>) offers these key daily summaries that we will be analyzing:</p>
 <table class="table">
 <colgroup>
-<col style="width: 16%">
-<col style="width: 74%">
-<col style="width: 8%">
+<col style="width: 17%">
+<col style="width: 76%">
+<col style="width: 6%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -193,7 +199,7 @@ ul.task-list li input[type="checkbox"] {
 <tbody>
 <tr class="odd">
 <td>DATE</td>
-<td>Date of the observation(year, month and day) along with time of observation given as a 4-digit number using a 24-hour clock in local standard time</td>
+<td>Date of the observation (year, month and day) along with time of observation given as a 4-digit number using a 24-hour clock in local standard time</td>
 <td>String</td>
 </tr>
 <tr class="even">
@@ -218,12 +224,12 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 <tr class="even">
 <td>DailyAverageSeaLevelPressure</td>
-<td>Sea level pressure given in inches of Mercury (in Hg)</td>
+<td>Sea level pressure given in inches of Mercury (in Hg).</td>
 <td>Float</td>
 </tr>
 <tr class="odd">
 <td>DailyAverageStationPressure</td>
-<td>Atmospheric pressure observed at the station during the time of observation. Given in inches of Mercury (in Hg)</td>
+<td>Atmospheric pressure observed at the station during the time of observation. Given in inches of Mercury (in Hg).</td>
 <td>Float</td>
 </tr>
 <tr class="even">
@@ -233,12 +239,12 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 <tr class="odd">
 <td>DailyAverageWindSpeed</td>
-<td>Speed of the wind at the time of observation given in miles per hour (mph)</td>
+<td>Speed of the wind at the time of observation given in miles per hour (mph).</td>
 <td>Float</td>
 </tr>
 <tr class="even">
 <td>DailySustainedWindDirection</td>
-<td>Wind direction from true north using compass directions (e.g.&nbsp;360 = true north, 180 = south, 270 = west, etc.)</td>
+<td>Wind direction from true north using compass directions (e.g.&nbsp;360 = true north, 180 = south, 270 = west, etc.).</td>
 <td>Float</td>
 </tr>
 </tbody>
@@ -692,7 +698,7 @@ NA
 28.99
 </td>
 <td style="text-align:right;">
-2.50
+2.5
 </td>
 <td style="text-align:right;">
 66
@@ -1004,7 +1010,7 @@ NA
 NA
 </td>
 <td style="text-align:right;">
-2007-02-26
+2/26/2007
 </td>
 </tr>
 <tr>
@@ -1066,7 +1072,7 @@ NA
 28.99
 </td>
 <td style="text-align:right;">
-3.00
+3
 </td>
 <td style="text-align:right;">
 66
@@ -1378,7 +1384,7 @@ NA
 NA
 </td>
 <td style="text-align:right;">
-2007-02-26
+2/26/2007
 </td>
 </tr>
 <tr>
@@ -1440,7 +1446,7 @@ FEW:02 13 BKN:07 25 OVC:08 32
 28.98
 </td>
 <td style="text-align:right;">
-5.00
+5
 </td>
 <td style="text-align:right;">
 64
@@ -1752,7 +1758,7 @@ NA
 NA
 </td>
 <td style="text-align:right;">
-2007-02-26
+2/26/2007
 </td>
 </tr>
 <tr>
@@ -1814,7 +1820,7 @@ OVC:08 26
 28.98
 </td>
 <td style="text-align:right;">
-5.00
+5
 </td>
 <td style="text-align:right;">
 64
@@ -2126,7 +2132,7 @@ NA
 NA
 </td>
 <td style="text-align:right;">
-2007-02-26
+2/26/2007
 </td>
 </tr>
 <tr>
@@ -2188,7 +2194,7 @@ OVC:08 26
 28.96
 </td>
 <td style="text-align:right;">
-4.00
+4
 </td>
 <td style="text-align:right;">
 64
@@ -2500,7 +2506,7 @@ NA
 NA
 </td>
 <td style="text-align:right;">
-2007-02-26
+2/26/2007
 </td>
 </tr>
 </tbody>
@@ -7038,132 +7044,131 @@ NA
 <h2 class="anchored" data-anchor-id="questions">Questions</h2>
 <ol type="1">
 <li><p>How does Urban Heat Island (UHI) intensity vary between urban and rural settings, such as Dallas, Arlington, and Denton, throughout a given year, and what methods can be employed to classify and interpret these varying intensity levels?</p>
-<p>Explanation:- This question highlights the investigation of variations, in Urban Heat Island (UHI) intensity between metropolitan cities and rural areas such as Arlington, Dallas, and Denton. Classifying UHI intensity in terms of multi-class classification into levels, the aim is to develop an approach that provides a comprehensive understanding of how urban and rural environments influence these observed differences in a given year.</p></li>
+<p>Explanation: This question highlights the investigation of variations in UHI intensity between metropolitan cities and rural areas such as Arlington, Dallas, and Denton. By classifying UHI intensity in terms of multi-class classification into levels, the aim is to develop an approach that provides a comprehensive understanding of how urban and rural environments influence these observed differences in a given year.</p></li>
 <li><p>How can time series data visualizations effectively illustrate the variations in Urban Heat Island (UHI) intensity across metropolitan and rural areas like Arlington, Dallas, and Denton over a given year, highlighting the distinct temporal patterns of UHI levels?</p>
-<p>Explanation:- This question dives into the exploration of variations, in the intensity of Urban Heat Island (UHI) both in metropolitan cities and rural areas like Arlington, Dallas and Denton throughout a specific year. The main focus is on using visualizations of time series data to uncover the changes over seasons and highlight the levels of UHI. By employing techniques this investigation aims to provide an easy understanding of how UHI intensity changes over seasons identifying patterns that differentiate between urban heat impacts, in metropolitan and rural environments across the specified region.</p></li>
+<p>Explanation: This question dives into the exploration of variations in the UHI intensity in metropolitan cities and rural areas like Arlington, Dallas and Denton throughout a specific year. Time series analysis will be used to uncover changes over seasons and highlight the levels of UHI. By employing techniques this investigation aims to provide an easy understanding of how UHI intensity changes over seasons identifying patterns that differentiate between urban heat impacts, in metropolitan and rural environments across the specified region.</p></li>
 </ol>
 </section>
 <section id="analysis-plan" class="level2">
 <h2 class="anchored" data-anchor-id="analysis-plan">Analysis Plan</h2>
+<section id="data-pre-processing" class="level3">
+<h3 class="anchored" data-anchor-id="data-pre-processing">Data Pre-Processing</h3>
+<ul>
+<li>Collect, clean, and prepare the climatological datasets for exploratory analysis.</li>
+</ul>
+</section>
+<section id="eda-exploratory-data-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="eda-exploratory-data-analysis">EDA (Exploratory Data Analysis)</h3>
+<ul>
+<li><p>EDA will be split into two parts, as based on our project objective and subsequent questions:</p>
+<ol type="1">
+<li><p><u><em>Multi-Class Classification Analysis</em></u></p>
+<ul>
+<li><p>Create a training dataset: Assess climatological relationships and correlations between UHIs, then develop an interval scale that best represents different UHI intensities.</p></li>
+<li><p>Train data on all types of classification models (Decision Trees, kNN, Random Forest, etc.), evaluate and select models with highest accuracy, then run tests to verify each model’s accuracy.</p></li>
+<li><p>Ensure that all processes and results have been well-documented and are error-free.</p></li>
+</ul></li>
+<li><p><u><em>Trend Analysis</em></u></p>
+<ul>
+<li><p>Perform summary statistics to assess outliers’ impact on climatological patterns and identify key time periods across UHI intensities.</p></li>
+<li><p>Create visualizations of temporal trends in UHI intensity, heat maps, and if possible, find reliable satellite images that captures the amount of vegetation available for the UHIs during this time period.</p></li>
+<li><p>Collect and verify the accuracy of all graphs and illustrations, then narrow down and select the visualizations that have the most significant insights in answering our project objectives.</p></li>
+</ul></li>
+</ol></li>
+</ul>
+</section>
+<section id="reporting" class="level3">
+<h3 class="anchored" data-anchor-id="reporting">Reporting</h3>
+<ul>
+<li>Compile all reports and visualizations into one report, then prepare and deliver the final presentation on our results and overall UHI assessments.</li>
+</ul>
+</section>
 </section>
 <section id="weekly-plan-of-attack" class="level2">
 <h2 class="anchored" data-anchor-id="weekly-plan-of-attack">Weekly Plan of Attack</h2>
 <table class="table">
 <colgroup>
-<col style="width: 11%">
-<col style="width: 23%">
-<col style="width: 9%">
-<col style="width: 29%">
-<col style="width: 24%">
+<col style="width: 25%">
+<col style="width: 53%">
+<col style="width: 20%">
 </colgroup>
 <thead>
 <tr class="header">
 <th style="text-align: center;">Week No.&nbsp;&amp; Overview</th>
 <th style="text-align: center;">Individual Weekly Tasks</th>
 <th style="text-align: center;">Assigned Team Members</th>
-<th style="text-align: center;">Objective</th>
-<th>Deliverables</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td style="text-align: center;"><u><strong>Week 1<br>
 </strong></u>11/8/23 - 11/15/23</td>
-<td style="text-align: center;">Setting up environment, data blending</td>
+<td style="text-align: center;">Setting up environment; data blending</td>
 <td style="text-align: center;"><em>Dhanya, Udit</em></td>
-<td style="text-align: center;">Data cleaning &amp; data pre-processing</td>
-<td>Cleaned dataset ready for exploratory analysis.</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;"></td>
 <td style="text-align: center;">Identify missing values and perform imputation to deal with missing values</td>
 <td style="text-align: center;"><em>Riyanshi, Ajinkya</em></td>
-<td style="text-align: center;"><br>
-</td>
-<td></td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;"></td>
 <td style="text-align: center;">Data type conversions</td>
 <td style="text-align: center;"><em>Kendall</em></td>
-<td style="text-align: center;"></td>
-<td></td>
 </tr>
 <tr class="even">
 <td style="text-align: center;"><u><strong>Week 2<br>
 </strong></u>11/15/23 - 11/22/23</td>
 <td style="text-align: center;">Visualization of key metrics</td>
 <td style="text-align: center;"><em>Udit, Dhanya</em></td>
-<td style="text-align: center;">Gain insights into the dataset and prepare data for model development.</td>
-<td>A thorough analysis of data insights and prepared features for modeling.</td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">Feature engineering and selection</td>
 <td style="text-align: center;"><em>Riyanshi</em></td>
-<td style="text-align: center;"><br>
-</td>
-<td></td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">Data normalization and standardization</td>
 <td style="text-align: center;"><em>Kendall, Ajinkya</em></td>
-<td style="text-align: center;"></td>
-<td></td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;"><u><strong>Week 3<br>
 </strong></u>11/22/23 - 11/29/23</td>
 <td style="text-align: center;">Implement Temporal Analysis</td>
 <td style="text-align: center;"><em>Riyanshi, Kendall, Dhanya</em></td>
-<td style="text-align: center;">Identify key time periods of significant UHI intensity</td>
-<td>Visualizations of temporal trends in UHI intensity, and actionable insights</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">Analyze trends over the months (seasons)</td>
 <td style="text-align: center;"><em>Udit, Ajinkya</em></td>
-<td style="text-align: center;"><br>
-</td>
-<td></td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;"><u><strong>Week 4<br>
 </strong></u>11/29/23 - 12/6/23</td>
 <td style="text-align: center;">Build classification models</td>
 <td style="text-align: center;"><em>Dhanya, Kendall</em></td>
-<td style="text-align: center;">Develop classification models for classifying UHI intensities and evaluate their performance.</td>
-<td>Working models and performance evaluation report.</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">Model optimization &amp; cross-validate models</td>
 <td style="text-align: center;"><em>Riyanshi, Udit</em></td>
-<td style="text-align: center;"></td>
-<td></td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">Evaluation metrics and performance analysis</td>
 <td style="text-align: center;"><em>Ajinkya</em></td>
-<td style="text-align: center;"></td>
-<td></td>
 </tr>
 <tr class="even">
 <td style="text-align: center;"><u><strong>Week 5 - Presentation<br>
 </strong></u>12/6/23- 12/11/23</td>
-<td style="text-align: center;">Compile project documentation -</td>
-<td style="text-align: center;">-<em>Kendall, Dhanya</em></td>
-<td style="text-align: center;">Document the project process and results, and prepare a presentation.</td>
-<td>Complete project documentation and ready-to-deliver presentation.</td>
+<td style="text-align: center;">Compile project documentation</td>
+<td style="text-align: center;"><em>Kendall, Dhanya</em></td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;"></td>
 <td style="text-align: center;">Prepare final presentation</td>
 <td style="text-align: center;"><em>Udit, Riyanshi, Ajinkya</em></td>
-<td style="text-align: center;"></td>
-<td></td>
 </tr>
 </tbody>
 </table>
