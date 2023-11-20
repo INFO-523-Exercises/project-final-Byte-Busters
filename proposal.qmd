@@ -192,11 +192,11 @@ cleaned_denton |>
 
         -   Create visualizations of temporal trends in UHI intensity, heat maps, and if possible, find reliable satellite images that captures the amount of vegetation available for the UHIs during this time period.
 
-        -   Ensure that all processes and results have been well-documented and are error-free.
+        -   Ensure that all graphs and visualizations have been throughly analzed and meaningful to our UHI analysis.
 
 ### Reporting
 
--   Compile all reports then prepare and deliver the final presentation on our results and assessments.
+-   Compile all reports and visualizations into one report, then prepare and deliver the final presentation on our results and overall assessments of our UHIs.
 
 ## Weekly Plan of Attack
 
