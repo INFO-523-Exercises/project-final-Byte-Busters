@@ -180,13 +180,13 @@ cleaned_denton |>
 
     1.  **Classification Analysis**
 
-        -   Create a training dataset: Assess climatological correlations between UHIs then create an interval scale to represent different UHI intensities.
+        -   Create a training dataset: Assess climatological correlations between UHIs, then develop an interval scale that best represents different UHI intensities.
+
+        -   Train data on all types of classification models (Decision Trees, kNN, Random Forest, etc.), evaluate and select models with highest accuracy, then run tests to verify each model's accuracy.
+
+        -   
 
         -   Gain insights into the dataset and prepare data for model development.
-
-        -   Develop classification models for classifying UHI intensities and evaluate their performance. Working models and performance evaluation report.
-
-        -   Explore decision trees, kNN, test and train models.
 
         -   A thorough analysis of data insights and prepared features for modeling.
 
