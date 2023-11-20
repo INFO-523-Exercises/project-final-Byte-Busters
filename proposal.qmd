@@ -170,9 +170,17 @@ cleaned_denton |>
 
 ## Analysis Plan
 
-Data cleaning & data pre-processing. (This will allow us to focus on outliers.) Cleaned dataset ready for exploratory analysis.
+### Data Pre-Processing
 
-Gain insights into the dataset and prepare data for model development. A thorough analysis of data insights and prepared features for modeling.
+Collect, clean, and prepare three climatological datasets for exploratory analysis.
+
+### EDA (**Exploratory Data Analysis)**
+
+Gain insights into the dataset and prepare data for model development.
+
+Calculate statistics
+
+A thorough analysis of data insights and prepared features for modeling.
 
 Identify key time periods of significant UHI intensity. Visualizations of temporal trends in UHI intensity, and actionable insights.
 
