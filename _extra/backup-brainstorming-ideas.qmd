@@ -124,16 +124,61 @@ wind conditions, precipitation levels, degree days, and temperature extremes. Ad
 #| echo: false 
 #| warning: false  
 
-arlington_data <- read_csv(here('./data/arlington-2022.csv'))  
+#arlington_data <- read_csv(here('./data/arlington-2022.csv'))  
 
-# Dimensions of dataset: 
-num_rows <- nrow(arlington_data) 
-num_columns <- ncol(arlington_data)  
+## Dimensions of dataset: 
+#num_rows <- nrow(arlington_data) 
+#num_columns <- ncol(arlington_data)  
+#cat("(", num_rows, " rows x ", num_columns, " columns)", sep = "")
+
+#arlington_data |> 
+#  head() |>   
+#  formattable()
+
+#| label: arlington-dataset 
+#| echo: false 
+#| warning: false  
+
+arlington_data <- read_csv(here('./data/arlington-2022.csv'))
+
+arlington_data <- arlington_data %>% select(-REM)
+
+# Dimensions of dataset:
+num_rows <- nrow(cleaned_arlington)
+num_columns <- ncol(cleaned_arlington)
 cat("(", num_rows, " rows x ", num_columns, " columns)", sep = "")
 
-arlington_data |> 
-  head() |>   
+arlington_data |>
+  head(n = 5) |>
   formattable()
+
+######################
+# Columns to extract
+#####################
+
+columns_to_extract <- c("DailyAverageDryBulbTemperature",
+"DailyAverageWetBulbTemperature",
+"DailyAverageDewPointTemperature",
+"DailyPrecipitation",
+"DailyAverageSeaLevelPressure",
+"DailyAverageStationPressure",
+"DailyAverageRelativeHumidity",
+"DailyAverageWindSpeed",
+"DailySustainedWindDirection")
+
+cleaned_arlington <- arlington_data %>% select(columns_to_extract)
+```
+
+```{r}
+
+cleaned_arlington |>
+  diagnose_outlier() |>
+  #filter(outliers_ratio > 0) |>  
+  #mutate(rate = outliers_mean / with_mean) |>
+  #arrange(desc(rate)) |> 
+  #select(-outliers_cnt) |>
+  formattable()
+  
 ```
 
 ### **Denton 2022 Dataset**
@@ -170,14 +215,21 @@ denton_data |> # Need to format "DATE" and other columns if we have time.
 
 -   **.github/:** Folder for storing github templates and workflow.
 
++-----------------------+---------------------------------------------------------------------------------+
 | Columns               | Description                                                                     |
-|-----------------------|---------------------------------------------------------------------------------|
++=======================+=================================================================================+
 | Wind Gust Speed       | Wind gusts occurring during time of observation. Given in miles per hour (mph)  |
++-----------------------+---------------------------------------------------------------------------------+
 | Dry Bulb Temperature  | The measure of air temperature (Fahrenheit)                                     |
++-----------------------+---------------------------------------------------------------------------------+
 | Precipitation Levels  | Total Liquid Content (TLC) Water equivalent amount of precipitation for the day |
++-----------------------+---------------------------------------------------------------------------------+
 | Dew Point Temperature | (Add description)                                                               |
++-----------------------+---------------------------------------------------------------------------------+
 | Pressure - Avg SL     | Daily average sea level pressure                                                |
++-----------------------+---------------------------------------------------------------------------------+
 | Rel Hum               | This is the relative humidity given to the nearest whole percentage             |
++-----------------------+---------------------------------------------------------------------------------+
 
 Leverage advanced data mining techniques to identify and analyze urban heat islands and weather anomalies, providing insights into the impacts of urbanization on local climates.
 
