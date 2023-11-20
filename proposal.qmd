@@ -184,11 +184,7 @@ cleaned_denton |>
 
         -   Train data on all types of classification models (Decision Trees, kNN, Random Forest, etc.), evaluate and select models with highest accuracy, then run tests to verify each model's accuracy.
 
-        -   
-
-        -   Gain insights into the dataset and prepare data for model development.
-
-        -   A thorough analysis of data insights and prepared features for modeling.
+        -   Ensure that all processes and results have been well-documented and are error-free.
 
     2.  **Trend Analysis**
 
@@ -198,7 +194,7 @@ cleaned_denton |>
 
 ### Reporting
 
--   Ensure that all processes and results have been well-documented, then prepare and deliver a presentation on our findings.
+-   Compile all reports and prepare and deliver the final presentation on our findings and assessments.
 
 ## Weekly Plan of Attack
 
