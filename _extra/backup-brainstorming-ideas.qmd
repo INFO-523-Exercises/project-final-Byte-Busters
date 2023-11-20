@@ -177,7 +177,9 @@ cleaned_arlington <- arlington_data %>% select(columns_to_extract)
 
 cleaned_arlington |> glimpse()
 
-cleaned_arlington <- cleaned_arlington %>% mutate(DailyAverageWetBulbTemperature = as.double(DailyAverageWetBulbTemperature),
+cleaned_arlington <- cleaned_arlington %>% mutate(ChangePrecipitation = ifelse(DailyPrecipitation %in% c("T", "Ts"), 0, DailyPrecipitation),
+  DailyPrecipitation = as.double(DailyPrecipitation),
+  DailyAverageWetBulbTemperature = as.double(DailyAverageWetBulbTemperature),
   DailyAverageDewPointTemperature = as.double(DailyAverageDewPointTemperature),
   DailyAverageSeaLevelPressure = as.double(DailyAverageSeaLevelPressure),
   DailyAverageRelativeHumidity = as.double(DailyAverageRelativeHumidity)
