@@ -172,13 +172,17 @@ cleaned_denton |>
 
 ### Data Pre-Processing
 
-Collect, clean, and prepare three climatological datasets for exploratory analysis.
+-   Collect, clean, and prepare three climatological datasets for exploratory analysis.
 
 ### EDA (**Exploratory Data Analysis)** 
 
-Perform summary statistics across the datasets to find missing values, central tendency values, and outliers.
+-   Clean and remove non-numeric data from numerical columns.
 
-Clean and remove scarce character data points from numerical columns.
+### Classification Analysis
+
+-   Assess correlations and variances of weather conditions between the three UHIs.
+
+-   Feature selection.
 
 Gain insights into the dataset and prepare data for model development.
 
@@ -190,9 +194,15 @@ Develop classification models for classifying UHI intensities and evaluate their
 
 Working models and performance evaluation report.
 
+### Trend Analysis
+
+-   Perform summary statistics across the datasets to find missing values, central tendency values, and outliers.
+
+-   
+
 ### Reporting
 
-Document the processes and results, and then prepare a presentation. Complete project documentation and ready-to-deliver presentation.
+-   Ensure that all processes and results have been well-documented, then deliver a presentation on our findings.
 
 ## Weekly Plan of Attack
 
