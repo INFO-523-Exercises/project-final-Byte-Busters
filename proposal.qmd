@@ -188,11 +188,9 @@ cleaned_denton |>
 
     2.  **Trend Analysis**
 
-        -   Perform summary statistics to find central tendencies, correct missing values, and assess outliers.
+        -   Perform summary statistics to assess outliers' impact on climatological patterns and identify key time periods across UHI intensities.
 
-        -   Identify key time periods of significant UHI intensity.
-
-        -   Create visualizations of temporal trends in UHI intensity, and actionable insights.
+        -   Create visualizations of temporal trends in UHI intensity, heat maps, and if possible, find reliable satellite images that captures the amount of vegetation available for the UHIs during this time period.
 
         -   Ensure that all processes and results have been well-documented and are error-free.
 

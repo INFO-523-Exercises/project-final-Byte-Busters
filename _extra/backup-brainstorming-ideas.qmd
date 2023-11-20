@@ -404,3 +404,5 @@ A thorough analysis of data insights and prepared features for modeling.
 ### Reporting
 
 -   Ensure that all processes and results have been well-documented, then prepare and deliver a presentation on our findings.
+
+-   key time periods of significant UHI intensity.
