@@ -105,13 +105,6 @@ arlington_data <- read_csv(here('./data/arlington-2022.csv'))
 
 cleaned_arlington <- arlington_data %>% select(-REM)
 
-cleaned_arlington <- col_types = cols(observed_month = col_date(),
-  prod_type = col_factor(),
-  prod_process = col_factor(),
-  n_hens = col_double(),
-  n_eggs = col_double()
-))
-
 # Dimensions of dataset:
 num_rows <- nrow(cleaned_arlington)
 num_columns <- ncol(cleaned_arlington)

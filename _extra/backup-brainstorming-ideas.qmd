@@ -143,6 +143,13 @@ arlington_data <- read_csv(here('./data/arlington-2022.csv'))
 
 arlington_data <- arlington_data %>% select(-REM)
 
+original_egg_prod_data <- read_csv(here('./data/egg-production.csv'), col_types = cols(observed_month = col_date(),
+  prod_type = col_factor(),
+  prod_process = col_factor(),
+  n_hens = col_double(),
+  n_eggs = col_double()
+))
+
 # Dimensions of dataset:
 num_rows <- nrow(cleaned_arlington)
 num_columns <- ncol(cleaned_arlington)
@@ -167,9 +174,23 @@ columns_to_extract <- c("DailyAverageDryBulbTemperature",
 "DailySustainedWindDirection")
 
 cleaned_arlington <- arlington_data %>% select(columns_to_extract)
+
+cleaned_arlington |> glimpse()
+
+cleaned_arlington <- cleaned_arlington %>% mutate(DailyAverageWetBulbTemperature = as.double(DailyAverageWetBulbTemperature),
+  DailyAverageDewPointTemperature = as.double(DailyAverageDewPointTemperature),
+  DailyAverageSeaLevelPressure = as.double(DailyAverageSeaLevelPressure),
+  DailyAverageRelativeHumidity = as.double(DailyAverageRelativeHumidity)
+)
+
+cleaned_arlington
 ```
 
 ```{r}
+
+cleaned_arlington |> 
+  summary() |>
+  formattable()
 
 cleaned_arlington |>
   diagnose_outlier() |>
