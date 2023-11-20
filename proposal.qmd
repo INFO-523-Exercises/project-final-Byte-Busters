@@ -188,13 +188,17 @@ cleaned_denton |>
 
     2.  **Trend Analysis**
 
-        -   Perform summary statistics across the datasets to find missing values, central tendency values, and outliers.
+        -   Perform summary statistics to find central tendencies, correct missing values, and assess outliers.
 
-        -   Identify key time periods of significant UHI intensity. Visualizations of temporal trends in UHI intensity, and actionable insights.
+        -   Identify key time periods of significant UHI intensity.
+
+        -   Create visualizations of temporal trends in UHI intensity, and actionable insights.
+
+        -   Ensure that all processes and results have been well-documented and are error-free.
 
 ### Reporting
 
--   Compile all reports and prepare and deliver the final presentation on our findings and assessments.
+-   Compile all reports then prepare and deliver the final presentation on our results and assessments.
 
 ## Weekly Plan of Attack
 
