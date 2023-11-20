@@ -174,19 +174,25 @@ cleaned_denton |>
 
 Collect, clean, and prepare three climatological datasets for exploratory analysis.
 
-### EDA (**Exploratory Data Analysis)**
+### EDA (**Exploratory Data Analysis)** 
+
+Perform summary statistics across the datasets to find missing values, central tendency values, and outliers.
+
+Clean and remove scarce character data points from numerical columns.
 
 Gain insights into the dataset and prepare data for model development.
-
-Calculate statistics
 
 A thorough analysis of data insights and prepared features for modeling.
 
 Identify key time periods of significant UHI intensity. Visualizations of temporal trends in UHI intensity, and actionable insights.
 
-Develop classification models for classifying UHI intensities and evaluate their performance. Working models and performance evaluation report.
+Develop classification models for classifying UHI intensities and evaluate their performance.
 
-Document the project process and results, and prepare a presentation. Complete project documentation and ready-to-deliver presentation.
+Working models and performance evaluation report.
+
+### Reporting
+
+Document the processes and results, and then prepare a presentation. Complete project documentation and ready-to-deliver presentation.
 
 ## Weekly Plan of Attack
 
