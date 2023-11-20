@@ -172,27 +172,58 @@ cleaned_denton |>
 
 ### Data Pre-Processing
 
--   Collect, clean, and prepare the climatological datasets for exploratory analysis.
+**Objective: Prepare the dataset for analysis by cleaning and structuring the data.**
 
-### EDA (**Exploratory Data Analysis)** 
+-   Merge datasets from different locations (Dallas, Arlington, Denton) into a unified format.
+-   Identify and handle missing values through imputation.
+-   Convert data types as necessary for consistency.
+-   Normalize and standardize data to ensure comparability.
 
--   EDA will be split into two parts based on our questions:
+### EDA (**Exploratory Data Analysis)**
 
-    1.  **Multi-Class Classification Analysis**
+**Objective: Gain initial insights into the dataset and identify patterns.**
 
-        -   Create a training dataset: Assess climatological relationships and correlations between UHIs, then develop an interval scale that best represents different UHI intensities.
+-   Visualize key metrics such as temperature, humidity, and wind patterns.
 
-        -   Train data on all types of classification models (Decision Trees, kNN, Random Forest, etc.), evaluate and select models with highest accuracy, then run tests to verify each model's accuracy.
+-   Identify initial trends and seasonal variations.
 
-        -   Ensure that all processes and results have been well-documented and are error-free.
+-   Perform basic statistical analyses to understand data distributions.
 
-    2.  **Trend Analysis**
+### Feature Engineering
 
-        -   Perform summary statistics to assess outliers' impact on climatological patterns and identify key time periods across UHI intensities.
+**Objective: Enhance the dataset with additional relevant features for analysis.**
 
-        -   Create visualizations of temporal trends in UHI intensity, heat maps, and if possible, find reliable satellite images that captures the amount of vegetation available for the UHIs during this time period.
+-   Performing feature selection by selecting relevant features for the modeling phase.
 
-        -   Collect and verify the accuracy of all graphs and illustrations; select the visualizations with the most meaningful insights that enhance and answers our project objectives.
+-   Develop a new feature for the classification task that defines the level of UHI intensity (High, Medium, Low). This feature will be derived based on specific conditions and thresholds of key parameters like temperature, humidity, wind speed, etc.
+
+-   Create new features that could influence UHI intensity, such as time of day, day of the week, and season.
+
+### Temporal Analysis
+
+**Objective: Analyze UHI intensity over time to identify trends and anomalies.**
+
+-   Conduct time series analysis to explore how UHI intensity changes over various time frames (hourly, daily, seasonally, annually).
+
+-   Identify peak periods of UHI intensity and investigate the underlying factors contributing to these peaks.
+
+-   Compare temporal patterns across different locations (urban vs. rural) to understand how geographical factors influence UHI intensity.
+
+### Model Development and Evaluation
+
+**Objective: Develop and assess models that classify and predict UHI intensity.**
+
+-   Build classification models to distinguish between various UHI intensity levels.
+
+-   Optimize models using techniques like cross-validation.
+
+-   Evaluate models using appropriate metrics (accuracy, precision, recall, etc.).
+
+### **Insight Generation and Recommendations**
+
+**Objective: Derive actionable insights and provide recommendations**
+
+Analyze model results to understand the key effects of UHI intensity.
 
 ### Reporting
 
