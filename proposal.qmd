@@ -110,8 +110,6 @@ num_rows <- nrow(cleaned_arlington)
 num_columns <- ncol(cleaned_arlington)
 cat("(", num_rows, " rows x ", num_columns, " columns)", sep = "")
 
-str(cleaned_arlington)
-
 cleaned_arlington |>
   head(n = 5) |>
   formattable()
@@ -172,12 +170,22 @@ cleaned_denton |>
 
 ## Analysis Plan
 
+Data cleaning & data pre-processing. (This will allow us to focus on outliers.) Cleaned dataset ready for exploratory analysis.
+
+Gain insights into the dataset and prepare data for model development. A thorough analysis of data insights and prepared features for modeling.
+
+Identify key time periods of significant UHI intensity. Visualizations of temporal trends in UHI intensity, and actionable insights.
+
+Develop classification models for classifying UHI intensities and evaluate their performance. Working models and performance evaluation report.
+
+Document the project process and results, and prepare a presentation. Complete project documentation and ready-to-deliver presentation.
+
 ## Weekly Plan of Attack
 
 +------------------------------------+----------------------------------------------------------------------------+-----------------------------+-----------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------+
 | Week No. & Overview                | Individual Weekly Tasks                                                    | Assigned Team Members       | Objective                                                                                     | Deliverables                                                                |
 +:==================================:+:==========================================================================:+:===========================:+:=============================================================================================:+=============================================================================+
-| [**Week 1\                         | Setting up environment, data blending                                      | *Dhanya, Udit*              | Data cleaning & data pre-processing                                                           | Cleaned datasett ready for exploratory analysis.                            |
+| [**Week 1\                         | Setting up environment, data blending                                      | *Dhanya, Udit*              | Data cleaning & data pre-processing.                                                          | Cleaned dataset ready for exploratory analysis.                             |
 | **]{.underline}11/8/23 - 11/15/23  |                                                                            |                             |                                                                                               |                                                                             |
 +------------------------------------+----------------------------------------------------------------------------+-----------------------------+-----------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------+
 |                                    | Identify missing values and perform imputation to deal with missing values | *Riyanshi, Ajinkya*         | \                                                                                             |                                                                             |
@@ -191,7 +199,7 @@ cleaned_denton |>
 +------------------------------------+----------------------------------------------------------------------------+-----------------------------+-----------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------+
 | \-                                 | Data normalization and standardization                                     | *Kendall, Ajinkya*          |                                                                                               |                                                                             |
 +------------------------------------+----------------------------------------------------------------------------+-----------------------------+-----------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------+
-| [**Week 3\                         | Implement Temporal Analysis                                                | *Riyanshi, Kendall, Dhanya* | Identify key time periods of significant UHI intensity                                        | Visualizations of temporal trends in UHI intensity, and actionable insights |
+| [**Week 3\                         | Implement Temporal Analysis                                                | *Riyanshi, Kendall, Dhanya* | Identify key time periods of significant UHI intensity.                                       | Visualizations of temporal trends in UHI intensity, and actionable insights |
 | **]{.underline}11/22/23 - 11/29/23 |                                                                            |                             |                                                                                               |                                                                             |
 +------------------------------------+----------------------------------------------------------------------------+-----------------------------+-----------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------+
 | \-                                 | Analyze trends over the months (seasons)                                   | *Udit, Ajinkya*             | \                                                                                             |                                                                             |
