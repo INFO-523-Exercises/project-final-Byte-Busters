@@ -143,13 +143,6 @@ arlington_data <- read_csv(here('./data/arlington-2022.csv'))
 
 arlington_data <- arlington_data %>% select(-REM)
 
-original_egg_prod_data <- read_csv(here('./data/egg-production.csv'), col_types = cols(observed_month = col_date(),
-  prod_type = col_factor(),
-  prod_process = col_factor(),
-  n_hens = col_double(),
-  n_eggs = col_double()
-))
-
 # Dimensions of dataset:
 num_rows <- nrow(cleaned_arlington)
 num_columns <- ncol(cleaned_arlington)
@@ -185,10 +178,14 @@ cleaned_arlington <- cleaned_arlington %>% mutate(ChangePrecipitation = ifelse(D
   DailyAverageRelativeHumidity = as.double(DailyAverageRelativeHumidity)
 )
 
-cleaned_arlington
+cleaned_arlington |> summary()
 ```
 
 ```{r}
+
+##########################
+# Outliers for Arlington
+##########################
 
 cleaned_arlington |> 
   summary() |>
@@ -201,6 +198,11 @@ cleaned_arlington |>
   #arrange(desc(rate)) |> 
   #select(-outliers_cnt) |>
   formattable()
+
+# Box-plot
+cleaned_arlington |> 
+  select(find_outliers(cleaned_arlington)) |>
+           plot_outlier()
   
 ```
 
