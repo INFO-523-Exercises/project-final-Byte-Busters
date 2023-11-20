@@ -179,7 +179,7 @@ cleaned_denton |>
 -   Convert data types as necessary for consistency.
 -   Normalize and standardize data to ensure comparability.
 
-### EDA (**Exploratory Data Analysis)**
+### EDA (Exploratory Data Analysis)
 
 **Objective: Gain initial insights into the dataset and identify patterns.**
 
@@ -219,7 +219,7 @@ cleaned_denton |>
 
 -   Evaluate models using appropriate metrics (accuracy, precision, recall, etc.).
 
-### **Insight Generation and Recommendations**
+### Insight Generation and Recommendations
 
 **Objective: Derive actionable insights and provide recommendations**
 

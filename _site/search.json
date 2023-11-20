@@ -3,36 +3,36 @@
     "objectID": "presentation.html#quarto",
     "href": "presentation.html#quarto",
     "title": "Project title",
-    "section": "",
-    "text": "The presentation is created using the Quarto CLI\n## sets the start of a new slide"
+    "section": "Quarto",
+    "text": "Quarto\n\nThe presentation is created using the Quarto CLI\n## sets the start of a new slide"
   },
   {
     "objectID": "presentation.html#layouts",
     "href": "presentation.html#layouts",
     "title": "Project title",
-    "section": "",
-    "text": "You can use plain text\n\n\n\nor bullet points1\n\n\nor in two columns\n\n\n\nlike\nthis"
+    "section": "Layouts",
+    "text": "Layouts\nYou can use plain text\n\n\n\nor bullet points1\n\n\nor in two columns\n\n\n\nlike\nthis\n\nAnd add footnotes"
   },
   {
     "objectID": "presentation.html#code",
     "href": "presentation.html#code",
     "title": "Project title",
-    "section": "",
-    "text": "# A tibble: 2 × 5\n  term        estimate std.error statistic       p.value\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;         &lt;dbl&gt;\n1 (Intercept)   25.3      3.08        8.22 0.00000000358\n2 speed         -0.116    0.0642     -1.81 0.0806       \n\n\n# A tibble: 1 × 12\n  r.squared adj.r.squared sigma statistic p.value    df logLik   AIC   BIC\n      &lt;dbl&gt;         &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt;   &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;\n1    0.0983        0.0682  5.82      3.27  0.0806     1  -101.  207.  212.\n# ℹ 3 more variables: deviance &lt;dbl&gt;, df.residual &lt;int&gt;, nobs &lt;int&gt;"
+    "section": "Code",
+    "text": "Code\n\n\n# A tibble: 2 × 5\n  term        estimate std.error statistic       p.value\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;         &lt;dbl&gt;\n1 (Intercept)   25.3      3.08        8.22 0.00000000358\n2 speed         -0.116    0.0642     -1.81 0.0806       \n\n\n# A tibble: 1 × 12\n  r.squared adj.r.squared sigma statistic p.value    df logLik   AIC   BIC\n      &lt;dbl&gt;         &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt;   &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;\n1    0.0983        0.0682  5.82      3.27  0.0806     1  -101.  207.  212.\n# ℹ 3 more variables: deviance &lt;dbl&gt;, df.residual &lt;int&gt;, nobs &lt;int&gt;"
   },
   {
     "objectID": "presentation.html#plots",
     "href": "presentation.html#plots",
     "title": "Project title",
-    "section": "",
-    "text": "Warning: Removed 2 rows containing missing values (`geom_point()`)."
+    "section": "Plots",
+    "text": "Plots"
   },
   {
     "objectID": "presentation.html#plot-and-text",
     "href": "presentation.html#plot-and-text",
     "title": "Project title",
-    "section": "",
-    "text": "Some text\ngoes here"
+    "section": "Plot and text",
+    "text": "Plot and text\n\n\n\nSome text\ngoes here"
   },
   {
     "objectID": "presentation.html#tables",
@@ -46,7 +46,7 @@
     "href": "presentation.html#images",
     "title": "Project title",
     "section": "Images",
-    "text": "Images\n\n\n\nImage credit: Danielle Navarro, Percolate."
+    "text": "Images\n\nImage credit: Danielle Navarro, Percolate."
   },
   {
     "objectID": "presentation.html#math-expressions",
@@ -123,14 +123,14 @@
     "href": "proposal.html#analysis-plan",
     "title": "Urban Heat Island Detection & Impact Analysis",
     "section": "Analysis Plan",
-    "text": "Analysis Plan"
+    "text": "Analysis Plan\n\nData Pre-Processing\nObjective: Prepare the dataset for analysis by cleaning and structuring the data.\n\nMerge datasets from different locations (Dallas, Arlington, Denton) into a unified format.\nIdentify and handle missing values through imputation.\nConvert data types as necessary for consistency.\nNormalize and standardize data to ensure comparability.\n\n\n\nEDA (Exploratory Data Analysis)\nObjective: Gain initial insights into the dataset and identify patterns.\n\nVisualize key metrics such as temperature, humidity, and wind patterns.\nIdentify initial trends and seasonal variations.\nPerform basic statistical analyses to understand data distributions.\n\n\n\nFeature Engineering\nObjective: Enhance the dataset with additional relevant features for analysis.\n\nPerforming feature selection by selecting relevant features for the modeling phase.\nDevelop a new feature for the classification task that defines the level of UHI intensity (High, Medium, Low). This feature will be derived based on specific conditions and thresholds of key parameters like temperature, humidity, wind speed, etc.\nCreate new features that could influence UHI intensity, such as time of day, day of the week, and season.\n\n\n\nTemporal Analysis\nObjective: Analyze UHI intensity over time to identify trends and anomalies.\n\nConduct time series analysis to explore how UHI intensity changes over various time frames (hourly, daily, seasonally, annually).\nIdentify peak periods of UHI intensity and investigate the underlying factors contributing to these peaks.\nCompare temporal patterns across different locations (urban vs. rural) to understand how geographical factors influence UHI intensity.\n\n\n\nModel Development and Evaluation\nObjective: Develop and assess models that classify and predict UHI intensity.\n\nBuild classification models to distinguish between various UHI intensity levels.\nOptimize models using techniques like cross-validation.\nEvaluate models using appropriate metrics (accuracy, precision, recall, etc.).\n\n\n\nInsight Generation and Recommendations\nObjective: Derive actionable insights and provide recommendations\nAnalyze model results to understand the key effects of UHI intensity.\n\n\nReporting\n\nCompile all reports and visualizations into one report, then prepare and deliver the final presentation on our results and overall UHI assessments."
   },
   {
     "objectID": "proposal.html#weekly-plan-of-attack",
     "href": "proposal.html#weekly-plan-of-attack",
     "title": "Urban Heat Island Detection & Impact Analysis",
     "section": "Weekly Plan of Attack",
-    "text": "Weekly Plan of Attack\n\n\n\n\n\n\n\n\n\n\nWeek No. & Overview\nIndividual Weekly Tasks\nAssigned Team Members\nObjective\nDeliverables\n\n\n\n\nWeek 1\n11/8/23 - 11/15/23\nSetting up environment, data blending\nDhanya, Udit\nData cleaning & data pre-processing\nCleaned datasett ready for exploratory analysis.\n\n\n\nIdentify missing values and perform imputation to deal with missing values\nRiyanshi, Ajinkya\n\n\n\n\n\n\nData type conversions\nKendall\n\n\n\n\nWeek 2\n11/15/23 - 11/22/23\nVisualization of key metrics\nUdit, Dhanya\nGain insights into the dataset and prepare data for model development.\nA thorough analysis of data insights and prepared features for modeling.\n\n\n-\nFeature engineering and selection\nRiyanshi\n\n\n\n\n\n-\nData normalization and standardization\nKendall, Ajinkya\n\n\n\n\nWeek 3\n11/22/23 - 11/29/23\nImplement Temporal Analysis\nRiyanshi, Kendall, Dhanya\nIdentify key time periods of significant UHI intensity\nVisualizations of temporal trends in UHI intensity, and actionable insights\n\n\n-\nAnalyze trends over the months (seasons)\nUdit, Ajinkya\n\n\n\n\n\nWeek 4\n11/29/23 - 12/6/23\nBuild classification models\nDhanya, Kendall\nDevelop classification models for classifying UHI intensities and evaluate their performance.\nWorking models and performance evaluation report.\n\n\n-\nModel optimization & cross-validate models\nRiyanshi, Udit\n\n\n\n\n-\nEvaluation metrics and performance analysis\nAjinkya\n\n\n\n\nWeek 5 - Presentation\n12/6/23- 12/11/23\nCompile project documentation -\n-Kendall, Dhanya\nDocument the project process and results, and prepare a presentation.\nComplete project documentation and ready-to-deliver presentation.\n\n\n\nPrepare final presentation\nUdit, Riyanshi, Ajinkya"
+    "text": "Weekly Plan of Attack\n\n\n\n\n\n\n\n\nWeek No. & Overview\nIndividual Weekly Tasks\nAssigned Team Members\n\n\n\n\nWeek 1\n11/8/23 - 11/15/23\nSetting up environment; data blending.\nDhanya, Udit\n\n\n\nIdentify missing values and perform imputation to deal with missing values.\nRiyanshi, Ajinkya\n\n\n\nData type conversions.\nKendall\n\n\nWeek 2\n11/15/23 - 11/22/23\nVisualization of key metrics.\nUdit, Dhanya\n\n\n-\nFeature engineering and selection.\nRiyanshi\n\n\n-\nData normalization and standardization.\nKendall, Ajinkya\n\n\nWeek 3\n11/22/23 - 11/29/23\nImplement Temporal Analysis.\nRiyanshi, Kendall, Dhanya\n\n\n-\nAnalyze trends over the months (seasons).\nUdit, Ajinkya\n\n\nWeek 4\n11/29/23 - 12/6/23\nBuild classification models.\nDhanya, Kendall\n\n\n-\nModel optimization & cross-validate models.\nRiyanshi, Udit\n\n\n-\nEvaluation metrics and performance analysis.\nAjinkya\n\n\nWeek 5 - Presentation\n12/6/23- 12/11/23\nCompile project documentation.\nKendall, Dhanya\n\n\n\nPrepare final presentation.\nUdit, Riyanshi, Ajinkya"
   },
   {
     "objectID": "proposal.html#organization-of-the-project-repository",
@@ -138,19 +138,5 @@
     "title": "Urban Heat Island Detection & Impact Analysis",
     "section": "Organization of the Project Repository",
     "text": "Organization of the Project Repository\nBelow are the key folders within the Project repository:\n\ndata/: This directory is designated for essential data files required for the project, including input files.\nimages/: This folder serves as the storage location for project-related visual representations and plots.\npresentation_files/: This folder is specifically reserved for materials relevant to project presentations.\n_extra/: We will brainstorm and store analysis-related content that doesn’t directly affect the project workflow.\n_freeze/: This folder stores the generated files during the build process, preserving the website’s specific state at a given moment.\n_site/: This is where we will generate our static website files after rendering our Quarto documents.\n.github/: This is where we will access and manage GitHub templates and workflow configurations."
-  },
-  {
-    "objectID": "presentation.html",
-    "href": "presentation.html",
-    "title": "Project title",
-    "section": "",
-    "text": "The presentation is created using the Quarto CLI\n## sets the start of a new slide\n\n\n\n\nYou can use plain text\n\n\n\nor bullet points1\n\n\nor in two columns\n\n\n\nlike\nthis\n\n\n\n\n\n\n# A tibble: 2 × 5\n  term        estimate std.error statistic       p.value\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;         &lt;dbl&gt;\n1 (Intercept)   25.3      3.08        8.22 0.00000000358\n2 speed         -0.116    0.0642     -1.81 0.0806       \n\n\n# A tibble: 1 × 12\n  r.squared adj.r.squared sigma statistic p.value    df logLik   AIC   BIC\n      &lt;dbl&gt;         &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt;   &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;\n1    0.0983        0.0682  5.82      3.27  0.0806     1  -101.  207.  212.\n# ℹ 3 more variables: deviance &lt;dbl&gt;, df.residual &lt;int&gt;, nobs &lt;int&gt;\n\n\n\n\n\n\n\nWarning: Removed 2 rows containing missing values (`geom_point()`).\n\n\n\n\n\n\n\n\n\n\n\nSome text\ngoes here"
-  },
-  {
-    "objectID": "presentation.html#footnotes",
-    "href": "presentation.html#footnotes",
-    "title": "Project title",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nAnd add footnotes↩︎"
   }
 ]
