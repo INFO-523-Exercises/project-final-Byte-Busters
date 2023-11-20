@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.3.353">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -55,8 +55,7 @@ ul.task-list li input[type="checkbox"] {
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    "search-submit-button-title": "Submit"
   }
 }</script>
 
@@ -132,6 +131,10 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#data-pre-processing" id="toc-data-pre-processing" class="nav-link" data-scroll-target="#data-pre-processing">Data Pre-Processing</a></li>
   <li><a href="#eda-exploratory-data-analysis" id="toc-eda-exploratory-data-analysis" class="nav-link" data-scroll-target="#eda-exploratory-data-analysis">EDA (Exploratory Data Analysis)</a></li>
+  <li><a href="#feature-engineering" id="toc-feature-engineering" class="nav-link" data-scroll-target="#feature-engineering">Feature Engineering</a></li>
+  <li><a href="#temporal-analysis" id="toc-temporal-analysis" class="nav-link" data-scroll-target="#temporal-analysis">Temporal Analysis</a></li>
+  <li><a href="#model-development-and-evaluation" id="toc-model-development-and-evaluation" class="nav-link" data-scroll-target="#model-development-and-evaluation">Model Development and Evaluation</a></li>
+  <li><a href="#insight-generation-and-recommendations" id="toc-insight-generation-and-recommendations" class="nav-link" data-scroll-target="#insight-generation-and-recommendations">Insight Generation and Recommendations</a></li>
   <li><a href="#reporting" id="toc-reporting" class="nav-link" data-scroll-target="#reporting">Reporting</a></li>
   </ul></li>
   <li><a href="#weekly-plan-of-attack" id="toc-weekly-plan-of-attack" class="nav-link" data-scroll-target="#weekly-plan-of-attack">Weekly Plan of Attack</a></li>
@@ -7053,29 +7056,54 @@ NA
 <h2 class="anchored" data-anchor-id="analysis-plan">Analysis Plan</h2>
 <section id="data-pre-processing" class="level3">
 <h3 class="anchored" data-anchor-id="data-pre-processing">Data Pre-Processing</h3>
+<p><strong>Objective: Prepare the dataset for analysis by cleaning and structuring the data.</strong></p>
 <ul>
-<li>Collect, clean, and prepare the climatological datasets for exploratory analysis.</li>
+<li>Merge datasets from different locations (Dallas, Arlington, Denton) into a unified format.</li>
+<li>Identify and handle missing values through imputation.</li>
+<li>Convert data types as necessary for consistency.</li>
+<li>Normalize and standardize data to ensure comparability.</li>
 </ul>
 </section>
 <section id="eda-exploratory-data-analysis" class="level3">
 <h3 class="anchored" data-anchor-id="eda-exploratory-data-analysis">EDA (Exploratory Data Analysis)</h3>
+<p><strong>Objective: Gain initial insights into the dataset and identify patterns.</strong></p>
 <ul>
-<li><p>EDA will be split into two parts, as based on our project objective and subsequent questions:</p>
-<ol type="1">
-<li><p><u><em>Multi-Class Classification Analysis</em></u></p>
-<ul>
-<li><p>Create a training dataset: Assess climatological relationships and correlations between UHIs, then develop an interval scale that best represents different UHI intensities.</p></li>
-<li><p>Train data on all types of classification models (Decision Trees, kNN, Random Forest, etc.), evaluate and select models with highest accuracy, then run tests to verify each model’s accuracy.</p></li>
-<li><p>Ensure that all processes and results have been well-documented and are error-free.</p></li>
-</ul></li>
-<li><p><u><em>Trend Analysis</em></u></p>
-<ul>
-<li><p>Perform summary statistics to assess outliers’ impact on climatological patterns and identify key time periods across UHI intensities.</p></li>
-<li><p>Create visualizations of temporal trends in UHI intensity, heat maps, and if possible, find reliable satellite images that captures the amount of vegetation available for the UHIs during this time period.</p></li>
-<li><p>Collect and verify the accuracy of all graphs and illustrations, then narrow down and select the visualizations that have the most significant insights in answering our project objectives.</p></li>
-</ul></li>
-</ol></li>
+<li><p>Visualize key metrics such as temperature, humidity, and wind patterns.</p></li>
+<li><p>Identify initial trends and seasonal variations.</p></li>
+<li><p>Perform basic statistical analyses to understand data distributions.</p></li>
 </ul>
+</section>
+<section id="feature-engineering" class="level3">
+<h3 class="anchored" data-anchor-id="feature-engineering">Feature Engineering</h3>
+<p><strong>Objective: Enhance the dataset with additional relevant features for analysis.</strong></p>
+<ul>
+<li><p>Performing feature selection by selecting relevant features for the modeling phase.</p></li>
+<li><p>Develop a new feature for the classification task that defines the level of UHI intensity (High, Medium, Low). This feature will be derived based on specific conditions and thresholds of key parameters like temperature, humidity, wind speed, etc.</p></li>
+<li><p>Create new features that could influence UHI intensity, such as time of day, day of the week, and season.</p></li>
+</ul>
+</section>
+<section id="temporal-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="temporal-analysis">Temporal Analysis</h3>
+<p><strong>Objective: Analyze UHI intensity over time to identify trends and anomalies.</strong></p>
+<ul>
+<li><p>Conduct time series analysis to explore how UHI intensity changes over various time frames (hourly, daily, seasonally, annually).</p></li>
+<li><p>Identify peak periods of UHI intensity and investigate the underlying factors contributing to these peaks.</p></li>
+<li><p>Compare temporal patterns across different locations (urban vs.&nbsp;rural) to understand how geographical factors influence UHI intensity.</p></li>
+</ul>
+</section>
+<section id="model-development-and-evaluation" class="level3">
+<h3 class="anchored" data-anchor-id="model-development-and-evaluation">Model Development and Evaluation</h3>
+<p><strong>Objective: Develop and assess models that classify and predict UHI intensity.</strong></p>
+<ul>
+<li><p>Build classification models to distinguish between various UHI intensity levels.</p></li>
+<li><p>Optimize models using techniques like cross-validation.</p></li>
+<li><p>Evaluate models using appropriate metrics (accuracy, precision, recall, etc.).</p></li>
+</ul>
+</section>
+<section id="insight-generation-and-recommendations" class="level3">
+<h3 class="anchored" data-anchor-id="insight-generation-and-recommendations">Insight Generation and Recommendations</h3>
+<p><strong>Objective: Derive actionable insights and provide recommendations</strong></p>
+<p>Analyze model results to understand the key effects of UHI intensity.</p>
 </section>
 <section id="reporting" class="level3">
 <h3 class="anchored" data-anchor-id="reporting">Reporting</h3>
@@ -7103,71 +7131,71 @@ NA
 <tr class="odd">
 <td style="text-align: center;"><u><strong>Week 1<br>
 </strong></u>11/8/23 - 11/15/23</td>
-<td style="text-align: center;">Setting up environment; data blending</td>
+<td style="text-align: center;">Setting up environment; data blending.</td>
 <td style="text-align: center;"><em>Dhanya, Udit</em></td>
 </tr>
 <tr class="even">
 <td style="text-align: center;"></td>
-<td style="text-align: center;">Identify missing values and perform imputation to deal with missing values</td>
+<td style="text-align: center;">Identify missing values and perform imputation to deal with missing values.</td>
 <td style="text-align: center;"><em>Riyanshi, Ajinkya</em></td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;"></td>
-<td style="text-align: center;">Data type conversions</td>
+<td style="text-align: center;">Data type conversions.</td>
 <td style="text-align: center;"><em>Kendall</em></td>
 </tr>
 <tr class="even">
 <td style="text-align: center;"><u><strong>Week 2<br>
 </strong></u>11/15/23 - 11/22/23</td>
-<td style="text-align: center;">Visualization of key metrics</td>
+<td style="text-align: center;">Visualization of key metrics.</td>
 <td style="text-align: center;"><em>Udit, Dhanya</em></td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">-</td>
-<td style="text-align: center;">Feature engineering and selection</td>
+<td style="text-align: center;">Feature engineering and selection.</td>
 <td style="text-align: center;"><em>Riyanshi</em></td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">-</td>
-<td style="text-align: center;">Data normalization and standardization</td>
+<td style="text-align: center;">Data normalization and standardization.</td>
 <td style="text-align: center;"><em>Kendall, Ajinkya</em></td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;"><u><strong>Week 3<br>
 </strong></u>11/22/23 - 11/29/23</td>
-<td style="text-align: center;">Implement Temporal Analysis</td>
+<td style="text-align: center;">Implement Temporal Analysis.</td>
 <td style="text-align: center;"><em>Riyanshi, Kendall, Dhanya</em></td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">-</td>
-<td style="text-align: center;">Analyze trends over the months (seasons)</td>
+<td style="text-align: center;">Analyze trends over the months (seasons).</td>
 <td style="text-align: center;"><em>Udit, Ajinkya</em></td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;"><u><strong>Week 4<br>
 </strong></u>11/29/23 - 12/6/23</td>
-<td style="text-align: center;">Build classification models</td>
+<td style="text-align: center;">Build classification models.</td>
 <td style="text-align: center;"><em>Dhanya, Kendall</em></td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">-</td>
-<td style="text-align: center;">Model optimization &amp; cross-validate models</td>
+<td style="text-align: center;">Model optimization &amp; cross-validate models.</td>
 <td style="text-align: center;"><em>Riyanshi, Udit</em></td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">-</td>
-<td style="text-align: center;">Evaluation metrics and performance analysis</td>
+<td style="text-align: center;">Evaluation metrics and performance analysis.</td>
 <td style="text-align: center;"><em>Ajinkya</em></td>
 </tr>
 <tr class="even">
 <td style="text-align: center;"><u><strong>Week 5 - Presentation<br>
 </strong></u>12/6/23- 12/11/23</td>
-<td style="text-align: center;">Compile project documentation</td>
+<td style="text-align: center;">Compile project documentation.</td>
 <td style="text-align: center;"><em>Kendall, Dhanya</em></td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;"></td>
-<td style="text-align: center;">Prepare final presentation</td>
+<td style="text-align: center;">Prepare final presentation.</td>
 <td style="text-align: center;"><em>Udit, Riyanshi, Ajinkya</em></td>
 </tr>
 </tbody>
