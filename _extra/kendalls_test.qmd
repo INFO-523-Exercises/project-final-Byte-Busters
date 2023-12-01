@@ -140,9 +140,11 @@ daily_data_arlington[is.na(daily_data_arlington)] <- NA
 ###################
 # ROWS TO REMOVE!!!
 ###################
-rows_to_remove <- c(362, 5232, 6705, 8077, 8079)
+rows_to_remove <- c(361, 362, 364, 5008, 5214, 5215, 5216, 5221, 5222, 5876, 6499, 6705, 6715, 8077, 8078, 8079)
+# There's some type of glitch where it thinks 5231 & 5232 are "5221 & 5222"
 
 daily_data_arlington <- daily_data_arlington[-rows_to_remove, ]
+daily_data_arlington
 ```
 
 ```{r}
@@ -150,17 +152,17 @@ daily_data_arlington <- daily_data_arlington[-rows_to_remove, ]
 # Rows to remove so I can effin' impute!
 ##########################################
 
-#subset_1_arlington_data <- daily_data_arlington[0:361, ] 
-#subset_1_arlington_data
-#imputed_data <- knnImputation(subset_1_arlington_data, k = 10, meth="median")
-#imputed_data
+subset_1_arlington_data <- daily_data_arlington[5220:6221, ]
+subset_1_arlington_data
+imputed_data <- knnImputation(subset_1_arlington_data, k = 10, meth="median")
+imputed_data
 
 #subset_2_arlington_data <- daily_data_arlington[363:700, ]
 #subset_2_arlington_data
 #imputed_data <- knnImputation(subset_2_arlington_data, k = 10, meth="median")
 #imputed_data
 
-daily_data_arlington <- data.matrix(daily_data_arlington)
+#daily_data_arlington <- data.matrix(daily_data_arlington)
 imputed_data <- knnImputation(daily_data_arlington, k = 10, meth="median")
 imputed_data
 
