@@ -1,0 +1,168 @@
+```{r}
+
+################
+# Load packages
+################
+
+# Required packages
+if (!require(pacman))
+  install.packages("pacman")
+
+pacman::p_load(dplyr,
+               Hmisc,
+               tidyr,
+               imputeTS,
+               impute,
+               tidymodels,
+               tidyverse,
+               ranger,
+               randomForest,
+               glmnet,
+               here,
+               formattable,
+               dlookr,
+               yardstick,
+               gridExtra,
+               VIM,
+               DMwR2)
+```
+
+```{r}
+
+############
+# Load data
+############
+
+original_data <- read_csv(here('./data/arlington-2022.csv'))
+```
+
+```{r}
+#####################
+# Show missing values
+#####################
+
+missing_values <- original_data %>% 
+  summarise_all(list(~ sum(is.na(.))))
+
+#missing_values <- original_data %>% summarize_all(funs(sum(is.na(.))))
+
+#original_data <- any(is.na(original_data))
+#original_data[original_data == ""] <- NA
+
+missing_values
+```
+
+```{r}
+############
+# Clean data
+############
+
+# First, remove the "REM" column
+
+original_data <- original_data %>% select(-DATE)
+
+# The asterick needs to be imputed as a missing value
+
+original_data[original_data == "*"] <- NA
+
+# Convert "T" to "NA", then "VRB" to "NA"
+original_data$HourlyPrecipitation <- ifelse(original_data$HourlyPrecipitation == "T", NA, original_data$HourlyPrecipitation)
+
+original_data$HourlyPrecipitation <- ifelse(original_data$HourlyPrecipitation == "VRB", NA, original_data$HourlyPrecipitation)
+
+# Remove "-s" from end of data
+
+original_data <- mutate_all(original_data, ~sub("s$", "", .))
+
+#original_data$HourlyPrecipitation <- sub("s$", "", original_data$HourlyPrecipitation)
+
+original_data
+```
+
+```{r}
+
+# Missing values
+
+missing_values <- original_data %>% 
+  summarise_all(list(~ sum(is.na(.))))
+
+descending_list_of_missing_values <- original_data %>% 
+  summarise_all(list(~ sum(is.na(.)))) %>% 
+  gather(key = "column", value = "missing_count") %>%
+  arrange(desc(missing_count))
+
+descending_list_of_missing_values
+
+write.csv(original_data, "C:/Users/kendallbeaver/Downloads/imputed_data.csv", row.names = FALSE)
+
+imputed_data <- knnImputation(original_data, k = 50, meth="median")
+imputed_data
+```
+
+\
+
+![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAABAklEQVR42mNgGAVDCqxdvzVhzcbNm6mBK6uqVuO06P///4xr128pptSSmtrarSCz8Ppq//79LGs3bGkl15K6hsZ9IDOICsJFO3dyr1m/tZdUS+obGw+D9JIUX6tW7eZfs2HLLGItaWxqPQXSQ17iWLtDEhiMSwhZ0tzceh6klqKUuGrjdvU1G7esxGVJU0vbJZAaqiT7NRs36q3ZsHU9hiWtbVdBclTNY6vXb3YAWrYJHlyt7ddAYrTJ0Bs2h0B80n4dxB4t4lAA4yK/zdTAhC1a4LOZYZsnRRhsBkGLZntRbhHIDIIWTfek3CKQGQQtmuxGuUUgMwiCPpfNVMGjYMgBAEpfBd1AknheAAAAAElFTkSuQmCC "Run All Chunks Above")![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAaCAYAAADFTB7LAAAAa0lEQVR42u3OywnAIBBAwcXSUoCW5D11xDoNCBGNv0MOecJOBSOi1OZMsJ4dvFxEJ1OQnMxBarIKEpNNkJbsBknJYZCSnAYJyVVQziNig7/nZkFEbhTE5HpBVO4dxOXKIDL3BLG5BJ1T6rsbMfep2CaMN00AAAAASUVORK5CYII= "Run Current Chunk")
+
+```{r}
+# Extract "Daily" columns
+
+columns_to_extract <- c("HourlyDryBulbTemperature",
+                        "HourlyWetBulbTemperature",
+                        "HourlyDewPointTemperature",
+                        "HourlyStationPressure",
+                        "HourlyRelativeHumidity",
+                        "HourlyWindSpeed")
+
+daily_data_arlington <- original_data[, columns_to_extract]
+
+daily_data_arlington <- mutate_all(daily_data_arlington, function(x) ifelse(x < 0, 0, x))
+
+char_columns <- sapply(daily_data_arlington, is.character)
+
+daily_data_arlington[, char_columns] <- lapply(daily_data_arlington[, char_columns], as.numeric)
+#daily_data_arlington |> summary()
+
+daily_data_arlington <- mutate_all(daily_data_arlington, ~sub("s$", "", .))
+#daily_data_arlington
+
+daily_data_arlington[is.na(daily_data_arlington)] <- NA
+
+#daily_data_arlington <- impute(daily_data_arlington)
+#daily_data_arlington <- as.numeric(daily_data_arlington)
+
+#max_decimal <- max(nchar(sub(".*\\.", "", as.character(daily_data_arlington))))
+#formatted_data <- sprintf(paste0("%.", max_decimal, "f"), daily_data_arlington)
+#daily_data_arlington <- head(formatted_data, 362)
+
+daily_data_arlington <- head(daily_data_arlington, 361)
+daily_data_arlington
+
+subset_1_arlington_data <- daily_data_arlington[0:361, ]
+subset_1_arlington_data
+
+subset_2_arlington_data <- daily_data_arlington[362:720, ]
+subset_2_arlington_data
+#imputed_data <- knnImputation(subset_arlington_data, k = 10, meth="median")
+
+#daily_data_arlington <- data.matrix(daily_data_arlington)
+imputed_data <- knnImputation(daily_data_arlington, k = 10, meth="median")
+imputed_data
+
+# Subset the first 362 rows of the dataset
+#subset_data <- head(daily_data_arlington, 362)
+#any(is.na(subset_data))
+#imputed_data <- knnImputation(subset_data, k = 10, meth = "median")
+
+
+#write.csv(daily_data_arlington, "C:/Users/kendallbeaver/Downloads/imputed_data.csv", row.names = FALSE)
+
+
+```
+
+```{r}
+
+# Impute Arlington dataset
+
+imputed_data <- knnImputation(daily_data_arlington, k = 20, meth="median")
+imputed_data
+```
