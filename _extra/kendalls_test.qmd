@@ -134,17 +134,33 @@ daily_data_arlington[is.na(daily_data_arlington)] <- NA
 #formatted_data <- sprintf(paste0("%.", max_decimal, "f"), daily_data_arlington)
 #daily_data_arlington <- head(formatted_data, 362)
 
-daily_data_arlington <- head(daily_data_arlington, 361)
-daily_data_arlington
+#daily_data_arlington <- head(daily_data_arlington, 361)
+#daily_data_arlington
 
-subset_1_arlington_data <- daily_data_arlington[0:361, ]
-subset_1_arlington_data
+###################
+# ROWS TO REMOVE!!!
+###################
+rows_to_remove <- c(362, 5232, 6705, 8077, 8079)
 
-subset_2_arlington_data <- daily_data_arlington[362:720, ]
-subset_2_arlington_data
-#imputed_data <- knnImputation(subset_arlington_data, k = 10, meth="median")
+daily_data_arlington <- daily_data_arlington[-rows_to_remove, ]
+```
 
-#daily_data_arlington <- data.matrix(daily_data_arlington)
+```{r}
+#########################################
+# Rows to remove so I can effin' impute!
+##########################################
+
+#subset_1_arlington_data <- daily_data_arlington[0:361, ] 
+#subset_1_arlington_data
+#imputed_data <- knnImputation(subset_1_arlington_data, k = 10, meth="median")
+#imputed_data
+
+#subset_2_arlington_data <- daily_data_arlington[363:700, ]
+#subset_2_arlington_data
+#imputed_data <- knnImputation(subset_2_arlington_data, k = 10, meth="median")
+#imputed_data
+
+daily_data_arlington <- data.matrix(daily_data_arlington)
 imputed_data <- knnImputation(daily_data_arlington, k = 10, meth="median")
 imputed_data
 
@@ -155,8 +171,6 @@ imputed_data
 
 
 #write.csv(daily_data_arlington, "C:/Users/kendallbeaver/Downloads/imputed_data.csv", row.names = FALSE)
-
-
 ```
 
 ```{r}
