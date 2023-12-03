@@ -36,6 +36,16 @@ pacman::p_load(dplyr,
 
 original_data <- read_csv(here('./data/arlington-2022.csv'))
 original_data
+#shortened_data <- head(original_data, 100)
+#shortened_data |> formattable()
+
+# Creating a "SunLogisticValues" column
+# (The below no longer matters)
+#shortened_data <- shortened_data %>%
+#  mutate(SunLogisticValues = !is.na(Sunset))
+#shortened_data
+
+write.csv(shortened_data, "C:/Users/kendallbeaver/Downloads/just_column_data.csv", row.names = FALSE)
 ```
 
 ```{r}
@@ -44,31 +54,13 @@ original_data
 # Separate sunset & sunrise into distinct datasets
 ##################################################
 
-original_data$DATE <- as.POSIXct(original_data$DATE, format = "%Y-%m-%d %H:%M:%S")
+# The below is already in POSIX format
+# original_data$DATE <- as.POSIXct(original_data$DATE, format = "%Y-%m-%d %H:%M:%S")
 
-# Extract Hour from 'DateTime'
-original_data$Hour <- hour(original_data$DATE)
-original_data$Hour
+original_data$TimeOnly <- format(original_data$DATE, "%H:%M")
+original_data$TimeOnly
 
-# Assuming 'Sunrise' and 'Sunset' are also in datetime format
-Sunrise <- as.POSIXct("2023-01-01 06:00:00", format = "%Y-%m-%d %H:%M:%S")
-Sunset <- as.POSIXct("2023-01-01 18:00:00", format = "%Y-%m-%d %H:%M:%S")
-
-# Create a new column 'Daytime' based on 'Hour'
-your_data <- your_data %>%
-  mutate(Daytime = ifelse(between(Hour, hour(Sunrise), hour(Sunset)), "Day", "Night"))
-
-# Group by 'Daytime' and calculate the average for each subset
-result <- your_data %>%
-  group_by(Daytime) %>%
-  summarize(
-    AvgDewPoint = mean(HourlyDewPointTemperature, na.rm = TRUE),
-    AvgWetBulb = mean(HourlyWetBulbTemperature, na.rm = TRUE)
-  )
-
-# Print the result
-print(result)
-
+write.csv(original_data, "C:/Users/kendallbeaver/Downloads/time_mutation.csv", row.names = FALSE)
 ```
 
 ```{r}
