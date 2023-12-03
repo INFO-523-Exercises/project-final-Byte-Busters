@@ -13,6 +13,7 @@ pacman::p_load(dplyr,
                tidyr,
                imputeTS,
                impute,
+               lubridate,
                tidymodels,
                tidyverse,
                ranger,
@@ -34,6 +35,40 @@ pacman::p_load(dplyr,
 ############
 
 original_data <- read_csv(here('./data/arlington-2022.csv'))
+original_data
+```
+
+```{r}
+
+##################################################
+# Separate sunset & sunrise into distinct datasets
+##################################################
+
+original_data$DATE <- as.POSIXct(original_data$DATE, format = "%Y-%m-%d %H:%M:%S")
+
+# Extract Hour from 'DateTime'
+original_data$Hour <- hour(original_data$DATE)
+original_data$Hour
+
+# Assuming 'Sunrise' and 'Sunset' are also in datetime format
+Sunrise <- as.POSIXct("2023-01-01 06:00:00", format = "%Y-%m-%d %H:%M:%S")
+Sunset <- as.POSIXct("2023-01-01 18:00:00", format = "%Y-%m-%d %H:%M:%S")
+
+# Create a new column 'Daytime' based on 'Hour'
+your_data <- your_data %>%
+  mutate(Daytime = ifelse(between(Hour, hour(Sunrise), hour(Sunset)), "Day", "Night"))
+
+# Group by 'Daytime' and calculate the average for each subset
+result <- your_data %>%
+  group_by(Daytime) %>%
+  summarize(
+    AvgDewPoint = mean(HourlyDewPointTemperature, na.rm = TRUE),
+    AvgWetBulb = mean(HourlyWetBulbTemperature, na.rm = TRUE)
+  )
+
+# Print the result
+print(result)
+
 ```
 
 ```{r}
@@ -148,23 +183,23 @@ daily_data_arlington
 ```
 
 ```{r}
-#########################################
-# Rows to remove so I can effin' impute!
-##########################################
+###################################################
+# Imputing subset to isolate "knnImputation" issues
+###################################################
 
-subset_1_arlington_data <- daily_data_arlington[5220:6221, ]
+subset_1_arlington_data <- daily_data_arlington[0:5000, ]
 subset_1_arlington_data
 imputed_data <- knnImputation(subset_1_arlington_data, k = 10, meth="median")
 imputed_data
 
-#subset_2_arlington_data <- daily_data_arlington[363:700, ]
-#subset_2_arlington_data
-#imputed_data <- knnImputation(subset_2_arlington_data, k = 10, meth="median")
-#imputed_data
+subset_2_arlington_data <- daily_data_arlington[8700:10000, ]
+subset_2_arlington_data
+imputed_data <- knnImputation(subset_2_arlington_data, k = 10, meth="median")
+imputed_data
 
 #daily_data_arlington <- data.matrix(daily_data_arlington)
-imputed_data <- knnImputation(daily_data_arlington, k = 10, meth="median")
-imputed_data
+#imputed_data <- knnImputation(daily_data_arlington, k = 10, meth="median")
+#imputed_data
 
 # Subset the first 362 rows of the dataset
 #subset_data <- head(daily_data_arlington, 362)
