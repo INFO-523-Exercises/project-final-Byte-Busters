@@ -56,7 +56,9 @@ Byte Busters' Draft:
 
 The Byte Busters will be using data from the National Centers for Environmental Information
 
-(https://www.ncei.noaa.gov/)...
+(https://www.ncei.noaa.gov/
+
+<https://www.ncei.noaa.gov/access/search/data-search/local-climatological-data?pageNum=1&startDate=2022-01-01T00:00:00&endDate=2022-01-01T23:59:59&bbox=33.486,-97.690,32.389,-96.284>
 
 Udit & Ajinkya:
 
@@ -379,7 +381,7 @@ cleaned_arlington <- arlington_data %>% filter(!is.na(DailyAverageStationPressur
 
 -   Collect, clean, and prepare the climatological datasets for exploratory analysis.
 
-### EDA (**Exploratory Data Analysis)** 
+### EDA (**Exploratory Data Analysis)**
 
 -   Clean and remove non-numeric data from numerical columns.
 

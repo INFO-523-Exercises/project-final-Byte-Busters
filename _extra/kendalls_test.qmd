@@ -49,6 +49,23 @@ write.csv(shortened_data, "C:/Users/kendallbeaver/Downloads/just_column_data.csv
 ```
 
 ```{r}
+# Convert Riyanishi's Python code into R code to categorize day and night
+
+categorize_day_night <- function(hour) {
+  if (hour >= 6 && hour < 18) {
+    return('Daytime')
+  } else {
+    return('Nighttime')
+  }
+}
+
+# Apply the function to your datasets
+original_data$Day_Night <- sapply(original_data$Hour, categorize_day_night)
+#dallas$Day_Night <- sapply(dallas$Hour, categorize_day_night)
+#denton$Day_Night <- sapply(denton$Hour, categorize_day_night)
+```
+
+```{r}
 
 ##################################################
 # Separate sunset & sunrise into distinct datasets
@@ -57,10 +74,19 @@ write.csv(shortened_data, "C:/Users/kendallbeaver/Downloads/just_column_data.csv
 # The below is already in POSIX format
 # original_data$DATE <- as.POSIXct(original_data$DATE, format = "%Y-%m-%d %H:%M:%S")
 
-original_data$TimeOnly <- format(original_data$DATE, "%H:%M")
-original_data$TimeOnly
+# Extract time from the DATE column (which has DATE & TIME smashed together in one cell)
+original_data$DateOnly <- format(original_data$DATE, "%H:%M")
+#original_data$SunriseFormatted <- as.POSIXct(original_data$Sunrise, format = "%H:%M")
 
-write.csv(original_data, "C:/Users/kendallbeaver/Downloads/time_mutation.csv", row.names = FALSE)
+original_data$SunriseFormatted <- ifelse(!is.na(original_data$Sunrise) & is.numeric(original_data$Sunrise), format(strptime(as.numeric(original_data$Sunrise), format = "%H%M"), "%H:%M"), NA)
+original_data$SunriseFormatted
+
+#original_data$SunriseFormatted <- format(strptime(as.numeric(original_data$Sunrise), format = "%H%M"), "%H:%M")
+
+
+original_data$SunriseFormatted
+
+write.csv(original_data, "C:/Users/kendallbeaver/Downloads/mutated_data.csv", row.names = FALSE)
 ```
 
 ```{r}
