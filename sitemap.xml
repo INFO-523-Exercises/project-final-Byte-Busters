@@ -1,27 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://INFO-523-Exercises.github.io/project-final-Byte-Busters/r_test.html</loc>
-    <lastmod>2023-12-06T18:24:21.510Z</lastmod>
-  </url>
-  <url>
-    <loc>https://INFO-523-Exercises.github.io/project-final-Byte-Busters/presentation.html</loc>
-    <lastmod>2023-12-06T18:24:11.777Z</lastmod>
-  </url>
-  <url>
-    <loc>https://INFO-523-Exercises.github.io/project-final-Byte-Busters/Code1.html</loc>
-    <lastmod>2023-12-06T18:24:08.463Z</lastmod>
-  </url>
-  <url>
-    <loc>https://INFO-523-Exercises.github.io/project-final-Byte-Busters/about.html</loc>
-    <lastmod>2023-12-06T18:24:04.557Z</lastmod>
+    <loc>https://INFO-523-Exercises.github.io/project-final-Byte-Busters/proposal.html</loc>
+    <lastmod>2023-12-06T18:30:42.335Z</lastmod>
   </url>
   <url>
     <loc>https://INFO-523-Exercises.github.io/project-final-Byte-Busters/index.html</loc>
-    <lastmod>2023-12-06T18:24:09.433Z</lastmod>
+    <lastmod>2023-12-06T18:30:31.546Z</lastmod>
   </url>
   <url>
-    <loc>https://INFO-523-Exercises.github.io/project-final-Byte-Busters/proposal.html</loc>
-    <lastmod>2023-12-06T18:24:19.976Z</lastmod>
+    <loc>https://INFO-523-Exercises.github.io/project-final-Byte-Busters/about.html</loc>
+    <lastmod>2023-12-06T18:30:26.192Z</lastmod>
+  </url>
+  <url>
+    <loc>https://INFO-523-Exercises.github.io/project-final-Byte-Busters/Code1.html</loc>
+    <lastmod>2023-12-06T18:30:30.351Z</lastmod>
+  </url>
+  <url>
+    <loc>https://INFO-523-Exercises.github.io/project-final-Byte-Busters/presentation.html</loc>
+    <lastmod>2023-12-06T18:30:33.804Z</lastmod>
   </url>
 </urlset>
