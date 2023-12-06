@@ -252,3 +252,113 @@ plt.title("Daily Avg Dry Bulb Temperature by UHI Intensity")
 # Show the plot
 plt.show()
 ```
+
+```{Python}
+
+# UHI Intensity Seasonal Nightly Avg Temp - Dallas
+
+# First format data
+dallas['HourlyDryBulbTemperature'] = pd.to_numeric(dallas['HourlyDryBulbTemperature'], errors='coerce')
+dallas['Date'] = pd.to_datetime(dallas['Date'])
+
+# Filter rows only for 'Nighttime'
+nighttime_data = dallas[dallas['Day_Night'] == 'Nighttime']
+
+# Calculate the mean for each date
+average_night_temp_dallas = nighttime_data.groupby('Date')['HourlyDryBulbTemperature'].mean()
+
+# Merge average back to the original DataFrame based on the 'Date'
+dallas = dallas.merge(average_night_temp_dallas.reset_index(name='average_night_temp_dallas'), on=['Date'], how='left')
+
+# Adding grid style to the plot
+sns.set(style="whitegrid")
+
+# Creating boxplot with different colors for "Season"
+plt.figure(figsize=(12, 8))
+sns.boxplot(x="UHI Intensity", y="average_night_temp_dallas", hue="Season", data=dallas,
+            order=["Low", "Medium", "High"], hue_order=["Winter", "Spring", "Summer", "Fall"])
+
+# Set plot labels and title
+plt.xlabel("UHI Intensity")
+plt.ylabel("Nightly Avgerate Temperature")
+plt.title("Seasonal Nightly Avg Temp by UHI Intensity - Dallas")
+
+# Show the legend
+plt.legend(title="Season")
+
+# Show the plot
+plt.show()
+
+
+
+
+# UHI Intensity Seasonal Nightly Avg Temp - Arlington
+
+# First format data
+arlington['HourlyDryBulbTemperature'] = pd.to_numeric(arlington['HourlyDryBulbTemperature'], errors='coerce')
+arlington['Date'] = pd.to_datetime(arlington['Date'])
+
+# Filter rows only for 'Nighttime'
+nighttime_data = arlington[arlington['Day_Night'] == 'Nighttime']
+
+# Calculate the mean for each date
+average_night_temp_arlington = nighttime_data.groupby('Date')['HourlyDryBulbTemperature'].mean()
+
+# Merge average back to the original DataFrame based on the 'Date'
+arlington = arlington.merge(average_night_temp_arlington.reset_index(name='average_night_temp_arlington'), on=['Date'], how='left')
+
+# Adding grid style to the plot
+sns.set(style="whitegrid")
+
+# Creating boxplot with different colors for "Season"
+plt.figure(figsize=(12, 8))
+sns.boxplot(x="UHI Intensity", y="average_night_temp_arlington", hue="Season", data=arlington,
+            order=["Low", "Medium", "High"], hue_order=["Winter", "Spring", "Summer", "Fall"])
+
+# Set plot labels and title
+plt.xlabel("UHI Intensity")
+plt.ylabel("Nightly Avgerate Temperature")
+plt.title("Seasonal Nightly Avg Temp by UHI Intensity - Arlington")
+
+# Show the legend
+plt.legend(title="Season")
+
+# Show the plot
+plt.show()
+
+
+# UHI Intensity Seasonal Nightly Avg Temp - Denton
+
+# First format data
+denton['HourlyDryBulbTemperature'] = pd.to_numeric(denton['HourlyDryBulbTemperature'], errors='coerce')
+denton['Date'] = pd.to_datetime(denton['Date'])
+
+# Filter rows only for 'Nighttime'
+nighttime_data = denton[denton['Day_Night'] == 'Nighttime']
+
+# Calculate the mean for each date
+average_night_temp_denton = nighttime_data.groupby('Date')['HourlyDryBulbTemperature'].mean()
+
+# Merge average back to the original DataFrame based on the 'Date'
+denton = denton.merge(average_night_temp_denton.reset_index(name='average_night_temp_denton'), on=['Date'], how='left')
+
+# Adding grid style to the plot
+sns.set(style="whitegrid")
+
+# Creating boxplot with different colors for "Season"
+plt.figure(figsize=(12, 8))
+sns.boxplot(x="UHI Intensity", y="average_night_temp_denton", hue="Season", data=denton,
+            order=["Low", "Medium", "High"], hue_order=["Winter", "Spring", "Summer", "Fall"])
+
+# Set plot labels and title
+plt.xlabel("UHI Intensity")
+plt.ylabel("Nightly Avgerate Temperature")
+plt.title("Seasonal Nightly Avg Temp by UHI Intensity - Denton")
+
+# Show the legend
+plt.legend(title="Season")
+
+# Show the plot
+plt.show()
+
+```
