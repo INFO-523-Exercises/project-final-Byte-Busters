@@ -1,0 +1,11 @@
+{
+  "hash": "b426f6a05d3784d20b829da35bcc4168",
+  "result": {
+    "markdown": "---\ntitle: \"Project title\"\nsubtitle: \"INFO 523 - Project Final\"\nauthor: \"Team name\"\nformat: html\neditor: visual\n---\n\n## Abstract\n\nAdd project abstract here.\n\n::: {.cell execution_count=1}\n``` {.python .cell-code}\n#Test\n```\n:::\n\n\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}
