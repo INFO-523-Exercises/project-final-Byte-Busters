@@ -235,3 +235,18 @@ imputed_data
 imputed_data <- knnImputation(daily_data_arlington, k = 20, meth="median")
 imputed_data
 ```
+
+Extra code/ideas 12/5/23:
+
+```{r}
+plt.figure(figsize=(10, 6))
+sns.boxplot(x="UHI Intensity", y="DailyAverageDryBulbTemperature", data=dallas, order=["Low", "Medium", "High"])
+
+# Set plot labels and title
+plt.xlabel("UHI Intensity")
+plt.ylabel("Daily Average Dry Bulb Temperature")
+plt.title("Daily Avg Dry Bulb Temperature by UHI Intensity")
+
+# Show the plot
+plt.show()
+```

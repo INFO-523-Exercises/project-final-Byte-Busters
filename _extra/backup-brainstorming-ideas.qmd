@@ -242,21 +242,14 @@ denton_data |> # Need to format "DATE" and other columns if we have time.
 
 -   **.github/:** Folder for storing github templates and workflow.
 
-+-----------------------+---------------------------------------------------------------------------------+
 | Columns               | Description                                                                     |
-+=======================+=================================================================================+
+|-----------------------|---------------------------------------------------------------------------------|
 | Wind Gust Speed       | Wind gusts occurring during time of observation. Given in miles per hour (mph)  |
-+-----------------------+---------------------------------------------------------------------------------+
 | Dry Bulb Temperature  | The measure of air temperature (Fahrenheit)                                     |
-+-----------------------+---------------------------------------------------------------------------------+
 | Precipitation Levels  | Total Liquid Content (TLC) Water equivalent amount of precipitation for the day |
-+-----------------------+---------------------------------------------------------------------------------+
 | Dew Point Temperature | (Add description)                                                               |
-+-----------------------+---------------------------------------------------------------------------------+
 | Pressure - Avg SL     | Daily average sea level pressure                                                |
-+-----------------------+---------------------------------------------------------------------------------+
 | Rel Hum               | This is the relative humidity given to the nearest whole percentage             |
-+-----------------------+---------------------------------------------------------------------------------+
 
 Leverage advanced data mining techniques to identify and analyze urban heat islands and weather anomalies, providing insights into the impacts of urbanization on local climates.
 
