@@ -21,9 +21,13 @@ execute:
   echo: false
 ---
 
-## **What is an Urban Heat Island?**
+# **What is an Urban Heat Island?**
 
--   UHI (Urban Heat Intensity) is a term that describes...![](images/UHI_Title.png)
+## **Definition**
+
+-   UHI (Urban Heat Intensity) is a term that describes...
+
+![](images/UHI_Title.png){fig-align="center"}
 
 ## **3 Cities for UHI Comparison**
 
