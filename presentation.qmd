@@ -21,15 +21,17 @@ execute:
   echo: false
 ---
 
-## Getting up
+## **What is an Urban Heat Island?**
 
--   Turn off alarm
--   Get out of bed
+-   UHI (Urban Heat Intensity) is a term that describes...
 
-## Going to sleep
+## **3 Cities for UHI Comparison**
 
--   Get in bed
--   Count sheep
+1.  Dallas
+    1.  Population
+2.  Arlington
+    1.  Population
+3.  Denton
 
 ```{r}
 #| label: load-packages
