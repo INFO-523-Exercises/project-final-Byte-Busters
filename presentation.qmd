@@ -1,5 +1,5 @@
 ---
-title: "Classifying & Predicting Urban Heat Islands"
+title: "Urban Heat Islands: A Data-Driven Classification"
 subtitle: "INFO 523 - Fall 2023 - Project Final"
 author: 
   - "Ajinkya Deshmukh"
