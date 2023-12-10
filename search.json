@@ -88,7 +88,7 @@
     "href": "presentation.html#outline-to-be-deleted-later",
     "title": "Urban Heat Islands: A Data-Driven Classification",
     "section": "Outline (to be deleted later)",
-    "text": "Outline (to be deleted later)\n\nGoal/Objective\n\nDefine UHI\n\nDataset brief intro\nGraphs( EDA)\nTime series results and plots\nClassification results and plots\nConclusion"
+    "text": "Outline (to be deleted later)\n\nGoal/Objective\n\nDefine UHI\n\nDataset brief intro\nGraphs(EDA)\nTime series results and plots\nClassification results and plots\nConclusion"
   },
   {
     "objectID": "presentation.html#definition",
@@ -102,7 +102,14 @@
     "href": "presentation.html#cities-for-uhi-comparison",
     "title": "Urban Heat Islands: A Data-Driven Classification",
     "section": "3 Cities for UHI Comparison",
-    "text": "3 Cities for UHI Comparison\n\nDallas\n\nPopulation\n\nArlington\n\nPopulation\n\nDenton"
+    "text": "3 Cities for UHI Comparison\n\nDallas\n\nPopulation: 1,288,457 (2021)\n\nArlington\n\nPopulation: 392,786 (2021)\n\nDenton\n\nPopulation: 148,146 (2021)"
+  },
+  {
+    "objectID": "presentation.html#datasets",
+    "href": "presentation.html#datasets",
+    "title": "Urban Heat Islands: A Data-Driven Classification",
+    "section": "Datasets",
+    "text": "Datasets\n\nThree datasets for the year 2022 were obtained from the National Centers for Environmental Information, then combined into one major dataset."
   },
   {
     "objectID": "presentation.html#quarto",
