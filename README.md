@@ -4,7 +4,7 @@ Final project repo for INFO 523 - Fall 2023- Byte Busters
 
 ## Exploring Urban Heat Islands: A Comparative Analysis of Metropolitan and Rural Environments
 
-![UHI Title](./images/UHI_Title.jpg)
+![UHI Title](./images/UHI_Title.png)
 
 
 The main goal of this project is to delve into climatological data for three cities—Dallas, Denton, and Arlington—in and around the Dallas, TX region. The focus is on understanding and categorizing these cities based on the "Urban Heat Island" (UHI) scale.
