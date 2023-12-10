@@ -8,7 +8,7 @@ author:
   - "Riyanshi Bohra"
   - "Udit Chaudhary"
 title-slide-attributes:
-  data-background-image: glowing-rays.jpg
+  data-background-image: 'images/glowing-rays.jpg'
   data-background-size: stretch
   data-background-opacity: "0.7"
   data-slide-number: none
