@@ -1,9 +1,9 @@
 ---
-title: "Project title"
+title: "Classifying & Predicting “Urban Heat Islands"
 subtitle: "INFO 523 - Fall 2023 - Project Final"
-author: "Author names"
+author: "Ajinkya Deshmukh, Dhanyapriya Somasundaram, Kendall Beaver, Riyanshi Bohra, Udit Chaudhary"
 title-slide-attributes:
-  data-background-image: images/watercolour_sys02_img34_teacup-ocean.jpg
+  data-background-image: images/dallas-united-states-travel-blog.jpg
   data-background-size: stretch
   data-background-opacity: "0.7"
   data-slide-number: none

@@ -6,7 +6,7 @@ editor: visual
 
 This project was developed by Byte Busters For [INFO 523 - Data Mining and Discovery](https://datamineaz.org/) at the University of Arizona, taught by Dr. Greg Chism. The team is comprised of the following team members.
 
--   Team member 1: Kendall Beaver - First-year graduate student studying Machine Learning.
+-   Team member 1: Kendall Beaver - First-year graduate student in Machine Learning.
 
 -   Team member 2: Riyanshi Bohra: Graduate Student in Data Science.
 
@@ -14,4 +14,4 @@ This project was developed by Byte Busters For [INFO 523 - Data Mining and Disco
 
 -   Team member 4: Udit Chaudhary: Graduate Student in Data Science.
 
--   Team member 5: Dhanyapriya Somasundaram: Graduate Student in Data Science. 
+-   Team member 5: Dhanyapriya Somasundaram: Graduate Student in Data Science.
