@@ -23,11 +23,13 @@ execute:
 
 ## Outline (to be deleted later)
 
--   Objective
+-   Goal/Objective
+
+    -   Define UHI
 
 -   Dataset brief intro
 
--   Graphs( EDA)
+-   Graphs(EDA)
 
 -   Time series results and plots
 
@@ -46,12 +48,17 @@ execute:
 ## **3 Cities for UHI Comparison**
 
 1.  Dallas
-    1.  Population
+    1.  Population: 1,288,457 (2021)
 2.  Arlington
-    1.  Population
+    1.  Population: 392,786 (2021)
 3.  Denton
+    1.  Population: 148,146 (2021)
 
 ![](images/google_maps_dallas_metro.png){fig-align="right"}
+
+## **Datasets**
+
+1.  Three datasets for the year 2022 were obtained from the [National Centers for Environmental Information](https://www.ncei.noaa.gov/access/search/data-search/local-climatological-data?pageNum=1&bbox=32.843,-97.215,32.629,-97.001), then combined into one major dataset.
 
 ```{r}
 #| label: load-packages
