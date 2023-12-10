@@ -37,7 +37,7 @@ execute:
     1.  Population
 3.  Denton
 
-![](images/google_maps_dallas_metro.png){fig-align="left"}
+![](images/google_maps_dallas_metro.png){fig-align="right"}
 
 ```{r}
 #| label: load-packages
