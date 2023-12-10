@@ -21,6 +21,20 @@ execute:
   echo: false
 ---
 
+## Outline (to be deleted later)
+
+-   Objective
+
+-   Dataset brief intro
+
+-   Graphs( EDA)
+
+-   Time series results and plots
+
+-   Classification results and plots
+
+-   Conclusion
+
 # **What is an Urban Heat Island?**
 
 ## **Definition**
