@@ -21,18 +21,6 @@ execute:
   echo: false
 ---
 
----
-title: "Classifying & Predicting Urban Heat Islands"
-subtitle: "INFO 523 - Fall 2023 - Project Final"
-author: 
-  - "Ajinkya Deshmukh"
-  - "Dhanyapriya Somasundaram"
-  - "Kendall Beaver"
-  - "Riyanshi Bohra"
-  - "Udit Chaudhary"
-format: revealjs
----
-
 ## Getting up
 
 - Turn off alarm
