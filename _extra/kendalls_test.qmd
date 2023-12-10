@@ -362,3 +362,105 @@ plt.legend(title="Season")
 plt.show()
 
 ```
+
+Testing in Dhayna's code on 12/9/23 (7:12 pm):
+
+```{python}
+
+# Kendall - running test for daily average values:
+
+import pandas as pd
+
+# Read the data
+new_dallas = pd.read_csv('https://raw.githubusercontent.com/INFO-523-Exercises/project-final-Byte-Busters/main/data/Dallas.csv', header='infer' ,low_memory=False)
+new_arlington = pd.read_csv('https://raw.githubusercontent.com/INFO-523-Exercises/project-final-Byte-Busters/main/data/Arlington.csv', header='infer' ,low_memory=False)
+new_denton = pd.read_csv('https://raw.githubusercontent.com/INFO-523-Exercises/project-final-Byte-Busters/main/data/Denton.csv', header='infer' ,low_memory=False)
+
+# Convert 'DATE' column to datetime format
+new_denton['DATE'] = pd.to_datetime(new_denton['DATE'])
+new_dallas['DATE'] = pd.to_datetime(new_dallas['DATE'])
+new_arlington['DATE'] = pd.to_datetime(new_arlington['DATE'])
+
+def get_season(month):
+    if month in [12, 1, 2]:
+        return 'Winter'
+    elif month in [3, 4, 5]:
+        return 'Spring'
+    elif month in [6, 7, 8]:
+        return 'Summer'
+    elif month in [9, 10, 11]:
+        return 'Fall'
+    else:
+        return None
+
+# Apply the function to create a new 'Season' column
+new_denton['Season'] = new_denton['DATE'].dt.month.apply(get_season)
+new_dallas['Season'] = new_dallas['DATE'].dt.month.apply(get_season)
+new_arlington['Season'] = new_arlington['DATE'].dt.month.apply(get_season)
+
+columns_of_interest = ['DATE','DailyAverageDryBulbTemperature', 'DailyAverageWetBulbTemperature', 'DailyAverageDewPointTemperature',
+                       'DailyPrecipitation', 'DailyAverageSeaLevelPressure', 'DailyAverageStationPressure',
+                       'DailyAverageRelativeHumidity', 'DailyAverageWindSpeed', 'DailyPeakWindDirection', 'Season']
+
+# Select only the columns of interest from each dataset
+new_denton = new_denton[columns_of_interest]
+new_dallas = new_dallas[columns_of_interest]
+new_arlington = new_arlington[columns_of_interest]
+
+# Recheck for missing values
+#print("Remaining Missing Values in Denton Dataset:\n", new_denton.isnull().sum())
+#print("\nRemaining Missing Values in Dallas Dataset:\n", new_dallas.isnull().sum())
+#print("\nRemaining Missing Values in Arlington Dataset:\n", new_arlington.isnull().sum())
+
+# Add a new column 'City' to each dataset
+new_denton['City'] = 'Denton'
+new_dallas['City'] = 'Dallas'
+new_arlington['City'] = 'Arlington'
+
+# Check if all datasets have the same columns and column order
+print(new_denton.columns == new_dallas.columns)
+print(new_denton.columns == new_arlington.columns)
+
+# Concatenate the datasets
+combined_data_new = pd.concat([new_denton, new_dallas, new_arlington])
+
+# Filter the combined data for rows where the 'Season' is 'Summer'
+combined_data_new = combined_data_new[(combined_data_new['Season'] == 'Summer')]
+
+def categorize_uhi_intensity(row):
+    # Initialize the score
+    score = 0
+
+    # Check for combinations of conditions rather than individual thresholds
+    # For instance, high temperature with high humidity (%)
+    if row['DailyAverageDryBulbTemperature'] > 85 and row['DailyAverageRelativeHumidity'] > 70:
+        score += 2
+    elif row['DailyAverageDryBulbTemperature'] > 70 and row['DailyAverageRelativeHumidity'] > 60:
+        score += 1
+
+    # Consider wind speed and temperature together
+    if row['DailyAverageWindSpeed'] < 5 and row['DailyAverageDryBulbTemperature'] > 80:
+        score += 1
+
+    # Use Heat Index with a higher threshold to make it more challenging
+#    if row['HeatIndex'] > 105:
+#        score += 1
+
+    # Use Wind Chill in combination with Day-Night Temperature Difference
+#    if row['WindChillTemperature'] < 50 and row['DayNightTempDiff'] > 15:
+#        score += 1
+
+    # Interpret the score for UHI intensity
+    if score >= 3: return 'High'
+    elif score >= 1: return 'Medium'
+    else: return 'Low'
+
+# Apply the function to create the 'UHI_Intensity' column
+combined_data_new['UHI_Intensity'] = combined_data_new.apply(categorize_uhi_intensity, axis=1)
+
+# Count the occurrences of each category in the 'UHI_Intensity' column
+uhi_intensity_counts = combined_data_new['UHI_Intensity'].value_counts()
+
+# Display the counts
+print(uhi_intensity_counts)
+```

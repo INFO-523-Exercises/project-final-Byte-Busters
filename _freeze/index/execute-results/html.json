@@ -1,9 +1,9 @@
 {
-  "hash": "b426f6a05d3784d20b829da35bcc4168",
+  "hash": "c4d7786e73d65d30967cc5fe82192cad",
   "result": {
-    "markdown": "---\ntitle: \"Project title\"\nsubtitle: \"INFO 523 - Project Final\"\nauthor: \"Team name\"\nformat: html\neditor: visual\n---\n\n## Abstract\n\nAdd project abstract here.\n\n::: {.cell execution_count=1}\n``` {.python .cell-code}\n#Test\n```\n:::\n\n\n",
+    "markdown": "---\ntitle: \"Project title\"\nsubtitle: \"INFO 523 - Project Final\"\nauthor: \"Team name\"\nformat: html\neditor: visual\n---\n\n## Abstract\n\nAdd project abstract here.\n\n## Code\n\n",
     "supporting": [
-      "index_files"
+      "index_files\\figure-html"
     ],
     "filters": [],
     "includes": {}
