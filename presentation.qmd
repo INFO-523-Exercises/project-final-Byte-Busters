@@ -22,8 +22,14 @@ execute:
 ---
 
 ---
-title: "Habits"
-author: "John Doe"
+title: "Classifying & Predicting Urban Heat Islands"
+subtitle: "INFO 523 - Fall 2023 - Project Final"
+author: 
+  - "Ajinkya Deshmukh"
+  - "Dhanyapriya Somasundaram"
+  - "Kendall Beaver"
+  - "Riyanshi Bohra"
+  - "Udit Chaudhary"
 format: revealjs
 ---
 
@@ -37,6 +43,16 @@ format: revealjs
 - Get in bed
 - Count sheep
 ---
+
+## Getting up
+
+-   Turn off alarm
+-   Get out of bed
+
+## Going to sleep
+
+-   Get in bed
+-   Count sheep
 
 ```{r}
 #| label: load-packages
