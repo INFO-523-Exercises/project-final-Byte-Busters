@@ -60,7 +60,7 @@
     "href": "index.html",
     "title": "Urban Climate Patterns:Analysis of Urban Heat Islands",
     "section": "",
-    "text": "# Install and load the required package\nif (!require(pacman))\n  install.packages(\"pacman\")\n\nLoading required package: pacman\n\npacman::p_load(png)\n\n#install.packages(\"png\")\n#library(png)\n\n# Specify the path to your image file\nimage_path &lt;- \"./images/UHI_Title.png\"\n\n# Read the image file\nimg &lt;- readPNG(image_path)\n\n# Display the image\nplot(1:2, type = 'n', axes = FALSE, xlab = '', ylab = '')\nrasterImage(img, 1, 1, 2, 2)"
+    "text": "echo=FALSE\n\n# Install and load the required package\nif (!require(pacman))\n  install.packages(\"pacman\")\n\nLoading required package: pacman\n\npacman::p_load(png)\n\n#install.packages(\"png\")\n#library(png)\n\n# Specify the path to your image file\nimage_path &lt;- \"./images/UHI_Title.png\"\n\n# Read the image file\nimg &lt;- readPNG(image_path)\n\n# Display the image\nplot(1:2, type = 'n', axes = FALSE, xlab = '', ylab = '')\nrasterImage(img, 1, 1, 2, 2)"
   },
   {
     "objectID": "index.html#abstract",
