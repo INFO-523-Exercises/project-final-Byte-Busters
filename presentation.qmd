@@ -27,18 +27,30 @@ execute:
 
 -   UHI ("Urban Heat Island") is a micro-climate condition that occurs when a city experiences much warmer temperatures than nearby rural areas.
 
-![](images/UHI_Title.png){: style="border: 2px solid #000;"}{fig-align="center"}
+![](images/UHI_Title.png){fig-align="center"}
 
 ## **3 Cities for UHI Comparison**
 
-1.  Dallas
+::: {style="display: flex; flex-direction: row;"}
+::: {style="flex: 1; padding-right: 20px;"}
+```         
+1.  **Dallas**
     1.  Population: 1,288,457 ([2021](https://datacommons.org/place/geoId/4819000))
-2.  Arlington
-    1.  Population: 392,786 (2021)
-3.  Denton
-    1.  Population: 148,146 (2021)
 
-![](images/google_maps_dallas_metro.png){fig-align="right"}
+2.  **Arlington**
+    1.  Population: 392,786 (2021)
+
+3.  **Denton**
+    1.  Population: 148,146 (2021)
+```
+:::
+
+::: {style="flex: 1;"}
+```         
+<img src="images/google_maps_dallas_metro.png" alt="Dallas Metro Map" width="100%">
+```
+:::
+:::
 
 # **Datasets**
 
