@@ -88,14 +88,14 @@
     "href": "presentation.html#uhi-definition",
     "title": "Urban Climate Patterns: Analysis of Urban Heat Islands",
     "section": "UHI Definition",
-    "text": "UHI Definition\n\nAn UHI (“Urban Heat Island”) is a micro-climate condition that occurs when a city experiences much warmer temperatures than nearby rural areas."
+    "text": "UHI Definition\n\nA UHI (“Urban Heat Island”) occurs when a city experiences much warmer temperatures than nearby rural areas."
   },
   {
     "objectID": "presentation.html#cities-for-uhi-comparison",
     "href": "presentation.html#cities-for-uhi-comparison",
     "title": "Urban Climate Patterns: Analysis of Urban Heat Islands",
     "section": "3 Cities for UHI Comparison",
-    "text": "3 Cities for UHI Comparison\nDallas vs\n\n\n1.  **Dallas**\n    1.  Population: 1,288,457 ([2021](https://datacommons.org/place/geoId/4819000))\n\n2.  **Arlington**\n    1.  Population: 392,786 (2021)\n\n3.  **Denton**\n    1.  Population: 148,146 (2021)\n\n\n&lt;img src=\"images/google_maps_dallas_metro.png\" alt=\"Dallas Metro Map\" width=\"100%\"&gt;"
+    "text": "3 Cities for UHI Comparison\nDallas vs. Arlington vs. Denton"
   },
   {
     "objectID": "presentation.html#data-collection",
@@ -173,5 +173,12 @@
     "title": "Urban Climate Patterns: Analysis of Urban Heat Islands",
     "section": "Feeling adventurous?",
     "text": "Feeling adventurous?\n\nYou are welcomed to use the default styling of the slides. In fact, that’s what I expect majority of you will do. You will differentiate yourself with the content of your presentation.\nBut some of you might want to play around with slide styling. Some solutions for this can be found at https://quarto.org/docs/presentations/revealjs."
+  },
+  {
+    "objectID": "presentation.html#data-preprocessing-and-cleaning",
+    "href": "presentation.html#data-preprocessing-and-cleaning",
+    "title": "Urban Climate Patterns: Analysis of Urban Heat Islands",
+    "section": "Data Preprocessing and Cleaning",
+    "text": "Data Preprocessing and Cleaning\n\nInspect the Data\nHandle Missing Values\nDeal with Outliers\nNormalize Data\nEnsure Temporal Integrity"
   }
 ]
