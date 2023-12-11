@@ -56,13 +56,6 @@
     "text": "Organization of the Project Repository\nBelow are the key folders within the Project repository:\n\ndata/: This directory is designated for essential data files required for the project, including input files.\nimages/: This folder serves as the storage location for project-related visual representations and plots.\npresentation_files/: This folder is specifically reserved for materials relevant to project presentations.\n_extra/: We will brainstorm and store analysis-related content that doesn’t directly affect the project workflow.\n_freeze/: This folder stores the generated files during the build process, preserving the website’s specific state at a given moment.\n_site/: This is where we will generate our static website files after rendering our Quarto documents.\n.github/: This is where we will access and manage GitHub templates and workflow configurations."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Urban Climate Patterns:Analysis of Urban Heat Islands",
-    "section": "",
-    "text": "# Install and load the required package\nif (!require(pacman))\n  install.packages(\"pacman\")\n\nLoading required package: pacman\n\npacman::p_load(png)\n\n#install.packages(\"png\")\n#library(png)\n\n# Specify the path to your image file\nimage_path &lt;- \"./images/UHI_Title.png\"\n\n# Read the image file\nimg &lt;- readPNG(image_path)\n\n# Display the image\nplot(1:2, type = 'n', axes = FALSE, xlab = '', ylab = '')\nrasterImage(img, 1, 1, 2, 2)"
-  },
-  {
     "objectID": "index.html#abstract",
     "href": "index.html#abstract",
     "title": "Urban Climate Patterns:Analysis of Urban Heat Islands",
