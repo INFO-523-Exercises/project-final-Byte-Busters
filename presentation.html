@@ -484,6 +484,9 @@ Udit Chaudhary
 <li><p>Hourly Relative Humidity</p></li>
 <li><p>Hourly Wind Speed</p></li>
 </ol>
+</section>
+<section id="create-seasonal-thresholds-1" class="slide level2">
+<h2>Create Seasonal Thresholds</h2>
 
 <img data-src="images/dallas_season_quartiles.png" class="r-stretch quarto-figure-center"></section>
 <section id="feature-engineering-1" class="slide level2">
@@ -518,28 +521,34 @@ Udit Chaudhary
 <h1>Classification Model Selection, Training, &amp; Validation</h1>
 
 </section>
-<section id="model-selection" class="slide level2">
-<h2>Model Selection</h2>
+<section id="model-selection-80-train-20-test" class="slide level2">
+<h2>Model Selection (80% Train / 20% Test)</h2>
 <p>Developed 5 classification models:</p>
 <ol type="1">
 <li><p>Decision Tree</p></li>
 <li><p>Random Forest</p></li>
 <li><p>XGBoost</p></li>
+<li><p>Gradient Boost</p></li>
 <li><p>SVM Classifier</p></li>
 </ol>
 </section>
-<section id="model-training-and-validation" class="slide level2">
-<h2>Model Training and Validation</h2>
-<p>Train your models on a portion of the data and validate their performance using another portion.</p>
-</section>
-<section id="model-evaluation" class="slide level2">
-<h2>Model Evaluation</h2>
-<p>Use metrics like accuracy, precision, and recall for classification models, to evaluate their performance on a test set.</p>
-</section>
-<section id="interpretation-of-results" class="slide level2">
-<h2>Interpretation of Results</h2>
-<p>Interpret the model outcomes in the context of UHI effects. Analyze which features are most important in predicting UHI intensity and how different climatic variables interact with urbanization.</p>
-</section></section>
+<section id="classification-model-results" class="slide level2">
+<h2>Classification Model Results</h2>
+
+<img data-src="images/classification_model_comparison.png" class="r-stretch quarto-figure-center"></section>
+<section id="random-forest" class="slide level2">
+<h2>Random Forest</h2>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a>rfc_model <span class="op">=</span> RandomForestClassifier()</span>
+<span id="cb2-2"><a href="#cb2-2"></a>rfc_model.fit(X_train, y_train)</span>
+<span id="cb2-3"><a href="#cb2-3"></a></span>
+<span id="cb2-4"><a href="#cb2-4"></a>y_pred <span class="op">=</span> rfc_model.predict(X_test)</span>
+<span id="cb2-5"><a href="#cb2-5"></a><span class="bu">print</span>(classification_report(y_test, y_pred))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+<img data-src="images/random_forest.png" class="r-stretch quarto-figure-center"></section>
+<section id="additional-evaluation-of-random-forest" class="slide level2">
+<h2>Additional Evaluation of Random Forest</h2>
+
+<img data-src="images/features_importance_RF.png" class="r-stretch quarto-figure-center"></section></section>
 <section>
 <section id="time-series-analysis" class="title-slide slide level1 center">
 <h1>Time Series Analysis</h1>
