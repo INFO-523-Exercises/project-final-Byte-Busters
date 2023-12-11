@@ -119,6 +119,13 @@
     "text": "Create Seasonal Thresholds\nCreate and separate the data by “Seasons” and then create thresholds for each season based on the following weather conditions:\n\nHourly Dry Bulb Temperature\nHourly Relative Humidity\nHourly Wind Speed"
   },
   {
+    "objectID": "presentation.html#create-seasonal-thresholds-1",
+    "href": "presentation.html#create-seasonal-thresholds-1",
+    "title": "Urban Climate Patterns: Analysis of Urban Heat Islands",
+    "section": "Create Seasonal Thresholds",
+    "text": "Create Seasonal Thresholds"
+  },
+  {
     "objectID": "presentation.html#feature-engineering-1",
     "href": "presentation.html#feature-engineering-1",
     "title": "Urban Climate Patterns: Analysis of Urban Heat Islands",
@@ -133,32 +140,32 @@
     "text": "Results of Classification Function"
   },
   {
-    "objectID": "presentation.html#model-selection",
-    "href": "presentation.html#model-selection",
+    "objectID": "presentation.html#model-selection-80-train-20-test",
+    "href": "presentation.html#model-selection-80-train-20-test",
     "title": "Urban Climate Patterns: Analysis of Urban Heat Islands",
-    "section": "Model Selection",
-    "text": "Model Selection\nDeveloped 5 classification models:\n\nDecision Tree\nRandom Forest\nXGBoost\nSVM Classifier"
+    "section": "Model Selection (80% Train / 20% Test)",
+    "text": "Model Selection (80% Train / 20% Test)\nDeveloped 5 classification models:\n\nDecision Tree\nRandom Forest\nXGBoost\nGradient Boost\nSVM Classifier"
   },
   {
-    "objectID": "presentation.html#model-training-and-validation",
-    "href": "presentation.html#model-training-and-validation",
+    "objectID": "presentation.html#classification-model-results",
+    "href": "presentation.html#classification-model-results",
     "title": "Urban Climate Patterns: Analysis of Urban Heat Islands",
-    "section": "Model Training and Validation",
-    "text": "Model Training and Validation\nTrain your models on a portion of the data and validate their performance using another portion."
+    "section": "Classification Model Results",
+    "text": "Classification Model Results"
   },
   {
-    "objectID": "presentation.html#model-evaluation",
-    "href": "presentation.html#model-evaluation",
+    "objectID": "presentation.html#random-forest",
+    "href": "presentation.html#random-forest",
     "title": "Urban Climate Patterns: Analysis of Urban Heat Islands",
-    "section": "Model Evaluation",
-    "text": "Model Evaluation\nUse metrics like accuracy, precision, and recall for classification models, to evaluate their performance on a test set."
+    "section": "Random Forest",
+    "text": "Random Forest\nrfc_model = RandomForestClassifier()\nrfc_model.fit(X_train, y_train)\n\ny_pred = rfc_model.predict(X_test)\nprint(classification_report(y_test, y_pred))"
   },
   {
-    "objectID": "presentation.html#interpretation-of-results",
-    "href": "presentation.html#interpretation-of-results",
+    "objectID": "presentation.html#additional-evaluation-of-random-forest",
+    "href": "presentation.html#additional-evaluation-of-random-forest",
     "title": "Urban Climate Patterns: Analysis of Urban Heat Islands",
-    "section": "Interpretation of Results",
-    "text": "Interpretation of Results\nInterpret the model outcomes in the context of UHI effects. Analyze which features are most important in predicting UHI intensity and how different climatic variables interact with urbanization."
+    "section": "Additional Evaluation of Random Forest",
+    "text": "Additional Evaluation of Random Forest"
   },
   {
     "objectID": "presentation.html#results",

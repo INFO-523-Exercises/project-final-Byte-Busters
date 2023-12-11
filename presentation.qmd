@@ -20,7 +20,7 @@ execute:
   echo: false
 ---
 
-# **What is an Urban Heat Island?**
+# **What is an Urban Heat Island?** {background-image="images/dallas-united-states-travel-blog.jpg" background-opacity="0.80"}
 
 ## **UHI Definition**
 
