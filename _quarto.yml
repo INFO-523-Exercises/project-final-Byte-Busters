@@ -16,12 +16,12 @@ website:
         href: presentation.qmd
       - text: About
         href: about.qmd
-    logo: images\BB_logo.png
-  favicon:  images\BB_logo.png
+    logo: images\B.png
+  favicon:  images\B.png
 
 format:
   html:
-    theme: atom-one-dark
+    theme: minimal
     toc: true
 
 execute:
