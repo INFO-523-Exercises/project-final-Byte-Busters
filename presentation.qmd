@@ -50,13 +50,27 @@ Dallas vs. Arlington vs. Denton
 
 ## Exploratory Data Analysis (EDA)Exploratory Data Analysis (EDA)
 
--   Conduct EDA to identify patterns and relationships in the climatic data.
+1.  Conduct EDA to identify patterns and relationships in the climatic data.
 
--   This can include visualizations like time series plots, histograms, and scatter plots to understand temperature trends, humidity levels, etc.
+2.  This can include visualizations like time series plots, histograms, and scatter plots to understand temperature trends, humidity levels, etc.
+
+# Feature Engineering
+
+## Create Seasonal Thresholds
+
+Create and separate the data by "Seasons" and then create thresholds for each season based on the following weather conditions:
+
+1.  Hourly Dry Bulb Temperature
+
+2.  Hourly Relative Humidity
+
+3.  Hourly Wind Speed
+
+![](images/dallas_season_quartiles.png){fig-align="center"}
 
 ## Feature Engineering
 
-Create new features that could better represent UHI effects, such as calculating temperature differences between day and night, urban and rural areas, or creating indices that combine multiple climatic variables.
+Design a classification function to label UHI intensities for hourly weather data.
 
 ``` python
 def classify_uhi(row, temp_thresholds, humidity_thresholds, wind_speed_thresholds):
@@ -80,15 +94,23 @@ def classify_uhi(row, temp_thresholds, humidity_thresholds, wind_speed_threshold
         return 'Low'
 ```
 
-## Feature Engineering
+## Results of Classification Function
 
 ![](images/UHI_intensities.png){fig-align="center"}
 
-# Model Selection, Training, & Validation
+# Classification Model Selection, Training, & Validation
 
 ## Model Selection
 
-For classification, algorithms like decision trees, random forests, or SVMs.
+Developed 5 classification models:
+
+1.  Decision Tree
+
+2.  Random Forest
+
+3.  XGBoost
+
+4.  SVM Classifier
 
 ## Model Training and Validation
 
