@@ -53,13 +53,13 @@ data <- read_csv(here("data", "Dallas.csv"))
 
 # **What is an Urban Heat Island?** {background-image="images/dallas-united-states-travel-blog.jpg" background-opacity="0.35"}
 
-## **UHI Definition**
+## **UHI Definition** {background-image="images/dallas-united-states-travel-blog.jpg" background-opacity="0.35"}
 
 -   A UHI ("Urban Heat Island") occurs when a city experiences much warmer temperatures than nearby rural areas.
 
 ![](images/UHI_Title.png){fig-align="center"}
 
-## **3 Cities for UHI Comparison**
+## **3 Cities for UHI Comparison** {background-image="images/dallas-united-states-travel-blog.jpg" background-opacity="0.35"}
 
 Dallas vs. Arlington vs. Denton
 
@@ -67,42 +67,33 @@ Dallas vs. Arlington vs. Denton
 
 # **Datasets** {background-image="images/dallas-united-states-travel-blog.jpg" background-opacity="0.35"}
 
-## **Data Collection**
+## **Data Collection** {background-image="images/dallas-united-states-travel-blog.jpg" background-opacity="0.35"}
 
 1.  Three datasets for the year 2022 were obtained from the [National Centers for Environmental Information](https://www.ncei.noaa.gov/access/search/data-search/local-climatological-data?pageNum=1&bbox=32.843,-97.215,32.629,-97.001), then combined into one major dataset.
 
-    ```{r}
-    #| label: arlington-dataset 
-    #| echo: false 
-    #| warning: false  
-
-    arlington_data <- read_csv(here('./data/Arlington.csv'))
-
-    # Dimensions of dataset:
-    num_rows <- nrow(arlington_data)
-    num_columns <- ncol(arlington_data)
-    cat("(", num_rows, " rows x ", num_columns, " columns)", sep = "")
-
-    arlington_data |>
-      head(n = 5) |>
-      formattable()
-    ```
-
-## Data Preprocessing and Cleaning
+## Data Preprocessing and Cleaning {background-image="images/dallas-united-states-travel-blog.jpg" background-opacity="0.35"}
 
 1.  Inspect the Data
 2.  Handle Missing Values
 3.  Ensure Temporal Integrity
 
-## Exploratory Data Analysis (EDA)
+## Exploratory Data Analysis (EDA) {background-image="images/dallas-united-states-travel-blog.jpg" background-opacity="0.35"}
 
 1.  Conduct EDA to identify patterns and relationships in the climatic data.
 
 2.  This can include visualizations like time series plots, histograms, and scatter plots to understand temperature trends, humidity levels, etc.
 
+## Exploratory Data Analysis (EDA) {background-image="images/dallas-united-states-travel-blog.jpg" background-opacity="0.35"}
+
+![](images/day_vs_night_temps.png){fig-align="center"}
+
+## Exploratory Data Analysis (EDA) {background-image="images/dallas-united-states-travel-blog.jpg" background-opacity="0.35"}
+
+![](images/Region_Comaprison_by_months.png){fig-align="center"}
+
 # Feature Engineering {background-image="images/dallas-united-states-travel-blog.jpg" background-opacity="0.35"}
 
-## Create Seasonal Thresholds
+## Create Seasonal Thresholds {background-image="images/dallas-united-states-travel-blog.jpg" background-opacity="0.35"}
 
 Create and separate the data by "Seasons" and then create thresholds for each season based on the following weather conditions:
 
@@ -112,11 +103,11 @@ Create and separate the data by "Seasons" and then create thresholds for each se
 
 3.  *Hourly Wind Speed*
 
-## Create Seasonal Thresholds
+## Create Seasonal Thresholds {background-image="images/dallas-united-states-travel-blog.jpg" background-opacity="0.35"}
 
 ![](images/dallas_season_quartiles.png){fig-align="center"}
 
-## Feature Engineering
+## Feature Engineering {background-image="images/dallas-united-states-travel-blog.jpg" background-opacity="0.35"}
 
 Design a classification function to label UHI intensities for hourly weather data.
 
@@ -142,13 +133,13 @@ def classify_uhi(row, temp_thresholds, humidity_thresholds, wind_speed_threshold
         return 'Low'
 ```
 
-## Results of Classification Function
+## Results of Classification Function {background-image="images/dallas-united-states-travel-blog.jpg" background-opacity="0.35"}
 
 ![](images/UHI_intensities.png){fig-align="center"}
 
 # Classification Model Selection, Training, & Validation {background-image="images/dallas-united-states-travel-blog.jpg" background-opacity="0.35"}
 
-## Model Selection (80% Train / 20% Test)
+## Model Selection (80% Train / 20% Test) {background-image="images/dallas-united-states-travel-blog.jpg" background-opacity="0.35"}
 
 Developed 5 classification models:
 
@@ -162,11 +153,11 @@ Developed 5 classification models:
 
 5.  SVM Classifier
 
-## Classification Model Results
+## Classification Model Results {background-image="images/dallas-united-states-travel-blog.jpg" background-opacity="0.35"}
 
 ![](images/classification_model_comparison.png){fig-align="center"}
 
-## Random Forest
+## Random Forest {background-image="images/dallas-united-states-travel-blog.jpg" background-opacity="0.35"}
 
 ``` python
 rfc_model = RandomForestClassifier()
@@ -178,13 +169,19 @@ print(classification_report(y_test, y_pred))
 
 ![](images/random_forest.png){fig-align="center"}
 
-## Additional Evaluation of Random Forest
+## Additional Evaluation of Random Forest {background-image="images/dallas-united-states-travel-blog.jpg" background-opacity="0.35"}
 
 ![](images/features_importance_RF.png){fig-align="center"}
 
 # Time Series Analysis {background-image="images/dallas-united-states-travel-blog.jpg" background-opacity="0.35"}
 
 ## Time Series Analysis {background-image="images/dallas-united-states-travel-blog.jpg" background-opacity="0.35"}
+
+![](images/time_series.png){fig-align="center"}
+
+## Time Series Analysis {background-image="images/dallas-united-states-travel-blog.jpg" background-opacity="0.35"}
+
+![](images/count of UHI Intensities.png){fig-align="center"}
 
 # Conclusion {background-image="images/dallas-united-states-travel-blog.jpg" background-opacity="0.35"}
 
