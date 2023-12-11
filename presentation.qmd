@@ -7,6 +7,11 @@ author:
   - "Kendall Beaver"
   - "Riyanshi Bohra"
   - "Udit Chaudhary"
+
+output:
+  md:
+    - "[Download PDF Document](./byte_busters_presentation.pdf)"
+
 title-slide-attributes:
     data-background-image: images/dallas-united-states-travel-blog.jpg
     data-background-size: stretch
