@@ -48,7 +48,7 @@ execute:
 ## **3 Cities for UHI Comparison**
 
 1.  Dallas
-    1.  Population: 1,288,457 (2021)
+    1.  Population: 1,288,457 ([2021](https://datacommons.org/place/geoId/4819000))
 2.  Arlington
     1.  Population: 392,786 (2021)
 3.  Denton
@@ -56,9 +56,26 @@ execute:
 
 ![](images/google_maps_dallas_metro.png){fig-align="right"}
 
+# **Datasets**
+
 ## **Datasets**
 
 1.  Three datasets for the year 2022 were obtained from the [National Centers for Environmental Information](https://www.ncei.noaa.gov/access/search/data-search/local-climatological-data?pageNum=1&bbox=32.843,-97.215,32.629,-97.001), then combined into one major dataset.
+
+# EDA
+
+## Analyzing Temperature Differences
+
+-   The smaller difference in nighttime and daytime temperatures in Dallas aligns with a stronger UHI effect.
+
+-   Arlington, while also urban, shows a slightly more significant temperature drop at night than Dallas, indicating a somewhat less intense UHI effect.
+
+-   Denton\'s larger temperature drop is consistent with rural areas that do not exhibit strong UHI effects.
+
+```{python}
+
+
+```
 
 ```{r}
 #| label: load-packages
