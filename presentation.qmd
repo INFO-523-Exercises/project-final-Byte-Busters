@@ -58,11 +58,37 @@ Dallas vs. Arlington vs. Denton
 
 Create new features that could better represent UHI effects, such as calculating temperature differences between day and night, urban and rural areas, or creating indices that combine multiple climatic variables.
 
+``` python
+def classify_uhi(row, temp_thresholds, humidity_thresholds, wind_speed_thresholds):
+    season = row['Season']
+    temp = row['HourlyDryBulbTemperature']
+    humidity = row['HourlyRelativeHumidity']
+    wind_speed = row['HourlyWindSpeed']
+
+    # Get the thresholds for the current season
+    temp_high = temp_thresholds.loc[season, 0.50]
+    temp_medium = temp_thresholds.loc[season, 0.25]
+    humidity_low = humidity_thresholds.loc[season, 0.25]
+    wind_speed_low = wind_speed_thresholds.loc[season, 0.25]
+
+    # Classify based on combined criteria
+    if temp > temp_high and humidity < humidity_low and wind_speed < wind_speed_low:
+        return 'High'
+    elif temp > temp_medium:
+        return 'Medium'
+    else:
+        return 'Low'
+```
+
+## Feature Engineering
+
+![](images/UHI_intensities.png){fig-align="center"}
+
 # Model Selection, Training, & Validation
 
 ## Model Selection
 
-For classification, algorithms like decision trees, random forests, or SVMs
+For classification, algorithms like decision trees, random forests, or SVMs.
 
 ## Model Training and Validation
 

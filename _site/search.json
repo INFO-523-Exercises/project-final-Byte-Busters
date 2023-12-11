@@ -56,13 +56,6 @@
     "text": "Organization of the Project Repository\nBelow are the key folders within the Project repository:\n\ndata/: This directory is designated for essential data files required for the project, including input files.\nimages/: This folder serves as the storage location for project-related visual representations and plots.\npresentation_files/: This folder is specifically reserved for materials relevant to project presentations.\n_extra/: We will brainstorm and store analysis-related content that doesn’t directly affect the project workflow.\n_freeze/: This folder stores the generated files during the build process, preserving the website’s specific state at a given moment.\n_site/: This is where we will generate our static website files after rendering our Quarto documents.\n.github/: This is where we will access and manage GitHub templates and workflow configurations."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Urban Climate Patterns:Analysis of Urban Heat Islands",
-    "section": "",
-    "text": "Loading required package: pacman"
-  },
-  {
     "objectID": "index.html#abstract",
     "href": "index.html#abstract",
     "title": "Urban Climate Patterns:Analysis of Urban Heat Islands",
@@ -123,7 +116,7 @@
     "href": "presentation.html#feature-engineering",
     "title": "Urban Climate Patterns: Analysis of Urban Heat Islands",
     "section": "Feature Engineering",
-    "text": "Feature Engineering\nCreate new features that could better represent UHI effects, such as calculating temperature differences between day and night, urban and rural areas, or creating indices that combine multiple climatic variables."
+    "text": "Feature Engineering\nCreate new features that could better represent UHI effects, such as calculating temperature differences between day and night, urban and rural areas, or creating indices that combine multiple climatic variables.\ndef classify_uhi(row, temp_thresholds, humidity_thresholds, wind_speed_thresholds):\n    season = row['Season']\n    temp = row['HourlyDryBulbTemperature']\n    humidity = row['HourlyRelativeHumidity']\n    wind_speed = row['HourlyWindSpeed']\n\n    # Get the thresholds for the current season\n    temp_high = temp_thresholds.loc[season, 0.50] # previous threshold --&gt; temp_high = temp_thresholds.loc[season, 0.75]\n    temp_medium = temp_thresholds.loc[season, 0.25] # previous threshold --&gt; temp_medium = temp_thresholds.loc[season, 0.50]\n    humidity_low = humidity_thresholds.loc[season, 0.25]\n    wind_speed_low = wind_speed_thresholds.loc[season, 0.25]\n\n    # Classify based on combined criteria\n    if temp &gt; temp_high and humidity &lt; humidity_low and wind_speed &lt; wind_speed_low:\n        return 'High'\n    elif temp &gt; temp_medium:\n        return 'Medium'\n    else:\n        return 'Low'"
   },
   {
     "objectID": "presentation.html#model-selection",
@@ -166,5 +159,12 @@
     "title": "Urban Climate Patterns: Analysis of Urban Heat Islands",
     "section": "Conclusion",
     "text": "Conclusion"
+  },
+  {
+    "objectID": "presentation.html#feature-engineering-1",
+    "href": "presentation.html#feature-engineering-1",
+    "title": "Urban Climate Patterns: Analysis of Urban Heat Islands",
+    "section": "Feature Engineering",
+    "text": "Feature Engineering"
   }
 ]
