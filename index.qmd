@@ -6,10 +6,9 @@ format: html
 editor: visual
 ---
 
-```{r, echo=FALSE}
+```{r, echo=FALSE, results='asis'}
 
-# Install and load the required package
-if (!require(pacman))
+if (!require(pacman, quietly = TRUE))
   install.packages("pacman")
 
 pacman::p_load(png)
