@@ -13,3 +13,20 @@
 -   Classification results and plots
 
 -   Conclusion
+
+
+
+1. Problem Understanding and Definition:
+2. Data Collection:
+3. Data Preprocessing and Cleaning: 
+Inspect the Data: 
+Handle Missing Values: 
+Deal with Outliers: 
+Normalize Data: I
+Ensure Temporal Integrity: 
+4. Exploratory Data Analysis (EDA): Conduct EDA to identify patterns and relationships in the climatic data. This can include visualizations like time series plots, histograms, and scatter plots to understand temperature trends, humidity levels, etc.
+5. Feature Engineering: Create new features that could better represent UHI effects, such as calculating temperature differences between day and night, urban and rural areas, or creating indices that combine multiple climatic variables.
+6. Model Selection: . For classification, algorithms like decision trees, random forests, or SVMs 
+7. Model Training and Validation: Train your models on a portion of the data and validate their performance using another portion. 
+8. Model Evaluation: Use metrics like accuracy, precision, and recall for classification models,  to evaluate their performance on a test set.
+9. Interpretation of Results: Interpret the model outcomes in the context of UHI effects. Analyze which features are most important in predicting UHI intensity and how different climatic variables interact with urbanization.

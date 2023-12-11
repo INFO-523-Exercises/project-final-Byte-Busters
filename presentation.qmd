@@ -14,8 +14,7 @@ title-slide-attributes:
   data-slide-number: none
 format:
   revealjs:
-    theme:  ['data/customtheming.scss']
-  
+    theme:  ['background-image="images/dallas-united-states-travel-blog.jpg']
 editor: visual
 execute:
   echo: false
@@ -25,11 +24,17 @@ execute:
 
 ## **UHI Definition**
 
--   UHI ("Urban Heat Island") is a micro-climate condition that occurs when a city experiences much warmer temperatures than nearby rural areas.
+-   A UHI ("Urban Heat Island") occurs when a city experiences much warmer temperatures than nearby rural areas.
 
-![](images/UHI_Title.png){fig-align="center"}
+![](images/urband_heat_island.jpg){fig-align="center"}
 
 ## **3 Cities for UHI Comparison**
+
+Dallas vs. Arlington vs. Denton
+
+![](images/google_maps_dallas_metro.png)
+
+![](){fig-align="center"}
 
 ::: {style="display: flex; flex-direction: row;"}
 ::: {style="flex: 1; padding-right: 20px;"}
@@ -41,7 +46,7 @@ execute:
     1.  Population: 392,786 (2021)
 
 3.  **Denton**
-    1.  Population: 148,146 (2021)
+    1.  Population: 148,146 (202
 ```
 :::
 
@@ -54,7 +59,7 @@ execute:
 
 # **Datasets**
 
-## **Datasets**
+## **Data Collection**
 
 1.  Three datasets for the year 2022 were obtained from the [National Centers for Environmental Information](https://www.ncei.noaa.gov/access/search/data-search/local-climatological-data?pageNum=1&bbox=32.843,-97.215,32.629,-97.001), then combined into one major dataset.
 
@@ -120,6 +125,12 @@ data("penguins")
 ## Layouts
 
 You can use plain text
+
+::: notes
+leiteh
+
+iwoetyie
+:::
 
 ::: columns
 ::: {.column width="40%"}
