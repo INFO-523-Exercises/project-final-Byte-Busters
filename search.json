@@ -88,14 +88,14 @@
     "href": "presentation.html#uhi-definition",
     "title": "Urban Climate Patterns: Analysis of Urban Heat Islands",
     "section": "UHI Definition",
-    "text": "UHI Definition\n\nUHI (“Urban Heat Island”) is a micro-climate condition that occurs when a city experiences much warmer temperatures than nearby rural areas.\n\n{: style=“border: 2px solid #000;”}{fig-align=“center”}"
+    "text": "UHI Definition\n\nUHI (“Urban Heat Island”) is a micro-climate condition that occurs when a city experiences much warmer temperatures than nearby rural areas."
   },
   {
     "objectID": "presentation.html#cities-for-uhi-comparison",
     "href": "presentation.html#cities-for-uhi-comparison",
     "title": "Urban Climate Patterns: Analysis of Urban Heat Islands",
     "section": "3 Cities for UHI Comparison",
-    "text": "3 Cities for UHI Comparison\n\nDallas\n\nPopulation: 1,288,457 (2021)\n\nArlington\n\nPopulation: 392,786 (2021)\n\nDenton\n\nPopulation: 148,146 (2021)"
+    "text": "3 Cities for UHI Comparison\n\n\n1.  **Dallas**\n    1.  Population: 1,288,457 ([2021](https://datacommons.org/place/geoId/4819000))\n\n2.  **Arlington**\n    1.  Population: 392,786 (2021)\n\n3.  **Denton**\n    1.  Population: 148,146 (2021)\n\n\n&lt;img src=\"images/google_maps_dallas_metro.png\" alt=\"Dallas Metro Map\" width=\"100%\"&gt;"
   },
   {
     "objectID": "presentation.html#datasets-1",
