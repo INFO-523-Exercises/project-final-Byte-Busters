@@ -1,5 +1,4 @@
 # Data
--   **[Dataset]**: Description of the dataset 
 Dataset Description
 
 The high-level goal of this project is to detect, analyze, and understand UHIs by leveraging data mining and machine learning to understand the microclimatic effects of urbanization in various metropolitan landscapes.
@@ -7,14 +6,10 @@ The high-level goal of this project is to detect, analyze, and understand UHIs b
 Climatological and hourly time-series data has been collected from several weather stations run by the National Weather Service (NWS), Federal Aviation Administration (FAA), and Department of Defense (DOD), which encompass data collected from airports and other significant areas. This data has been divided into three Local Climatological Datasets (LCD) for Arlington, Dallas, and Denton for the year 2022.
 
 
-# Codebook for [chosen] Dataset
+# Codebook for Dataset
 The dataset that we've gathered from National Center for Environmental Information (NCEI) (https://www.ncei.noaa.gov/) offers these key hourly summaries that we will be analyzing.
 
 ## Variable Names and Descriptions:
-
--   **variable and DataTypes**:
-
-
 | Column Name                        | Description                                                                                                               | Data Type    |
 |------------------------------------|---------------------------------------------------------------------------------------------------------------------------|--------------|
 | DATE                               | Date of the observation (year, month, and day) along with time of observation given as a 4-digit number using a 24-hour clock in local standard time | String       |
