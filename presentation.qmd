@@ -138,9 +138,7 @@ print(classification_report(y_test, y_pred))
 
 # Time Series Analysis {background-image="images/dallas-united-states-travel-blog.jpg" background-opacity="0.5"}
 
-## Results
-
-\[Udit's information\]
+## Time Series Analysis {background-image="images/dallas-united-states-travel-blog.jpg" background-opacity="0.5"}
 
 # Conclusion {background-image="images/dallas-united-states-travel-blog.jpg" background-opacity="0.5"}
 
