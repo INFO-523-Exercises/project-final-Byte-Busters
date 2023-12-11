@@ -1,5 +1,12 @@
 ## Outline (to be deleted later)
 
+title-slide-attributes:
+  data-background-image: 'images/glowing-rays.jpg'
+  data-background-size: stretch
+  data-background-opacity: "0.7"
+  data-slide-number: none
+
+
 -   Goal/Objective
 
     -   Define UHI

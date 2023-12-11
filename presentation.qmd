@@ -8,10 +8,10 @@ author:
   - "Riyanshi Bohra"
   - "Udit Chaudhary"
 title-slide-attributes:
-  data-background-image: 'images/glowing-rays.jpg'
-  data-background-size: stretch
-  data-background-opacity: "0.7"
-  data-slide-number: none
+    data-background-image: images/dallas-united-states-travel-blog.jpg
+    data-background-size: stretch
+    data-background-opacity: "0.5"
+
 format:
   revealjs:
     theme:  ['data/customtheming.scss']
@@ -20,7 +20,7 @@ execute:
   echo: false
 ---
 
-# **What is an Urban Heat Island?** {background-image="images/dallas-united-states-travel-blog.jpg" background-opacity="0.80"}
+# **What is an Urban Heat Island?** {background-image="images/dallas-united-states-travel-blog.jpg" background-opacity="0.5"}
 
 ## **UHI Definition**
 
@@ -34,7 +34,7 @@ Dallas vs. Arlington vs. Denton
 
 ![](images/google_maps_dallas_metro.png){fig-align="center"}
 
-# **Datasets**
+# **Datasets** {background-image="images/dallas-united-states-travel-blog.jpg" background-opacity="0.5"}
 
 ## **Data Collection**
 
@@ -54,7 +54,7 @@ Dallas vs. Arlington vs. Denton
 
 2.  This can include visualizations like time series plots, histograms, and scatter plots to understand temperature trends, humidity levels, etc.
 
-# Feature Engineering
+# Feature Engineering {background-image="images/dallas-united-states-travel-blog.jpg" background-opacity="0.5"}
 
 ## Create Seasonal Thresholds
 
@@ -100,7 +100,7 @@ def classify_uhi(row, temp_thresholds, humidity_thresholds, wind_speed_threshold
 
 ![](images/UHI_intensities.png){fig-align="center"}
 
-# Classification Model Selection, Training, & Validation
+# Classification Model Selection, Training, & Validation {background-image="images/dallas-united-states-travel-blog.jpg" background-opacity="0.5"}
 
 ## Model Selection (80% Train / 20% Test)
 
@@ -136,12 +136,12 @@ print(classification_report(y_test, y_pred))
 
 ![](images/features_importance_RF.png){fig-align="center"}
 
-# Time Series Analysis
+# Time Series Analysis {background-image="images/dallas-united-states-travel-blog.jpg" background-opacity="0.5"}
 
 ## Results
 
 \[Udit's information\]
 
-# Conclusion
+# Conclusion {background-image="images/dallas-united-states-travel-blog.jpg" background-opacity="0.5"}
 
 ## Conclusion
