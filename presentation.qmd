@@ -23,6 +23,34 @@ execute:
   echo: false
 ---
 
+```{r install_packages, include=FALSE}
+### Loading the required libraries
+if (!require(pacman))
+  install.packages(pacman)
+
+pacman::p_load(tidyverse,   
+               dlookr,      
+               formattable, 
+               gt,          
+               gtsummary,
+               here,
+               nnet,
+               janitor,
+               corrplot,
+               dplyr,
+               caret,
+               formattable)
+```
+
+```{r read_data, include=FALSE}
+# Using the original data
+# Loading the csv into a variable using read_csv
+
+data <- read_csv(here("data", "Arlington.csv"))
+data <- read_csv(here("data", "Denton.csv"))
+data <- read_csv(here("data", "Dallas.csv"))
+```
+
 # **What is an Urban Heat Island?** {background-image="images/dallas-united-states-travel-blog.jpg" background-opacity="0.5"}
 
 ## **UHI Definition**
@@ -42,6 +70,10 @@ Dallas vs. Arlington vs. Denton
 ## **Data Collection**
 
 1.  Three datasets for the year 2022 were obtained from the [National Centers for Environmental Information](https://www.ncei.noaa.gov/access/search/data-search/local-climatological-data?pageNum=1&bbox=32.843,-97.215,32.629,-97.001), then combined into one major dataset.
+
+```{r}
+
+```
 
 ## Data Preprocessing and Cleaning
 
@@ -63,11 +95,11 @@ Dallas vs. Arlington vs. Denton
 
 Create and separate the data by "Seasons" and then create thresholds for each season based on the following weather conditions:
 
-1.  Hourly Dry Bulb Temperature
+1.  *Hourly Dry Bulb Temperature*
 
-2.  Hourly Relative Humidity
+2.  *Hourly Relative Humidity*
 
-3.  Hourly Wind Speed
+3.  *Hourly Wind Speed*
 
 ## Create Seasonal Thresholds
 
@@ -145,4 +177,4 @@ print(classification_report(y_test, y_pred))
 
 # Conclusion {background-image="images/dallas-united-states-travel-blog.jpg" background-opacity="0.5"}
 
-## Conclusion
+# Thank You! {background-image="images/dallas-united-states-travel-blog.jpg" background-opacity="0.5"}
