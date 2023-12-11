@@ -105,11 +105,18 @@
     "text": "3 Cities for UHI Comparison\n\nDallas\n\nPopulation: 1,288,457 (2021)\n\nArlington\n\nPopulation: 392,786 (2021)\n\nDenton\n\nPopulation: 148,146 (2021)"
   },
   {
-    "objectID": "presentation.html#datasets",
-    "href": "presentation.html#datasets",
+    "objectID": "presentation.html#datasets-1",
+    "href": "presentation.html#datasets-1",
     "title": "Urban Heat Islands: A Data-Driven Classification",
     "section": "Datasets",
     "text": "Datasets\n\nThree datasets for the year 2022 were obtained from the National Centers for Environmental Information, then combined into one major dataset."
+  },
+  {
+    "objectID": "presentation.html#analyzing-temperature-differences",
+    "href": "presentation.html#analyzing-temperature-differences",
+    "title": "Urban Heat Islands: A Data-Driven Classification",
+    "section": "Analyzing Temperature Differences",
+    "text": "Analyzing Temperature Differences\n\nThe smaller difference in nighttime and daytime temperatures in Dallas aligns with a stronger UHI effect.\nArlington, while also urban, shows a slightly more significant temperature drop at night than Dallas, indicating a somewhat less intense UHI effect.\nDenton's larger temperature drop is consistent with rural areas that do not exhibit strong UHI effects."
   },
   {
     "objectID": "presentation.html#quarto",

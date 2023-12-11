@@ -21,29 +21,13 @@ execute:
   echo: false
 ---
 
-## Outline (to be deleted later)
-
--   Goal/Objective
-
-    -   Define UHI
-
--   Dataset brief intro
-
--   Graphs(EDA)
-
--   Time series results and plots
-
--   Classification results and plots
-
--   Conclusion
-
 # **What is an Urban Heat Island?**
 
-## **Definition**
+## **UHI Definition**
 
--   UHI (Urban Heat Intensity) is a term that describes...
+-   An UHI ("Urban Heat Island") is a weather condition that occurs when a city experiences much warmer temperatures than nearby rural areas.
 
-![](images/UHI_Title.png){fig-align="center"}
+![Image with Border](images/UHI_Title.png){fig-align="center"}{: style="border: 2px solid #000;"}
 
 ## **3 Cities for UHI Comparison**
 
@@ -70,7 +54,7 @@ execute:
 
 -   Arlington, while also urban, shows a slightly more significant temperature drop at night than Dallas, indicating a somewhat less intense UHI effect.
 
--   Denton\'s larger temperature drop is consistent with rural areas that do not exhibit strong UHI effects.
+-   Denton's larger temperature drop is consistent with rural areas that do not exhibit strong UHI effects.
 
 ```{python}
 
