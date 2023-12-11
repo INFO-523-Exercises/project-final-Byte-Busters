@@ -119,6 +119,20 @@
     "text": "Exploratory Data Analysis (EDA)\n\nConduct EDA to identify patterns and relationships in the climatic data.\nThis can include visualizations like time series plots, histograms, and scatter plots to understand temperature trends, humidity levels, etc."
   },
   {
+    "objectID": "presentation.html#exploratory-data-analysis-eda-1",
+    "href": "presentation.html#exploratory-data-analysis-eda-1",
+    "title": "Urban Climate Patterns: Analysis of Urban Heat Islands",
+    "section": "Exploratory Data Analysis (EDA)",
+    "text": "Exploratory Data Analysis (EDA)"
+  },
+  {
+    "objectID": "presentation.html#exploratory-data-analysis-eda-2",
+    "href": "presentation.html#exploratory-data-analysis-eda-2",
+    "title": "Urban Climate Patterns: Analysis of Urban Heat Islands",
+    "section": "Exploratory Data Analysis (EDA)",
+    "text": "Exploratory Data Analysis (EDA)"
+  },
+  {
     "objectID": "presentation.html#create-seasonal-thresholds",
     "href": "presentation.html#create-seasonal-thresholds",
     "title": "Urban Climate Patterns: Analysis of Urban Heat Islands",
@@ -187,12 +201,5 @@
     "title": "Urban Climate Patterns: Analysis of Urban Heat Islands",
     "section": "Time Series Analysis",
     "text": "Time Series Analysis"
-  },
-  {
-    "objectID": "presentation.html#exploratory-data-analysis-eda-1",
-    "href": "presentation.html#exploratory-data-analysis-eda-1",
-    "title": "Urban Climate Patterns: Analysis of Urban Heat Islands",
-    "section": "Exploratory Data Analysis (EDA)",
-    "text": "Exploratory Data Analysis (EDA)"
   }
 ]

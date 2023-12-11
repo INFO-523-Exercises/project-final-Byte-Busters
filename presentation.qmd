@@ -183,6 +183,10 @@ print(classification_report(y_test, y_pred))
 
 ![](images/count of UHI Intensities.png){fig-align="center"}
 
+## Time Series Analysis {background-image="images/dallas-united-states-travel-blog.jpg" background-opacity="0.35"}
+
+![](images/third_time_series_analysis_plot.png){fig-align="center"}
+
 # Conclusion {background-image="images/dallas-united-states-travel-blog.jpg" background-opacity="0.35"}
 
 # Thank You! {background-image="images/dallas-united-states-travel-blog.jpg" background-opacity="0.35"}
