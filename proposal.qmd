@@ -1,5 +1,5 @@
 ---
-title: "Urban Heat Island Detection & Impact Analysis"
+title: "Urban Climate Patterns:Analysis of Urban Heat Islands"
 subtitle: "Proposal"
 format: html
 editor: visual
