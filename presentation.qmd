@@ -46,8 +46,8 @@ pacman::p_load(tidyverse,
 # Using the original data
 # Loading the csv into a variable using read_csv
 
-data <- read_csv(here("data", "Arlington.csv"))
-data <- read_csv(here("data", "Denton.csv"))
+#data <- read_csv(here("data", "Arlington.csv"))
+#data <- read_csv(here("data", "Denton.csv"))
 data <- read_csv(here("data", "Dallas.csv"))
 ```
 
@@ -57,7 +57,7 @@ data <- read_csv(here("data", "Dallas.csv"))
 
 -   A UHI ("Urban Heat Island") occurs when a city experiences much warmer temperatures than nearby rural areas.
 
-![](images/urband_heat_island.jpg){fig-align="center"}
+![](images/UHI_Title.png){fig-align="center"}
 
 ## **3 Cities for UHI Comparison**
 
@@ -71,19 +71,13 @@ Dallas vs. Arlington vs. Denton
 
 1.  Three datasets for the year 2022 were obtained from the [National Centers for Environmental Information](https://www.ncei.noaa.gov/access/search/data-search/local-climatological-data?pageNum=1&bbox=32.843,-97.215,32.629,-97.001), then combined into one major dataset.
 
-```{r}
-
-```
-
 ## Data Preprocessing and Cleaning
 
 1.  Inspect the Data
 2.  Handle Missing Values
-3.  Deal with Outliers
-4.  Normalize Data
-5.  Ensure Temporal Integrity
+3.  Ensure Temporal Integrity
 
-## Exploratory Data Analysis (EDA)Exploratory Data Analysis (EDA)
+## Exploratory Data Analysis (EDA)
 
 1.  Conduct EDA to identify patterns and relationships in the climatic data.
 

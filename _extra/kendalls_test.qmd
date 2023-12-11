@@ -30,6 +30,43 @@ pacman::p_load(dplyr,
 
 ```{r}
 
+{r}
+#| label: dallas-dataset 
+#| echo: false
+#| warning: false
+
+# Load Dallas data
+
+dallas_data <- read_csv(here('./data/dallas21.csv'))
+
+# List of columns we will analyze:
+
+columns_to_extract <- c("DATE",
+"NAME",
+"HourlyAverageDryBulbTemperature",
+"HourlyAverageWetBulbTemperature",
+"HourlyAverageDewPointTemperature",
+"HourlyPrecipitation",
+"HourlyAverageSeaLevelPressure",
+"HourlyAverageStationPressure",
+"HourlyAverageRelativeHumidity",
+"HourlyAverageWindSpeed",
+"HourlySustainedWindDirection")
+
+cleaned_dallas <- dallas_data[, columns_to_extract]
+
+# Dimensions of dataset: 
+num_rows <- nrow(cleaned_dallas)
+num_columns <- ncol(cleaned_dallas)
+cat("(", num_rows, " rows x ", num_columns, " columns)", sep = "")
+
+cleaned_dallas |>
+  head(n = 5) |>
+  formattable()
+```
+
+```{r}
+
 ############
 # Load data
 ############
