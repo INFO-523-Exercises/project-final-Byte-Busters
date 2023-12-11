@@ -78,14 +78,12 @@ Dallas vs. Arlington vs. Denton
 
     arlington_data <- read_csv(here('./data/Arlington.csv'))
 
-    cleaned_arlington <- arlington_data %>% select(-REM)
-
     # Dimensions of dataset:
-    num_rows <- nrow(cleaned_arlington)
-    num_columns <- ncol(cleaned_arlington)
+    num_rows <- nrow(arlington_data)
+    num_columns <- ncol(arlington_data)
     cat("(", num_rows, " rows x ", num_columns, " columns)", sep = "")
 
-    cleaned_arlington |>
+    arlington_data |>
       head(n = 5) |>
       formattable()
     ```
