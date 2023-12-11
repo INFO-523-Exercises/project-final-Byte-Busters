@@ -439,7 +439,7 @@ Udit Chaudhary
 <li>A UHI (“Urban Heat Island”) occurs when a city experiences much warmer temperatures than nearby rural areas.</li>
 </ul>
 
-<img data-src="images/urband_heat_island.jpg" class="r-stretch quarto-figure-center"></section>
+<img data-src="images/UHI_Title.png" class="r-stretch quarto-figure-center"></section>
 <section id="cities-for-uhi-comparison" class="slide level2">
 <h2><strong>3 Cities for UHI Comparison</strong></h2>
 <p>Dallas vs.&nbsp;Arlington vs.&nbsp;Denton</p>
@@ -453,7 +453,2266 @@ Udit Chaudhary
 <section id="data-collection" class="slide level2">
 <h2><strong>Data Collection</strong></h2>
 <ol type="1">
-<li>Three datasets for the year 2022 were obtained from the <a href="https://www.ncei.noaa.gov/access/search/data-search/local-climatological-data?pageNum=1&amp;bbox=32.843,-97.215,32.629,-97.001">National Centers for Environmental Information</a>, then combined into one major dataset.</li>
+<li><p>Three datasets for the year 2022 were obtained from the <a href="https://www.ncei.noaa.gov/access/search/data-search/local-climatological-data?pageNum=1&amp;bbox=32.843,-97.215,32.629,-97.001">National Centers for Environmental Information</a>, then combined into one major dataset.</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>(10938 rows x 124 columns)</code></pre>
+</div>
+<div class="cell-output-display">
+
+<table class="table table-condensed">
+<thead>
+<tr>
+<th style="text-align:right;">
+STATION
+</th>
+<th style="text-align:right;">
+DATE
+</th>
+<th style="text-align:right;">
+LATITUDE
+</th>
+<th style="text-align:right;">
+LONGITUDE
+</th>
+<th style="text-align:right;">
+ELEVATION
+</th>
+<th style="text-align:right;">
+NAME
+</th>
+<th style="text-align:right;">
+REPORT_TYPE
+</th>
+<th style="text-align:right;">
+SOURCE
+</th>
+<th style="text-align:right;">
+HourlyAltimeterSetting
+</th>
+<th style="text-align:right;">
+HourlyDewPointTemperature
+</th>
+<th style="text-align:right;">
+HourlyDryBulbTemperature
+</th>
+<th style="text-align:right;">
+HourlyPrecipitation
+</th>
+<th style="text-align:right;">
+HourlyPresentWeatherType
+</th>
+<th style="text-align:right;">
+HourlyPressureChange
+</th>
+<th style="text-align:right;">
+HourlyPressureTendency
+</th>
+<th style="text-align:right;">
+HourlyRelativeHumidity
+</th>
+<th style="text-align:right;">
+HourlySkyConditions
+</th>
+<th style="text-align:right;">
+HourlySeaLevelPressure
+</th>
+<th style="text-align:right;">
+HourlyStationPressure
+</th>
+<th style="text-align:right;">
+HourlyVisibility
+</th>
+<th style="text-align:right;">
+HourlyWetBulbTemperature
+</th>
+<th style="text-align:right;">
+HourlyWindDirection
+</th>
+<th style="text-align:right;">
+HourlyWindGustSpeed
+</th>
+<th style="text-align:right;">
+HourlyWindSpeed
+</th>
+<th style="text-align:right;">
+Sunrise
+</th>
+<th style="text-align:right;">
+Sunset
+</th>
+<th style="text-align:right;">
+DailyAverageDewPointTemperature
+</th>
+<th style="text-align:right;">
+DailyAverageDryBulbTemperature
+</th>
+<th style="text-align:right;">
+DailyAverageRelativeHumidity
+</th>
+<th style="text-align:right;">
+DailyAverageSeaLevelPressure
+</th>
+<th style="text-align:right;">
+DailyAverageStationPressure
+</th>
+<th style="text-align:right;">
+DailyAverageWetBulbTemperature
+</th>
+<th style="text-align:right;">
+DailyAverageWindSpeed
+</th>
+<th style="text-align:right;">
+DailyCoolingDegreeDays
+</th>
+<th style="text-align:right;">
+DailyDepartureFromNormalAverageTemperature
+</th>
+<th style="text-align:right;">
+DailyHeatingDegreeDays
+</th>
+<th style="text-align:right;">
+DailyMaximumDryBulbTemperature
+</th>
+<th style="text-align:right;">
+DailyMinimumDryBulbTemperature
+</th>
+<th style="text-align:right;">
+DailyPeakWindDirection
+</th>
+<th style="text-align:right;">
+DailyPeakWindSpeed
+</th>
+<th style="text-align:right;">
+DailyPrecipitation
+</th>
+<th style="text-align:right;">
+DailySnowDepth
+</th>
+<th style="text-align:right;">
+DailySnowfall
+</th>
+<th style="text-align:right;">
+DailySustainedWindDirection
+</th>
+<th style="text-align:right;">
+DailySustainedWindSpeed
+</th>
+<th style="text-align:right;">
+DailyWeather
+</th>
+<th style="text-align:right;">
+MonthlyAverageRH
+</th>
+<th style="text-align:right;">
+MonthlyDaysWithGT001Precip
+</th>
+<th style="text-align:right;">
+MonthlyDaysWithGT010Precip
+</th>
+<th style="text-align:right;">
+MonthlyDaysWithGT32Temp
+</th>
+<th style="text-align:right;">
+MonthlyDaysWithGT90Temp
+</th>
+<th style="text-align:right;">
+MonthlyDaysWithLT0Temp
+</th>
+<th style="text-align:right;">
+MonthlyDaysWithLT32Temp
+</th>
+<th style="text-align:right;">
+MonthlyDepartureFromNormalAverageTemperature
+</th>
+<th style="text-align:right;">
+MonthlyDepartureFromNormalCoolingDegreeDays
+</th>
+<th style="text-align:right;">
+MonthlyDepartureFromNormalHeatingDegreeDays
+</th>
+<th style="text-align:right;">
+MonthlyDepartureFromNormalMaximumTemperature
+</th>
+<th style="text-align:right;">
+MonthlyDepartureFromNormalMinimumTemperature
+</th>
+<th style="text-align:right;">
+MonthlyDepartureFromNormalPrecipitation
+</th>
+<th style="text-align:right;">
+MonthlyDewpointTemperature
+</th>
+<th style="text-align:right;">
+MonthlyGreatestPrecip
+</th>
+<th style="text-align:right;">
+MonthlyGreatestPrecipDate
+</th>
+<th style="text-align:right;">
+MonthlyGreatestSnowDepth
+</th>
+<th style="text-align:right;">
+MonthlyGreatestSnowDepthDate
+</th>
+<th style="text-align:right;">
+MonthlyGreatestSnowfall
+</th>
+<th style="text-align:right;">
+MonthlyGreatestSnowfallDate
+</th>
+<th style="text-align:right;">
+MonthlyMaxSeaLevelPressureValue
+</th>
+<th style="text-align:right;">
+MonthlyMaxSeaLevelPressureValueDate
+</th>
+<th style="text-align:right;">
+MonthlyMaxSeaLevelPressureValueTime
+</th>
+<th style="text-align:right;">
+MonthlyMaximumTemperature
+</th>
+<th style="text-align:right;">
+MonthlyMeanTemperature
+</th>
+<th style="text-align:right;">
+MonthlyMinSeaLevelPressureValue
+</th>
+<th style="text-align:right;">
+MonthlyMinSeaLevelPressureValueDate
+</th>
+<th style="text-align:right;">
+MonthlyMinSeaLevelPressureValueTime
+</th>
+<th style="text-align:right;">
+MonthlyMinimumTemperature
+</th>
+<th style="text-align:right;">
+MonthlySeaLevelPressure
+</th>
+<th style="text-align:right;">
+MonthlyStationPressure
+</th>
+<th style="text-align:right;">
+MonthlyTotalLiquidPrecipitation
+</th>
+<th style="text-align:right;">
+MonthlyTotalSnowfall
+</th>
+<th style="text-align:right;">
+MonthlyWetBulb
+</th>
+<th style="text-align:right;">
+AWND
+</th>
+<th style="text-align:right;">
+CDSD
+</th>
+<th style="text-align:right;">
+CLDD
+</th>
+<th style="text-align:right;">
+DSNW
+</th>
+<th style="text-align:right;">
+HDSD
+</th>
+<th style="text-align:right;">
+HTDD
+</th>
+<th style="text-align:right;">
+DYTS
+</th>
+<th style="text-align:right;">
+DYHF
+</th>
+<th style="text-align:right;">
+NormalsCoolingDegreeDay
+</th>
+<th style="text-align:right;">
+NormalsHeatingDegreeDay
+</th>
+<th style="text-align:right;">
+ShortDurationEndDate005
+</th>
+<th style="text-align:right;">
+ShortDurationEndDate010
+</th>
+<th style="text-align:right;">
+ShortDurationEndDate015
+</th>
+<th style="text-align:right;">
+ShortDurationEndDate020
+</th>
+<th style="text-align:right;">
+ShortDurationEndDate030
+</th>
+<th style="text-align:right;">
+ShortDurationEndDate045
+</th>
+<th style="text-align:right;">
+ShortDurationEndDate060
+</th>
+<th style="text-align:right;">
+ShortDurationEndDate080
+</th>
+<th style="text-align:right;">
+ShortDurationEndDate100
+</th>
+<th style="text-align:right;">
+ShortDurationEndDate120
+</th>
+<th style="text-align:right;">
+ShortDurationEndDate150
+</th>
+<th style="text-align:right;">
+ShortDurationEndDate180
+</th>
+<th style="text-align:right;">
+ShortDurationPrecipitationValue005
+</th>
+<th style="text-align:right;">
+ShortDurationPrecipitationValue010
+</th>
+<th style="text-align:right;">
+ShortDurationPrecipitationValue015
+</th>
+<th style="text-align:right;">
+ShortDurationPrecipitationValue020
+</th>
+<th style="text-align:right;">
+ShortDurationPrecipitationValue030
+</th>
+<th style="text-align:right;">
+ShortDurationPrecipitationValue045
+</th>
+<th style="text-align:right;">
+ShortDurationPrecipitationValue060
+</th>
+<th style="text-align:right;">
+ShortDurationPrecipitationValue080
+</th>
+<th style="text-align:right;">
+ShortDurationPrecipitationValue100
+</th>
+<th style="text-align:right;">
+ShortDurationPrecipitationValue120
+</th>
+<th style="text-align:right;">
+ShortDurationPrecipitationValue150
+</th>
+<th style="text-align:right;">
+ShortDurationPrecipitationValue180
+</th>
+<th style="text-align:right;">
+BackupDirection
+</th>
+<th style="text-align:right;">
+BackupDistance
+</th>
+<th style="text-align:right;">
+BackupDistanceUnit
+</th>
+<th style="text-align:right;">
+BackupElements
+</th>
+<th style="text-align:right;">
+BackupElevation
+</th>
+<th style="text-align:right;">
+BackupEquipment
+</th>
+<th style="text-align:right;">
+BackupLatitude
+</th>
+<th style="text-align:right;">
+BackupLongitude
+</th>
+<th style="text-align:right;">
+BackupName
+</th>
+<th style="text-align:right;">
+WindEquipmentChangeDate
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">
+72247953907
+</td>
+<td style="text-align:right;">
+2022-01-01 00:18:00
+</td>
+<td style="text-align:right;">
+32.65832
+</td>
+<td style="text-align:right;">
+-97.09509
+</td>
+<td style="text-align:right;">
+179.7
+</td>
+<td style="text-align:right;">
+ARLINGTON MUNICIPAL AIRPORT, TX US
+</td>
+<td style="text-align:right;">
+FM-16
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:right;">
+29.66
+</td>
+<td style="text-align:right;">
+65
+</td>
+<td style="text-align:right;">
+67
+</td>
+<td style="text-align:right;">
+0.03
+</td>
+<td style="text-align:right;">
+-RA:02 BR:1 |RA |RA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+93
+</td>
+<td style="text-align:right;">
+OVC:08 15
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+28.99
+</td>
+<td style="text-align:right;">
+2.50
+</td>
+<td style="text-align:right;">
+66
+</td>
+<td style="text-align:right;">
+290
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+2007-02-26
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+72247953907
+</td>
+<td style="text-align:right;">
+2022-01-01 00:27:00
+</td>
+<td style="text-align:right;">
+32.65832
+</td>
+<td style="text-align:right;">
+-97.09509
+</td>
+<td style="text-align:right;">
+179.7
+</td>
+<td style="text-align:right;">
+ARLINGTON MUNICIPAL AIRPORT, TX US
+</td>
+<td style="text-align:right;">
+FM-16
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:right;">
+29.66
+</td>
+<td style="text-align:right;">
+65
+</td>
+<td style="text-align:right;">
+67
+</td>
+<td style="text-align:right;">
+0.04
+</td>
+<td style="text-align:right;">
+-RA:02 BR:1 |RA |RA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+93
+</td>
+<td style="text-align:right;">
+OVC:08 15
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+28.99
+</td>
+<td style="text-align:right;">
+3.00
+</td>
+<td style="text-align:right;">
+66
+</td>
+<td style="text-align:right;">
+270
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+2007-02-26
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+72247953907
+</td>
+<td style="text-align:right;">
+2022-01-01 00:53:00
+</td>
+<td style="text-align:right;">
+32.65832
+</td>
+<td style="text-align:right;">
+-97.09509
+</td>
+<td style="text-align:right;">
+179.7
+</td>
+<td style="text-align:right;">
+ARLINGTON MUNICIPAL AIRPORT, TX US
+</td>
+<td style="text-align:right;">
+FM-15
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:right;">
+29.65
+</td>
+<td style="text-align:right;">
+63
+</td>
+<td style="text-align:right;">
+66
+</td>
+<td style="text-align:right;">
+0.04
+</td>
+<td style="text-align:right;">
+BR:1 ||
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+90
+</td>
+<td style="text-align:right;">
+FEW:02 13 BKN:07 25 OVC:08 32
+</td>
+<td style="text-align:right;">
+29.62
+</td>
+<td style="text-align:right;">
+28.98
+</td>
+<td style="text-align:right;">
+5.00
+</td>
+<td style="text-align:right;">
+64
+</td>
+<td style="text-align:right;">
+310
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+2007-02-26
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+72247953907
+</td>
+<td style="text-align:right;">
+2022-01-01 01:53:00
+</td>
+<td style="text-align:right;">
+32.65832
+</td>
+<td style="text-align:right;">
+-97.09509
+</td>
+<td style="text-align:right;">
+179.7
+</td>
+<td style="text-align:right;">
+ARLINGTON MUNICIPAL AIRPORT, TX US
+</td>
+<td style="text-align:right;">
+FM-15
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:right;">
+29.65
+</td>
+<td style="text-align:right;">
+63
+</td>
+<td style="text-align:right;">
+65
+</td>
+<td style="text-align:right;">
+T
+</td>
+<td style="text-align:right;">
+BR:1 ||
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+93
+</td>
+<td style="text-align:right;">
+OVC:08 26
+</td>
+<td style="text-align:right;">
+29.62
+</td>
+<td style="text-align:right;">
+28.98
+</td>
+<td style="text-align:right;">
+5.00
+</td>
+<td style="text-align:right;">
+64
+</td>
+<td style="text-align:right;">
+330
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+2007-02-26
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+72247953907
+</td>
+<td style="text-align:right;">
+2022-01-01 02:53:00
+</td>
+<td style="text-align:right;">
+32.65832
+</td>
+<td style="text-align:right;">
+-97.09509
+</td>
+<td style="text-align:right;">
+179.7
+</td>
+<td style="text-align:right;">
+ARLINGTON MUNICIPAL AIRPORT, TX US
+</td>
+<td style="text-align:right;">
+FM-15
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:right;">
+29.63
+</td>
+<td style="text-align:right;">
+63
+</td>
+<td style="text-align:right;">
+65
+</td>
+<td style="text-align:right;">
+T
+</td>
+<td style="text-align:right;">
+BR:1 ||
+</td>
+<td style="text-align:right;">
+0.02
+</td>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:right;">
+93
+</td>
+<td style="text-align:right;">
+OVC:08 26
+</td>
+<td style="text-align:right;">
+29.61
+</td>
+<td style="text-align:right;">
+28.96
+</td>
+<td style="text-align:right;">
+4.00
+</td>
+<td style="text-align:right;">
+64
+</td>
+<td style="text-align:right;">
+310
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+2007-02-26
+</td>
+</tr>
+</tbody>
+
+</table>
+</div>
+</div></li>
 </ol>
 </section>
 <section id="data-preprocessing-and-cleaning" class="slide level2">
@@ -461,13 +2720,11 @@ Udit Chaudhary
 <ol type="1">
 <li>Inspect the Data</li>
 <li>Handle Missing Values</li>
-<li>Deal with Outliers</li>
-<li>Normalize Data</li>
 <li>Ensure Temporal Integrity</li>
 </ol>
 </section>
-<section id="exploratory-data-analysis-edaexploratory-data-analysis-eda" class="slide level2">
-<h2>Exploratory Data Analysis (EDA)Exploratory Data Analysis (EDA)</h2>
+<section id="exploratory-data-analysis-eda" class="slide level2">
+<h2>Exploratory Data Analysis (EDA)</h2>
 <ol type="1">
 <li><p>Conduct EDA to identify patterns and relationships in the climatic data.</p></li>
 <li><p>This can include visualizations like time series plots, histograms, and scatter plots to understand temperature trends, humidity levels, etc.</p></li>
@@ -494,25 +2751,25 @@ Udit Chaudhary
 <section id="feature-engineering-1" class="slide level2">
 <h2>Feature Engineering</h2>
 <p>Design a classification function to label UHI intensities for hourly weather data.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a><span class="kw">def</span> classify_uhi(row, temp_thresholds, humidity_thresholds, wind_speed_thresholds):</span>
-<span id="cb1-2"><a href="#cb1-2"></a>    season <span class="op">=</span> row[<span class="st">'Season'</span>]</span>
-<span id="cb1-3"><a href="#cb1-3"></a>    temp <span class="op">=</span> row[<span class="st">'HourlyDryBulbTemperature'</span>]</span>
-<span id="cb1-4"><a href="#cb1-4"></a>    humidity <span class="op">=</span> row[<span class="st">'HourlyRelativeHumidity'</span>]</span>
-<span id="cb1-5"><a href="#cb1-5"></a>    wind_speed <span class="op">=</span> row[<span class="st">'HourlyWindSpeed'</span>]</span>
-<span id="cb1-6"><a href="#cb1-6"></a></span>
-<span id="cb1-7"><a href="#cb1-7"></a>    <span class="co"># Get the thresholds for the current season</span></span>
-<span id="cb1-8"><a href="#cb1-8"></a>    temp_high <span class="op">=</span> temp_thresholds.loc[season, <span class="fl">0.50</span>]</span>
-<span id="cb1-9"><a href="#cb1-9"></a>    temp_medium <span class="op">=</span> temp_thresholds.loc[season, <span class="fl">0.25</span>]</span>
-<span id="cb1-10"><a href="#cb1-10"></a>    humidity_low <span class="op">=</span> humidity_thresholds.loc[season, <span class="fl">0.25</span>]</span>
-<span id="cb1-11"><a href="#cb1-11"></a>    wind_speed_low <span class="op">=</span> wind_speed_thresholds.loc[season, <span class="fl">0.25</span>]</span>
-<span id="cb1-12"><a href="#cb1-12"></a></span>
-<span id="cb1-13"><a href="#cb1-13"></a>    <span class="co"># Classify based on combined criteria</span></span>
-<span id="cb1-14"><a href="#cb1-14"></a>    <span class="cf">if</span> temp <span class="op">&gt;</span> temp_high <span class="kw">and</span> humidity <span class="op">&lt;</span> humidity_low <span class="kw">and</span> wind_speed <span class="op">&lt;</span> wind_speed_low:</span>
-<span id="cb1-15"><a href="#cb1-15"></a>        <span class="cf">return</span> <span class="st">'High'</span></span>
-<span id="cb1-16"><a href="#cb1-16"></a>    <span class="cf">elif</span> temp <span class="op">&gt;</span> temp_medium:</span>
-<span id="cb1-17"><a href="#cb1-17"></a>        <span class="cf">return</span> <span class="st">'Medium'</span></span>
-<span id="cb1-18"><a href="#cb1-18"></a>    <span class="cf">else</span>:</span>
-<span id="cb1-19"><a href="#cb1-19"></a>        <span class="cf">return</span> <span class="st">'Low'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a><span class="kw">def</span> classify_uhi(row, temp_thresholds, humidity_thresholds, wind_speed_thresholds):</span>
+<span id="cb2-2"><a href="#cb2-2"></a>    season <span class="op">=</span> row[<span class="st">'Season'</span>]</span>
+<span id="cb2-3"><a href="#cb2-3"></a>    temp <span class="op">=</span> row[<span class="st">'HourlyDryBulbTemperature'</span>]</span>
+<span id="cb2-4"><a href="#cb2-4"></a>    humidity <span class="op">=</span> row[<span class="st">'HourlyRelativeHumidity'</span>]</span>
+<span id="cb2-5"><a href="#cb2-5"></a>    wind_speed <span class="op">=</span> row[<span class="st">'HourlyWindSpeed'</span>]</span>
+<span id="cb2-6"><a href="#cb2-6"></a></span>
+<span id="cb2-7"><a href="#cb2-7"></a>    <span class="co"># Get the thresholds for the current season</span></span>
+<span id="cb2-8"><a href="#cb2-8"></a>    temp_high <span class="op">=</span> temp_thresholds.loc[season, <span class="fl">0.50</span>]</span>
+<span id="cb2-9"><a href="#cb2-9"></a>    temp_medium <span class="op">=</span> temp_thresholds.loc[season, <span class="fl">0.25</span>]</span>
+<span id="cb2-10"><a href="#cb2-10"></a>    humidity_low <span class="op">=</span> humidity_thresholds.loc[season, <span class="fl">0.25</span>]</span>
+<span id="cb2-11"><a href="#cb2-11"></a>    wind_speed_low <span class="op">=</span> wind_speed_thresholds.loc[season, <span class="fl">0.25</span>]</span>
+<span id="cb2-12"><a href="#cb2-12"></a></span>
+<span id="cb2-13"><a href="#cb2-13"></a>    <span class="co"># Classify based on combined criteria</span></span>
+<span id="cb2-14"><a href="#cb2-14"></a>    <span class="cf">if</span> temp <span class="op">&gt;</span> temp_high <span class="kw">and</span> humidity <span class="op">&lt;</span> humidity_low <span class="kw">and</span> wind_speed <span class="op">&lt;</span> wind_speed_low:</span>
+<span id="cb2-15"><a href="#cb2-15"></a>        <span class="cf">return</span> <span class="st">'High'</span></span>
+<span id="cb2-16"><a href="#cb2-16"></a>    <span class="cf">elif</span> temp <span class="op">&gt;</span> temp_medium:</span>
+<span id="cb2-17"><a href="#cb2-17"></a>        <span class="cf">return</span> <span class="st">'Medium'</span></span>
+<span id="cb2-18"><a href="#cb2-18"></a>    <span class="cf">else</span>:</span>
+<span id="cb2-19"><a href="#cb2-19"></a>        <span class="cf">return</span> <span class="st">'Low'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="results-of-classification-function" class="slide level2">
 <h2>Results of Classification Function</h2>
@@ -540,11 +2797,11 @@ Udit Chaudhary
 <img data-src="images/classification_model_comparison.png" class="r-stretch quarto-figure-center"></section>
 <section id="random-forest" class="slide level2">
 <h2>Random Forest</h2>
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a>rfc_model <span class="op">=</span> RandomForestClassifier()</span>
-<span id="cb2-2"><a href="#cb2-2"></a>rfc_model.fit(X_train, y_train)</span>
-<span id="cb2-3"><a href="#cb2-3"></a></span>
-<span id="cb2-4"><a href="#cb2-4"></a>y_pred <span class="op">=</span> rfc_model.predict(X_test)</span>
-<span id="cb2-5"><a href="#cb2-5"></a><span class="bu">print</span>(classification_report(y_test, y_pred))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a>rfc_model <span class="op">=</span> RandomForestClassifier()</span>
+<span id="cb3-2"><a href="#cb3-2"></a>rfc_model.fit(X_train, y_train)</span>
+<span id="cb3-3"><a href="#cb3-3"></a></span>
+<span id="cb3-4"><a href="#cb3-4"></a>y_pred <span class="op">=</span> rfc_model.predict(X_test)</span>
+<span id="cb3-5"><a href="#cb3-5"></a><span class="bu">print</span>(classification_report(y_test, y_pred))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 <img data-src="images/random_forest.png" class="r-stretch quarto-figure-center"></section>
 <section id="additional-evaluation-of-random-forest" class="slide level2">
