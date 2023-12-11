@@ -2,7 +2,7 @@
 
 Final project repo for INFO 523 - Fall 2023- Byte Busters
 
-## Exploring Urban Heat Islands: A Comparative Analysis of Metropolitan and Rural Environments
+## Urban Climate Patterns:Analysis of Urban Heat Islands
 
 ![UHI Title](./images/UHI_Title.png)
 

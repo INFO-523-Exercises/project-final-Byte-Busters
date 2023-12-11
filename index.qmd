@@ -1,14 +1,30 @@
 ---
-title: "Project title"
+title: "Urban Climate Patterns:Analysis of Urban Heat Islands"
 subtitle: "INFO 523 - Project Final"
-author: "Team name"
+author: "Byte-Busters"
 format: html
 editor: visual
 ---
 
-## **Abstract**
+```{r}
+# Install and load the required package
+install.packages("png")
+library(png)
 
-**Title:** Exploring Urban Heat Islands: A Comparative Analysis of Metropolitan and Rural Environments
+# Specify the path to your image file
+image_path <- "./images/UHI_Title.png"
+
+# Read the image file
+img <- readPNG(image_path)
+
+# Display the image
+plot(1:2, type = 'n', axes = FALSE, xlab = '', ylab = '')
+rasterImage(img, 1, 1, 2, 2)
+
+
+```
+
+## **Abstract**
 
 **Objective:**
 This project aims to study and analyze climatological data for Dallas, Arlington, and Denton, categorizing them based on an "Urban Heat Island" (UHI) scale. By leveraging data mining and machine learning, the goal is to understand the microclimatic effects of urbanization in different settings and classify UHI intensity levels. The project will focus on three key aspects:
@@ -36,9 +52,6 @@ Climatological and hourly time-series data have been collected from various weat
 
 **Methodology:**
 Utilizing data mining and machine learning techniques, the project will detect and analyze UHIs, providing insights into the impact of urbanization on microclimates. The analysis includes visualizations and classification methods to interpret varying UHI intensity levels.
-
-**Datasets:**
-Three datasets have been prepared for Arlington, Dallas, and Denton, featuring key climatological parameters. The datasets have been cleaned and organized for further analysis.
 
 **Key Questions:**
 
