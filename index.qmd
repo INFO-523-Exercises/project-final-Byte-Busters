@@ -6,7 +6,7 @@ format: html
 editor: visual
 ---
 
-```{r}
+```{r, echo=FALSE}
 
 # Install and load the required package
 if (!require(pacman))
@@ -14,19 +14,21 @@ if (!require(pacman))
 
 pacman::p_load(png)
 
-#install.packages("png")
-#library(png)
-
 # Specify the path to your image file
 image_path <- "./images/UHI_Title.png"
 
 # Read the image file
 img <- readPNG(image_path)
 
-# Display the image
-plot(1:2, type = 'n', axes = FALSE, xlab = '', ylab = '')
-rasterImage(img, 1, 1, 2, 2)
+# Get image dimensions
+img_width <- dim(img)[3]
+img_height <- dim(img)[2]
 
+# Create a plot with dimensions matching the image
+plot(1, type = 'n', axes = FALSE, xlab = '', ylab = '', xlim = c(0, img_width), ylim = c(0, img_height))
+
+# Display the image with correct dimensions
+rasterImage(img, 0, 0, img_width, img_height)
 ```
 
 ## **Abstract**
