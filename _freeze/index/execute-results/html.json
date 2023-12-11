@@ -1,11 +1,16 @@
 {
-  "hash": "c4d7786e73d65d30967cc5fe82192cad",
+  "hash": "2c3869c5c7176397c8a3f3f36acfda37",
   "result": {
-    "markdown": "---\ntitle: \"Project title\"\nsubtitle: \"INFO 523 - Project Final\"\nauthor: \"Team name\"\nformat: html\neditor: visual\n---\n\n## Abstract\n\nAdd project abstract here.\n\n## Code\n\n",
+    "markdown": "---\ntitle: \"Urban Climate Patterns:Analysis of Urban Heat Islands\"\nsubtitle: \"INFO 523 - Project Final\"\nauthor: \"Byte-Busters\"\nformat: html\neditor: visual\n---\n\n::: {.cell}\n\n```{.r .cell-code}\necho=FALSE\n\n# Install and load the required package\nif (!require(pacman))\n  install.packages(\"pacman\")\n```\n\n::: {.cell-output .cell-output-stderr}\n```\nLoading required package: pacman\n```\n:::\n\n```{.r .cell-code}\npacman::p_load(png)\n\n#install.packages(\"png\")\n#library(png)\n\n# Specify the path to your image file\nimage_path <- \"./images/UHI_Title.png\"\n\n# Read the image file\nimg <- readPNG(image_path)\n\n# Display the image\nplot(1:2, type = 'n', axes = FALSE, xlab = '', ylab = '')\nrasterImage(img, 1, 1, 2, 2)\n```\n\n::: {.cell-output-display}\n![](index_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n:::\n\n\n## **Abstract**\n\n**Objective:** This project aims to study and analyze climatological data for Dallas, Arlington, and Denton, categorizing them based on an \"Urban Heat Island\" (UHI) scale. By leveraging data mining and machine learning, the goal is to understand the microclimatic effects of urbanization in different settings and classify UHI intensity levels. The project will focus on three key aspects:\n\n1.  **Dallas (Significant City):**\n\n    -   Analyzing UHI in a major metropolitan area.\n\n    -   Considering factors such as pollution, land use, and climate to determine UHI intensity.\n\n2.  **Arlington (Suburban Town):**\n\n    -   Evaluating UHI in a suburban setting with moderate population density.\n\n    -   Comparing UHI variations in less densely populated areas.\n\n3.  **Denton (Rural City):**\n\n    -   Examining UHI in a rural city with lower population density.\n\n    -   Considering factors like reduced pollution and different land use patterns.\n\n**Dataset:** Climatological and hourly time-series data have been collected from various weather stations, providing key daily summaries for Arlington, Dallas, and Denton in 2022. The dataset includes information on temperature, precipitation, pressure, humidity, wind speed, and more.\n\n**Methodology:** Utilizing data mining and machine learning techniques, the project will detect and analyze UHIs, providing insights into the impact of urbanization on microclimates. The analysis includes visualizations and classification methods to interpret varying UHI intensity levels.\n\n**Key Questions:**\n\n1.  How does UHI intensity vary between urban and rural settings throughout the year, and what methods can be employed to classify and interpret these intensity levels?\n\n    -   Investigating variations in UHI intensity between metropolitan and rural areas.\n\n    -   Employing multi-class classification to classify and interpret intensity levels.\n\n2.  How can time series data visualizations effectively illustrate variations in UHI intensity across metropolitan and rural areas like Arlington, Dallas, and Denton over a given year, highlighting distinct temporal patterns?\n\n    -   Exploring time series analysis to visualize UHI intensity changes over seasons.\n\n    -   Identifying patterns that differentiate between urban and rural heat impacts across the specified region.\n\nThis project will contribute to the understanding of UHI dynamics in different urban environments and provide valuable insights for sustainable urban development and climate resilience.\n",
     "supporting": [
-      "index_files\\figure-html"
+      "index_files"
     ],
-    "filters": [],
-    "includes": {}
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
   }
 }

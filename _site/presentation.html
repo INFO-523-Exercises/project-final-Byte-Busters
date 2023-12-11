@@ -323,9 +323,6 @@
       margin-right: 0; 
     }
   </style>
-  
-  <script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
-  <link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -401,192 +398,55 @@ Udit Chaudhary
 <li>Normalize Data</li>
 <li>Ensure Temporal Integrity</li>
 </ol>
+</section>
+<section id="exploratory-data-analysis-edaexploratory-data-analysis-eda" class="slide level2">
+<h2>Exploratory Data Analysis (EDA)Exploratory Data Analysis (EDA)</h2>
+<ul>
+<li><p>Conduct EDA to identify patterns and relationships in the climatic data.</p></li>
+<li><p>This can include visualizations like time series plots, histograms, and scatter plots to understand temperature trends, humidity levels, etc.</p></li>
+</ul>
+</section>
+<section id="feature-engineering" class="slide level2">
+<h2>Feature Engineering</h2>
+<p>Create new features that could better represent UHI effects, such as calculating temperature differences between day and night, urban and rural areas, or creating indices that combine multiple climatic variables.</p>
 </section></section>
 <section>
-<section id="exploratory-data-analysis-eda" class="title-slide slide level1 center">
-<h1>Exploratory Data Analysis (EDA)</h1>
+<section id="model-selection-training-validation" class="title-slide slide level1 center">
+<h1>Model Selection, Training, &amp; Validation</h1>
 
 </section>
-<section id="analyzing-temperature-differences" class="slide level2">
-<h2>Analyzing Temperature Differences</h2>
-<ul>
-<li><p>The smaller difference in nighttime and daytime temperatures in Dallas aligns with a stronger UHI effect.</p></li>
-<li><p>Arlington, while also urban, shows a slightly more significant temperature drop at night than Dallas, indicating a somewhat less intense UHI effect.</p></li>
-<li><p>Denton’s larger temperature drop is consistent with rural areas that do not exhibit strong UHI effects.</p></li>
-</ul>
+<section id="model-selection" class="slide level2">
+<h2>Model Selection</h2>
+<p>For classification, algorithms like decision trees, random forests, or SVMs</p>
+</section>
+<section id="model-training-and-validation" class="slide level2">
+<h2>Model Training and Validation</h2>
+<p>Train your models on a portion of the data and validate their performance using another portion.</p>
+</section>
+<section id="model-evaluation" class="slide level2">
+<h2>Model Evaluation</h2>
+<p>Use metrics like accuracy, precision, and recall for classification models, to evaluate their performance on a test set.</p>
+</section>
+<section id="interpretation-of-results" class="slide level2">
+<h2>Interpretation of Results</h2>
+<p>Interpret the model outcomes in the context of UHI effects. Analyze which features are most important in predicting UHI intensity and how different climatic variables interact with urbanization.</p>
 </section></section>
 <section>
-<section id="using-quarto-for-presentations" class="title-slide slide level1 center">
-<h1>Using Quarto for presentations</h1>
+<section id="time-series-analysis" class="title-slide slide level1 center">
+<h1>Time Series Analysis</h1>
 
 </section>
-<section id="quarto" class="slide level2">
-<h2>Quarto</h2>
-<ul>
-<li><p>The presentation is created using the Quarto CLI</p></li>
-<li><p><code>##</code> sets the start of a new slide</p></li>
-</ul>
-</section>
-<section id="layouts" class="slide level2">
-<h2>Layouts</h2>
-<p>You can use plain text</p>
-<aside class="notes">
-<p>leiteh</p>
-<p>iwoetyie</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-<div class="columns">
-<div class="column" style="width:40%;">
-<ul>
-<li>or bullet points<sup>1</sup></li>
-</ul>
-</div><div class="column" style="width:60%;">
-<p>or in two columns</p>
-</div>
-</div>
-<ul>
-<li><p>like</p></li>
-<li><p>this</p></li>
-</ul>
-<aside><ol class="aside-footnotes"><li id="fn1"><p>And add footnotes</p></li></ol></aside></section>
-<section id="code" class="slide level2">
-<h2>Code</h2>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 2 × 5
-  term        estimate std.error statistic       p.value
-  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;         &lt;dbl&gt;
-1 (Intercept)   25.3      3.08        8.22 0.00000000358
-2 speed         -0.116    0.0642     -1.81 0.0806       </code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 1 × 12
-  r.squared adj.r.squared sigma statistic p.value    df logLik   AIC   BIC
-      &lt;dbl&gt;         &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt;   &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
-1    0.0983        0.0682  5.82      3.27  0.0806     1  -101.  207.  212.
-# ℹ 3 more variables: deviance &lt;dbl&gt;, df.residual &lt;int&gt;, nobs &lt;int&gt;</code></pre>
-</div>
-</div>
-</section>
-<section id="plots" class="slide level2">
-<h2>Plots</h2>
-
-<img data-src="presentation_files/figure-revealjs/unnamed-chunk-5-1.png" width="1800" class="r-stretch"></section>
-<section id="plot-and-text" class="slide level2">
-<h2>Plot and text</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<ul>
-<li><p>Some text</p></li>
-<li><p>goes here</p></li>
-</ul>
-</div><div class="column" style="width:50%;">
-<div class="cell">
-<div class="cell-output-display">
-<p><img data-src="presentation_files/figure-revealjs/unnamed-chunk-6-1.png" width="1650"></p>
-</div>
-</div>
-</div>
-</div>
+<section id="results" class="slide level2">
+<h2>Results</h2>
+<p>[Udit’s information]</p>
 </section></section>
-<section>
-<section id="a-new-section" class="title-slide slide level1 center">
-<h1>A new section…</h1>
-
-</section>
-<section id="tables" class="slide level2">
-<h2>Tables</h2>
-<p>If you want to generate a table, make sure it is in the HTML format (instead of Markdown or other formats), e.g.,</p>
-<div class="cell">
-<div class="cell-output-display">
-<table class="table" data-quarto-postprocess="true" style="margin-left: auto; margin-right: auto;">
-<thead>
-<tr class="header">
-<th style="text-align: left;" data-quarto-table-cell-role="th">species</th>
-<th style="text-align: left;" data-quarto-table-cell-role="th">island</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">bill_length_mm</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">bill_depth_mm</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">flipper_length_mm</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">body_mass_g</th>
-<th style="text-align: left;" data-quarto-table-cell-role="th">sex</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">Adelie</td>
-<td style="text-align: left;">Torgersen</td>
-<td style="text-align: right;">39.1</td>
-<td style="text-align: right;">18.7</td>
-<td style="text-align: right;">181</td>
-<td style="text-align: right;">3750</td>
-<td style="text-align: left;">male</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Adelie</td>
-<td style="text-align: left;">Torgersen</td>
-<td style="text-align: right;">39.5</td>
-<td style="text-align: right;">17.4</td>
-<td style="text-align: right;">186</td>
-<td style="text-align: right;">3800</td>
-<td style="text-align: left;">female</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Adelie</td>
-<td style="text-align: left;">Torgersen</td>
-<td style="text-align: right;">40.3</td>
-<td style="text-align: right;">18.0</td>
-<td style="text-align: right;">195</td>
-<td style="text-align: right;">3250</td>
-<td style="text-align: left;">female</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Adelie</td>
-<td style="text-align: left;">Torgersen</td>
-<td style="text-align: right;">NA</td>
-<td style="text-align: right;">NA</td>
-<td style="text-align: right;">NA</td>
-<td style="text-align: right;">NA</td>
-<td style="text-align: left;">NA</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Adelie</td>
-<td style="text-align: left;">Torgersen</td>
-<td style="text-align: right;">36.7</td>
-<td style="text-align: right;">19.3</td>
-<td style="text-align: right;">193</td>
-<td style="text-align: right;">3450</td>
-<td style="text-align: left;">female</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Adelie</td>
-<td style="text-align: left;">Torgersen</td>
-<td style="text-align: right;">39.3</td>
-<td style="text-align: right;">20.6</td>
-<td style="text-align: right;">190</td>
-<td style="text-align: right;">3650</td>
-<td style="text-align: left;">male</td>
-</tr>
-</tbody>
-</table>
-
-
-</div>
-</div>
+<section id="section" class="title-slide slide level1 center">
+<h1></h1>
 
 <div class="footer footer-default">
 
 </div>
-</section></section>
-
+</section>
     </div>
   </div>
 
@@ -798,44 +658,6 @@ Udit Chaudhary
         ]
       });
     </script>
-    
-    <script>
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-      // slide changes (different for each slide format).
-      (function () {
-        // dispatch for htmlwidgets
-        function fireSlideEnter() {
-          const event = window.document.createEvent("Event");
-          event.initEvent("slideenter", true, true);
-          window.document.dispatchEvent(event);
-        }
-
-        function fireSlideChanged(previousSlide, currentSlide) {
-          fireSlideEnter();
-
-          // dispatch for shiny
-          if (window.jQuery) {
-            if (previousSlide) {
-              window.jQuery(previousSlide).trigger("hidden");
-            }
-            if (currentSlide) {
-              window.jQuery(currentSlide).trigger("shown");
-            }
-          }
-        }
-
-        // hookup for slidy
-        if (window.w3c_slidy) {
-          window.w3c_slidy.add_observer(function (slide_num) {
-            // slide_num starts at position 1
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-          });
-        }
-
-      })();
-    </script>
-
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {

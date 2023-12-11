@@ -7,9 +7,15 @@ editor: visual
 ---
 
 ```{r}
+
 # Install and load the required package
-install.packages("png")
-library(png)
+if (!require(pacman))
+  install.packages("pacman")
+
+pacman::p_load(png)
+
+#install.packages("png")
+#library(png)
 
 # Specify the path to your image file
 image_path <- "./images/UHI_Title.png"
@@ -21,13 +27,11 @@ img <- readPNG(image_path)
 plot(1:2, type = 'n', axes = FALSE, xlab = '', ylab = '')
 rasterImage(img, 1, 1, 2, 2)
 
-
 ```
 
 ## **Abstract**
 
-**Objective:**
-This project aims to study and analyze climatological data for Dallas, Arlington, and Denton, categorizing them based on an "Urban Heat Island" (UHI) scale. By leveraging data mining and machine learning, the goal is to understand the microclimatic effects of urbanization in different settings and classify UHI intensity levels. The project will focus on three key aspects:
+**Objective:** This project aims to study and analyze climatological data for Dallas, Arlington, and Denton, categorizing them based on an "Urban Heat Island" (UHI) scale. By leveraging data mining and machine learning, the goal is to understand the microclimatic effects of urbanization in different settings and classify UHI intensity levels. The project will focus on three key aspects:
 
 1.  **Dallas (Significant City):**
 
@@ -47,11 +51,9 @@ This project aims to study and analyze climatological data for Dallas, Arlington
 
     -   Considering factors like reduced pollution and different land use patterns.
 
-**Dataset:**
-Climatological and hourly time-series data have been collected from various weather stations, providing key daily summaries for Arlington, Dallas, and Denton in 2022. The dataset includes information on temperature, precipitation, pressure, humidity, wind speed, and more.
+**Dataset:** Climatological and hourly time-series data have been collected from various weather stations, providing key daily summaries for Arlington, Dallas, and Denton in 2022. The dataset includes information on temperature, precipitation, pressure, humidity, wind speed, and more.
 
-**Methodology:**
-Utilizing data mining and machine learning techniques, the project will detect and analyze UHIs, providing insights into the impact of urbanization on microclimates. The analysis includes visualizations and classification methods to interpret varying UHI intensity levels.
+**Methodology:** Utilizing data mining and machine learning techniques, the project will detect and analyze UHIs, providing insights into the impact of urbanization on microclimates. The analysis includes visualizations and classification methods to interpret varying UHI intensity levels.
 
 **Key Questions:**
 
