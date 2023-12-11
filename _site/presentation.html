@@ -466,14 +466,29 @@ Udit Chaudhary
 </section>
 <section id="exploratory-data-analysis-edaexploratory-data-analysis-eda" class="slide level2">
 <h2>Exploratory Data Analysis (EDA)Exploratory Data Analysis (EDA)</h2>
-<ul>
+<ol type="1">
 <li><p>Conduct EDA to identify patterns and relationships in the climatic data.</p></li>
 <li><p>This can include visualizations like time series plots, histograms, and scatter plots to understand temperature trends, humidity levels, etc.</p></li>
-</ul>
+</ol>
+</section></section>
+<section>
+<section id="feature-engineering" class="title-slide slide level1 center">
+<h1>Feature Engineering</h1>
+
 </section>
-<section id="feature-engineering" class="slide level2">
+<section id="create-seasonal-thresholds" class="slide level2">
+<h2>Create Seasonal Thresholds</h2>
+<p>Create and separate the data by “Seasons” and then create thresholds for each season based on the following weather conditions:</p>
+<ol type="1">
+<li><p>Hourly Dry Bulb Temperature</p></li>
+<li><p>Hourly Relative Humidity</p></li>
+<li><p>Hourly Wind Speed</p></li>
+</ol>
+
+<img data-src="images/dallas_season_quartiles.png" class="r-stretch quarto-figure-center"></section>
+<section id="feature-engineering-1" class="slide level2">
 <h2>Feature Engineering</h2>
-<p>Create new features that could better represent UHI effects, such as calculating temperature differences between day and night, urban and rural areas, or creating indices that combine multiple climatic variables.</p>
+<p>Design a classification function to label UHI intensities for hourly weather data.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a><span class="kw">def</span> classify_uhi(row, temp_thresholds, humidity_thresholds, wind_speed_thresholds):</span>
 <span id="cb1-2"><a href="#cb1-2"></a>    season <span class="op">=</span> row[<span class="st">'Season'</span>]</span>
 <span id="cb1-3"><a href="#cb1-3"></a>    temp <span class="op">=</span> row[<span class="st">'HourlyDryBulbTemperature'</span>]</span>
@@ -494,18 +509,24 @@ Udit Chaudhary
 <span id="cb1-18"><a href="#cb1-18"></a>    <span class="cf">else</span>:</span>
 <span id="cb1-19"><a href="#cb1-19"></a>        <span class="cf">return</span> <span class="st">'Low'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="feature-engineering-1" class="slide level2">
-<h2>Feature Engineering</h2>
+<section id="results-of-classification-function" class="slide level2">
+<h2>Results of Classification Function</h2>
 
 <img data-src="images/UHI_intensities.png" class="r-stretch quarto-figure-center"></section></section>
 <section>
-<section id="model-selection-training-validation" class="title-slide slide level1 center">
-<h1>Model Selection, Training, &amp; Validation</h1>
+<section id="classification-model-selection-training-validation" class="title-slide slide level1 center">
+<h1>Classification Model Selection, Training, &amp; Validation</h1>
 
 </section>
 <section id="model-selection" class="slide level2">
 <h2>Model Selection</h2>
-<p>For classification, algorithms like decision trees, random forests, or SVMs.</p>
+<p>Developed 5 classification models:</p>
+<ol type="1">
+<li><p>Decision Tree</p></li>
+<li><p>Random Forest</p></li>
+<li><p>XGBoost</p></li>
+<li><p>SVM Classifier</p></li>
+</ol>
 </section>
 <section id="model-training-and-validation" class="slide level2">
 <h2>Model Training and Validation</h2>

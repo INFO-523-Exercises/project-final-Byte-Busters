@@ -112,18 +112,32 @@
     "text": "Exploratory Data Analysis (EDA)Exploratory Data Analysis (EDA)\n\nConduct EDA to identify patterns and relationships in the climatic data.\nThis can include visualizations like time series plots, histograms, and scatter plots to understand temperature trends, humidity levels, etc."
   },
   {
-    "objectID": "presentation.html#feature-engineering",
-    "href": "presentation.html#feature-engineering",
+    "objectID": "presentation.html#create-seasonal-thresholds",
+    "href": "presentation.html#create-seasonal-thresholds",
+    "title": "Urban Climate Patterns: Analysis of Urban Heat Islands",
+    "section": "Create Seasonal Thresholds",
+    "text": "Create Seasonal Thresholds\nCreate and separate the data by “Seasons” and then create thresholds for each season based on the following weather conditions:\n\nHourly Dry Bulb Temperature\nHourly Relative Humidity\nHourly Wind Speed"
+  },
+  {
+    "objectID": "presentation.html#feature-engineering-1",
+    "href": "presentation.html#feature-engineering-1",
     "title": "Urban Climate Patterns: Analysis of Urban Heat Islands",
     "section": "Feature Engineering",
-    "text": "Feature Engineering\nCreate new features that could better represent UHI effects, such as calculating temperature differences between day and night, urban and rural areas, or creating indices that combine multiple climatic variables.\ndef classify_uhi(row, temp_thresholds, humidity_thresholds, wind_speed_thresholds):\n    season = row['Season']\n    temp = row['HourlyDryBulbTemperature']\n    humidity = row['HourlyRelativeHumidity']\n    wind_speed = row['HourlyWindSpeed']\n\n    # Get the thresholds for the current season\n    temp_high = temp_thresholds.loc[season, 0.50] # previous threshold --&gt; temp_high = temp_thresholds.loc[season, 0.75]\n    temp_medium = temp_thresholds.loc[season, 0.25] # previous threshold --&gt; temp_medium = temp_thresholds.loc[season, 0.50]\n    humidity_low = humidity_thresholds.loc[season, 0.25]\n    wind_speed_low = wind_speed_thresholds.loc[season, 0.25]\n\n    # Classify based on combined criteria\n    if temp &gt; temp_high and humidity &lt; humidity_low and wind_speed &lt; wind_speed_low:\n        return 'High'\n    elif temp &gt; temp_medium:\n        return 'Medium'\n    else:\n        return 'Low'"
+    "text": "Feature Engineering\nDesign a classification function to label UHI intensities for hourly weather data.\ndef classify_uhi(row, temp_thresholds, humidity_thresholds, wind_speed_thresholds):\n    season = row['Season']\n    temp = row['HourlyDryBulbTemperature']\n    humidity = row['HourlyRelativeHumidity']\n    wind_speed = row['HourlyWindSpeed']\n\n    # Get the thresholds for the current season\n    temp_high = temp_thresholds.loc[season, 0.50]\n    temp_medium = temp_thresholds.loc[season, 0.25]\n    humidity_low = humidity_thresholds.loc[season, 0.25]\n    wind_speed_low = wind_speed_thresholds.loc[season, 0.25]\n\n    # Classify based on combined criteria\n    if temp &gt; temp_high and humidity &lt; humidity_low and wind_speed &lt; wind_speed_low:\n        return 'High'\n    elif temp &gt; temp_medium:\n        return 'Medium'\n    else:\n        return 'Low'"
+  },
+  {
+    "objectID": "presentation.html#results-of-classification-function",
+    "href": "presentation.html#results-of-classification-function",
+    "title": "Urban Climate Patterns: Analysis of Urban Heat Islands",
+    "section": "Results of Classification Function",
+    "text": "Results of Classification Function"
   },
   {
     "objectID": "presentation.html#model-selection",
     "href": "presentation.html#model-selection",
     "title": "Urban Climate Patterns: Analysis of Urban Heat Islands",
     "section": "Model Selection",
-    "text": "Model Selection\nFor classification, algorithms like decision trees, random forests, or SVMs"
+    "text": "Model Selection\nDeveloped 5 classification models:\n\nDecision Tree\nRandom Forest\nXGBoost\nSVM Classifier"
   },
   {
     "objectID": "presentation.html#model-training-and-validation",
@@ -159,12 +173,5 @@
     "title": "Urban Climate Patterns: Analysis of Urban Heat Islands",
     "section": "Conclusion",
     "text": "Conclusion"
-  },
-  {
-    "objectID": "presentation.html#feature-engineering-1",
-    "href": "presentation.html#feature-engineering-1",
-    "title": "Urban Climate Patterns: Analysis of Urban Heat Islands",
-    "section": "Feature Engineering",
-    "text": "Feature Engineering"
   }
 ]

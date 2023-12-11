@@ -66,6 +66,8 @@ Create and separate the data by "Seasons" and then create thresholds for each se
 
 3.  Hourly Wind Speed
 
+## Create Seasonal Thresholds
+
 ![](images/dallas_season_quartiles.png){fig-align="center"}
 
 ## Feature Engineering
@@ -100,7 +102,7 @@ def classify_uhi(row, temp_thresholds, humidity_thresholds, wind_speed_threshold
 
 # Classification Model Selection, Training, & Validation
 
-## Model Selection
+## Model Selection (80% Train / 20% Test)
 
 Developed 5 classification models:
 
@@ -110,19 +112,29 @@ Developed 5 classification models:
 
 3.  XGBoost
 
-4.  SVM Classifier
+4.  Gradient Boost
 
-## Model Training and Validation
+5.  SVM Classifier
 
-Train your models on a portion of the data and validate their performance using another portion.
+## Classification Model Results
 
-## Model Evaluation
+![](images/classification_model_comparison.png){fig-align="center"}
 
-Use metrics like accuracy, precision, and recall for classification models, to evaluate their performance on a test set.
+## Random Forest
 
-## Interpretation of Results
+``` python
+rfc_model = RandomForestClassifier()
+rfc_model.fit(X_train, y_train)
 
-Interpret the model outcomes in the context of UHI effects. Analyze which features are most important in predicting UHI intensity and how different climatic variables interact with urbanization.
+y_pred = rfc_model.predict(X_test)
+print(classification_report(y_test, y_pred))
+```
+
+![](images/random_forest.png){fig-align="center"}
+
+## Additional Evaluation of Random Forest
+
+![](images/features_importance_RF.png){fig-align="center"}
 
 # Time Series Analysis
 
