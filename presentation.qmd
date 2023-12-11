@@ -27,7 +27,7 @@ execute:
 
 -   UHI ("Urban Heat Island") is a micro-climate condition that occurs when a city experiences much warmer temperatures than nearby rural areas.
 
-![Image with Border](images/UHI_Title.png){fig-align="center"}
+![](images/UHI_Title.png){: style="border: 2px solid #000;"}{fig-align="center"}
 
 ## **3 Cities for UHI Comparison**
 
