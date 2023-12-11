@@ -71,6 +71,25 @@ Dallas vs. Arlington vs. Denton
 
 1.  Three datasets for the year 2022 were obtained from the [National Centers for Environmental Information](https://www.ncei.noaa.gov/access/search/data-search/local-climatological-data?pageNum=1&bbox=32.843,-97.215,32.629,-97.001), then combined into one major dataset.
 
+    ```{r}
+    #| label: arlington-dataset 
+    #| echo: false 
+    #| warning: false  
+
+    arlington_data <- read_csv(here('./data/Arlington.csv'))
+
+    cleaned_arlington <- arlington_data %>% select(-REM)
+
+    # Dimensions of dataset:
+    num_rows <- nrow(cleaned_arlington)
+    num_columns <- ncol(cleaned_arlington)
+    cat("(", num_rows, " rows x ", num_columns, " columns)", sep = "")
+
+    cleaned_arlington |>
+      head(n = 5) |>
+      formattable()
+    ```
+
 ## Data Preprocessing and Cleaning
 
 1.  Inspect the Data
