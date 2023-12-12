@@ -56,13 +56,6 @@
     "text": "Organization of the Project Repository\nBelow are the key folders within the Project repository:\n\ndata/: This directory is designated for essential data files required for the project, including input files.\nimages/: This folder serves as the storage location for project-related visual representations and plots.\npresentation_files/: This folder is specifically reserved for materials relevant to project presentations.\n_extra/: We will brainstorm and store analysis-related content that doesn’t directly affect the project workflow.\n_freeze/: This folder stores the generated files during the build process, preserving the website’s specific state at a given moment.\n_site/: This is where we will generate our static website files after rendering our Quarto documents.\n.github/: This is where we will access and manage GitHub templates and workflow configurations."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Urban Climate Patterns:Analysis of Urban Heat Islands",
-    "section": "",
-    "text": "Urban_Heat_Island"
-  },
-  {
     "objectID": "index.html#abstract",
     "href": "index.html#abstract",
     "title": "Urban Climate Patterns:Analysis of Urban Heat Islands",
@@ -124,6 +117,13 @@
     "title": "1. Problem Understanding and Definition:",
     "section": "",
     "text": "Define the problem as understanding and classifying the intensity of UHI effects in Dallas, Arlington, and Denton. The goal is to analyze how urbanization affects local climate variables."
+  },
+  {
+    "objectID": "code.html#model-comparison-bar-chart",
+    "href": "code.html#model-comparison-bar-chart",
+    "title": "1. Problem Understanding and Definition:",
+    "section": "Model Comparison Bar Chart",
+    "text": "Model Comparison Bar Chart\n\nmodel_performance = {\n    'Model': [ 'Random\\nForest', 'XGBoost','Gradient\\nBoosting', 'Decision\\nTree', 'SVM'],\n    'Accuracy': [ 0.91, 0.90, 0.87, 0.83, 0.81]\n}\n\ndf_performance = pd.DataFrame(model_performance)\n\n# Plot\nplt.figure(figsize=(10, 6))\nbarplot = sns.barplot(x='Model', y='Accuracy', data=df_performance)\nplt.title('Model Comparison by Accuracy')\nplt.ylabel('Accuracy')\nplt.xlabel('Model')\nplt.xticks(rotation=0)\n\n# Adding the text labels for each bar\nfor p in barplot.patches:\n    barplot.annotate(format(p.get_height(), '.2f'),\n                     (p.get_x() + p.get_width() / 2., p.get_height()),\n                     ha = 'center', va = 'center',\n                     xytext = (0, 9),\n                     textcoords = 'offset points')\n\nplt.show()"
   },
   {
     "objectID": "presentation.html#uhi-definition",
@@ -252,10 +252,17 @@
     "text": "Time Series Analysis"
   },
   {
-    "objectID": "code.html#model-comparison-bar-chart",
-    "href": "code.html#model-comparison-bar-chart",
-    "title": "1. Problem Understanding and Definition:",
-    "section": "Model Comparison Bar Chart",
-    "text": "Model Comparison Bar Chart\n\nmodel_performance = {\n    'Model': [ 'Random\\nForest', 'XGBoost','Gradient\\nBoosting', 'Decision\\nTree', 'SVM'],\n    'Accuracy': [ 0.91, 0.90, 0.87, 0.83, 0.81]\n}\n\ndf_performance = pd.DataFrame(model_performance)\n\n# Plot\nplt.figure(figsize=(10, 6))\nbarplot = sns.barplot(x='Model', y='Accuracy', data=df_performance)\nplt.title('Model Comparison by Accuracy')\nplt.ylabel('Accuracy')\nplt.xlabel('Model')\nplt.xticks(rotation=0)\n\n# Adding the text labels for each bar\nfor p in barplot.patches:\n    barplot.annotate(format(p.get_height(), '.2f'),\n                     (p.get_x() + p.get_width() / 2., p.get_height()),\n                     ha = 'center', va = 'center',\n                     xytext = (0, 9),\n                     textcoords = 'offset points')\n\nplt.show()"
+    "objectID": "presentation.html#link-to-pdf-presentation",
+    "href": "presentation.html#link-to-pdf-presentation",
+    "title": "Urban Climate Patterns: Analysis of Urban Heat Islands",
+    "section": "Link to PDF Presentation",
+    "text": "Link to PDF Presentation"
+  },
+  {
+    "objectID": "presentation.html#link-to-pdf-presentation-1",
+    "href": "presentation.html#link-to-pdf-presentation-1",
+    "title": "Urban Climate Patterns: Analysis of Urban Heat Islands",
+    "section": "Link to PDF Presentation",
+    "text": "Link to PDF Presentation"
   }
 ]

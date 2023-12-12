@@ -1,11 +1,9 @@
-# [Link to PDF Presentation](./byte_busters_presentation.pdf) {background-image="images/dallas-united-states-travel-blog.jpg" background-opacity="0.35"}
-
 ---
 title: "Urban Climate Patterns: Analysis of Urban Heat Islands"
 subtitle: "INFO 523 - Fall 2023 - Project Final"
 output:
   md:
-    - "[Link to PDF Presentation](./byte_busters_presentation.pdf)"
+    - "[Download Presentation (PDF)](./byte_busters_presentation.pdf)"
 author: 
   - "Ajinkya Deshmukh"
   - "Dhanyapriya Somasundaram"
@@ -195,4 +193,4 @@ print(classification_report(y_test, y_pred))
 
 # Conclusion {background-image="images/dallas-united-states-travel-blog.jpg" background-opacity="0.35"}
 
-# Thank You! {background-image="images/dallas-united-states-travel-blog.jpg" background-opacity="0.35"}
+[Download Presentation (PDF)](./byte_busters_presentation.pdf)
