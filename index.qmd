@@ -6,7 +6,9 @@ format: html
 editor: visual
 ---
 
-![Urban_Heat_Island](./images/UHI_Title.png){fig-align="center"}
+###### ([Link to PDF Presentation](./byte_busters_presentation.pdf)) {background-image="images/dallas-united-states-travel-blog.jpg" background-opacity="0.35"}
+
+![](./images/UHI_Title.png){fig-align="center"}
 
 ## **Abstract**
 
@@ -29,17 +31,17 @@ This project aims to study and analyze climatological data for Dallas, Arlington
     -   Examining UHI in a rural city with lower population density.
 
     -   Considering factors like reduced pollution and different land use patterns.
-    
+
 ## **Introduction**
 
-Urbanization has been a significant driver of environmental change, leading to the development of Urban Heat Islands (UHIs) in metropolitan areas. These UHIs, characterized by elevated temperatures in urban regions compared to their rural surroundings, have garnered substantial attention due to their potential impact on local climates and communities. In response to this, the current project aims to conduct a detailed investigation into the climatological data of Dallas, Arlington, and Denton, with a specific focus on categorizing and understanding the UHI phenomenon.
-By leveraging advanced data mining and machine learning methodologies, the project seeks to unravel the intricate microclimatic effects associated with urbanization in these diverse settings. The utilization of these cutting-edge techniques will enable the classification of UHI intensity levels, providing valuable insights into the varying degrees of urban heat island effects within the specified locations.
-The significance of this research lies in its potential to contribute to a deeper understanding of the implications of urbanization on local climates, thereby facilitating informed decision-making and the development of targeted mitigation strategies. Through the comprehensive analysis of UHI effects in Dallas, Arlington, and Denton, this project endeavors to shed light on the complex interplay between urban development and climatological dynamics, ultimately paving the way for more sustainable and resilient urban planning and environmental management.
+Urbanization has been a significant driver of environmental change, leading to the development of Urban Heat Islands (UHIs) in metropolitan areas. These UHIs, characterized by elevated temperatures in urban regions compared to their rural surroundings, have garnered substantial attention due to their potential impact on local climates and communities. In response to this, the current project aims to conduct a detailed investigation into the climatological data of Dallas, Arlington, and Denton, with a specific focus on categorizing and understanding the UHI phenomenon. By leveraging advanced data mining and machine learning methodologies, the project seeks to unravel the intricate microclimatic effects associated with urbanization in these diverse settings. The utilization of these cutting-edge techniques will enable the classification of UHI intensity levels, providing valuable insights into the varying degrees of urban heat island effects within the specified locations. The significance of this research lies in its potential to contribute to a deeper understanding of the implications of urbanization on local climates, thereby facilitating informed decision-making and the development of targeted mitigation strategies. Through the comprehensive analysis of UHI effects in Dallas, Arlington, and Denton, this project endeavors to shed light on the complex interplay between urban development and climatological dynamics, ultimately paving the way for more sustainable and resilient urban planning and environmental management.
 
-## **Dataset:** 
+## **Dataset:**
+
 Climatological and hourly time-series data have been collected from various weather stations, providing key daily summaries for Arlington, Dallas, and Denton in 2022. The dataset includes information on temperature, precipitation, pressure, humidity, wind speed, and more.
 
-## **Methodology:** 
+## **Methodology:**
+
 Utilizing data mining and machine learning techniques, the project will detect and analyze UHIs, providing insights into the impact of urbanization on microclimates. The analysis includes visualizations and classification methods to interpret varying UHI intensity levels.
 
 ## **Questions:**
@@ -59,6 +61,7 @@ Utilizing data mining and machine learning techniques, the project will detect a
 This project will contribute to the understanding of UHI dynamics in different urban environments and provide valuable insights for sustainable urban development and climate resilience.
 
 ## **Data Analysis and Visualizations:**
+
 In this project we're employing data visualization techniques to explore and compare the seasonal variation of relative humidity in three different cities---Arlington, Dallas, and Denton.Plot is showcasing the hourly relative humidity trends across each month. The distinctive line styles and markers aid in differentiating data points for each city.
 
 ![](./images/Seasonal_Comparison.png){fig-align="center"}
@@ -73,9 +76,6 @@ The correlation heatmap is to explore the relationships between various meteorol
 
 ![](./images/Correlation_HeatMap.png){fig-align="center"}
 
+## **Conclusion**
 
-## **Conclusion** 
-The analysis of climatological data for Dallas, Arlington, and Denton has provided valuable insights into the Urban Heat Island (UHI) phenomenon, shedding light on the complex interplay between urban development and climatological dynamics. By leveraging data mining and machine learning techniques, this project has successfully categorized and understood UHI intensity levels in diverse urban and rural settings. The significance of this research lies in its potential to contribute to a deeper understanding of the implications of urbanization on local climates, thereby facilitating informed decision-making and the development of targeted mitigation strategies.
-The findings of this analysis have revealed distinct UHI intensity variations across the studied locations. In Dallas, a major metropolitan area, the UHI intensity was found to be significantly influenced by factors such as pollution, land use, and climate, leading to higher UHI levels. Conversely, in Arlington, a suburban town with moderate population density, and Denton, a rural city with lower population density, the UHI intensities were comparatively lower, with varying influences from factors such as land use patterns and reduced pollution.
-The project's data analysis and visualizations have effectively illustrated the seasonal and temporal variations in UHI intensity across the studied areas, providing comprehensive insights into the microclimatic effects of urbanization. The correlation heatmap analysis has further elucidated the interdependencies and potential contributing factors to the UHI phenomenon in the selected locations.
-In conclusion, this project has significantly advanced the understanding of UHI dynamics in different urban environments, laying the groundwork for informed urban planning, environmental management, and climate resilience strategies. The insights gained from this analysis will be instrumental in guiding sustainable urban development practices and fostering the creation of targeted UHI mitigation measures. The project's comprehensive approach to UHI analysis has not only contributed to the scientific understanding of UHI dynamics but also holds practical implications for creating healthier and more sustainable urban environments.
+The analysis of climatological data for Dallas, Arlington, and Denton has provided valuable insights into the Urban Heat Island (UHI) phenomenon, shedding light on the complex interplay between urban development and climatological dynamics. By leveraging data mining and machine learning techniques, this project has successfully categorized and understood UHI intensity levels in diverse urban and rural settings. The significance of this research lies in its potential to contribute to a deeper understanding of the implications of urbanization on local climates, thereby facilitating informed decision-making and the development of targeted mitigation strategies. The findings of this analysis have revealed distinct UHI intensity variations across the studied locations. In Dallas, a major metropolitan area, the UHI intensity was found to be significantly influenced by factors such as pollution, land use, and climate, leading to higher UHI levels. Conversely, in Arlington, a suburban town with moderate population density, and Denton, a rural city with lower population density, the UHI intensities were comparatively lower, with varying influences from factors such as land use patterns and reduced pollution. The project's data analysis and visualizations have effectively illustrated the seasonal and temporal variations in UHI intensity across the studied areas, providing comprehensive insights into the microclimatic effects of urbanization. The correlation heatmap analysis has further elucidated the interdependencies and potential contributing factors to the UHI phenomenon in the selected locations. In conclusion, this project has significantly advanced the understanding of UHI dynamics in different urban environments, laying the groundwork for informed urban planning, environmental management, and climate resilience strategies. The insights gained from this analysis will be instrumental in guiding sustainable urban development practices and fostering the creation of targeted UHI mitigation measures. The project's comprehensive approach to UHI analysis has not only contributed to the scientific understanding of UHI dynamics but also holds practical implications for creating healthier and more sustainable urban environments.

@@ -1,16 +1,17 @@
+# [Link to PDF Presentation](./byte_busters_presentation.pdf) {background-image="images/dallas-united-states-travel-blog.jpg" background-opacity="0.35"}
+
 ---
 title: "Urban Climate Patterns: Analysis of Urban Heat Islands"
 subtitle: "INFO 523 - Fall 2023 - Project Final"
+output:
+  md:
+    - "[Link to PDF Presentation](./byte_busters_presentation.pdf)"
 author: 
   - "Ajinkya Deshmukh"
   - "Dhanyapriya Somasundaram"
   - "Kendall Beaver"
   - "Riyanshi Bohra"
   - "Udit Chaudhary"
-
-output:
-  md:
-    - "[Download PDF Document](./byte_busters_presentation.pdf)"
 
 title-slide-attributes:
     data-background-image: images/dallas-united-states-travel-blog.jpg
