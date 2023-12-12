@@ -3,7 +3,7 @@ title: "Urban Climate Patterns: Analysis of Urban Heat Islands"
 subtitle: "INFO 523 - Fall 2023 - Project Final"
 output:
   md:
-    - "[Download Presentation (PDF)](./byte_busters_presentation.pdf)"
+    - "[Download Presentation (PDF)](.byte_busters_presentation.pdf)"
 author: 
   - "Ajinkya Deshmukh"
   - "Dhanyapriya Somasundaram"
